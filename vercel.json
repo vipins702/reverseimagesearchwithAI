@@ -1,0 +1,9 @@
+{
+  "functions": {
+    "api/upload-image.ts": {
+      "runtime": "edge"
+    }
+  },
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist"
+}
