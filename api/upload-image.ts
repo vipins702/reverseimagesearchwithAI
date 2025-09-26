@@ -43,10 +43,26 @@ export default async function handler(req: Request): Promise<Response> {
       });
     }
 
-    // Validate file size (10MB limit)
+
+    // Validate file size (10MB limit) and decode base64 using Web APIs
     const base64Data = imageData.split(',')[1];
-    const binaryString = Buffer.from(base64Data, 'base64');
-    if (binaryString.length > 10 * 1024 * 1024) {
+    // Use atob + Uint8Array for base64 decoding (works in Edge and Node)
+    function base64ToUint8Array(base64: string): Uint8Array {
+      if (typeof atob === 'function') {
+        const binaryString = atob(base64);
+        const len = binaryString.length;
+        const bytes = new Uint8Array(len);
+        for (let i = 0; i < len; i++) {
+          bytes[i] = binaryString.charCodeAt(i);
+        }
+        return bytes;
+      } else {
+        // Node.js fallback
+        return new Uint8Array(Buffer.from(base64, 'base64'));
+      }
+    }
+    const bytes = base64ToUint8Array(base64Data);
+    if (bytes.length > 10 * 1024 * 1024) {
       return new Response(JSON.stringify({ error: 'File size exceeds 10MB limit' }), {
         status: 400,
         headers: { 'Content-Type': 'application/json' },
@@ -59,8 +75,9 @@ export default async function handler(req: Request): Promise<Response> {
     const fileExtension = filename.split('.').pop();
     const uniqueFilename = `reverse-search-${timestamp}-${randomId}.${fileExtension}`;
 
+
     // Upload to Vercel Blob Storage
-    const blob = await put(uniqueFilename, binaryString, {
+    const blob = await put(uniqueFilename, bytes, {
       access: 'public',
       contentType: `image/${fileExtension}`,
       token: blobToken,
