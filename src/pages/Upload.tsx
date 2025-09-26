@@ -22,34 +22,44 @@ interface SearchEngine {
 }
 
 const searchEngines: SearchEngine[] = [
-{
-  name: 'Google',
-  icon: <Globe className="w-5 h-5" />,
-  color: 'from-blue-500 to-blue-600',
-  searchUrl: (url) => `https://images.google.com/searchbyimage?image_url=${encodeURIComponent(url)}`,
-  description: 'Most comprehensive results'
-},
-{
-  name: 'Bing',
-  icon: <Search className="w-5 h-5" />,
-  color: 'from-green-500 to-green-600',
-  searchUrl: (url) => `https://www.bing.com/images/search?q=imgurl:${encodeURIComponent(url)}&view=detailv2&iss=sbi`,
-  description: 'Microsoft\'s visual search'
-},
-{
-  name: 'Yandex',
-  icon: <Eye className="w-5 h-5" />,
-  color: 'from-red-500 to-red-600',
-  searchUrl: (url) => `https://yandex.com/images/search?rpt=imageview&url=${encodeURIComponent(url)}`,
-  description: 'Great for Russian content'
-},
-{
-  name: 'TinEye',
-  icon: <Zap className="w-5 h-5" />,
-  color: 'from-purple-500 to-purple-600',
-  searchUrl: (url) => `https://tineye.com/search?url=${encodeURIComponent(url)}`,
-  description: 'Reverse image specialist'
-}];
+  {
+    name: 'Google',
+    icon: <Globe className="w-5 h-5" />,
+    color: 'from-blue-500 to-blue-600',
+    // Use Google Lens for better support (mobile and desktop)
+    searchUrl: (url) => `https://lens.google.com/uploadbyurl?url=${encodeURIComponent(url)}`,
+    description: 'Google Lens (best for most users)'
+  },
+  {
+    name: 'Google Images (Legacy)',
+    icon: <Globe className="w-5 h-5" />,
+    color: 'from-blue-400 to-blue-700',
+    searchUrl: (url) => `https://www.google.com/searchbyimage?image_url=${encodeURIComponent(url)}`,
+    description: 'Classic Google Images (may not work for all)'
+  },
+  {
+    name: 'Bing',
+    icon: <Search className="w-5 h-5" />,
+    color: 'from-green-500 to-green-600',
+    searchUrl: (url) => `https://www.bing.com/images/search?q=imgurl:${encodeURIComponent(url)}&view=detailv2&iss=sbi`,
+    description: "Microsoft's visual search"
+  },
+  {
+    name: 'Yandex',
+    icon: <Eye className="w-5 h-5" />,
+    color: 'from-red-500 to-red-600',
+    searchUrl: (url) => `https://yandex.com/images/search?rpt=imageview&url=${encodeURIComponent(url)}`,
+    description: 'Great for Russian content'
+  },
+  {
+    name: 'TinEye',
+    icon: <Zap className="w-5 h-5" />,
+    color: 'from-purple-500 to-purple-600',
+    // Use TinEye's direct search URL (sometimes requires public image URL)
+    searchUrl: (url) => `https://www.tineye.com/search?url=${encodeURIComponent(url)}`,
+    description: 'Reverse image specialist'
+  }
+];
 
 
 const UploadPage = () => {
