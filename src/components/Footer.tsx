@@ -92,11 +92,6 @@ const Footer = () => {
             <p className="text-gray-400 text-sm">
               © 2024 Cosmic Search. All rights reserved.
             </p>
-            <div className="flex items-center gap-2 text-gray-400 text-sm">
-              <span>Made with</span>
-              <Heart className="w-4 h-4 text-red-400" />
-              <span>for the web</span>
-            </div>
           </div>
         </div>
       </div>
