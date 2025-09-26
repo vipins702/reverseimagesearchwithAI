@@ -31,11 +31,11 @@ const searchEngines: SearchEngine[] = [
     description: 'Google Lens (best for most users)'
   },
   {
-    name: 'Google Images (Legacy)',
-    icon: <Globe className="w-5 h-5" />,
-    color: 'from-blue-400 to-blue-700',
-    searchUrl: (url) => `https://www.google.com/searchbyimage?image_url=${encodeURIComponent(url)}`,
-    description: 'Classic Google Images (may not work for all)'
+    name: 'Karma Decay',
+    icon: <Zap className="w-5 h-5" />,
+    color: 'from-yellow-500 to-yellow-700',
+    searchUrl: (url) => `https://karmadecay.com/search?q=${encodeURIComponent(url)}`,
+    description: 'Find Reddit posts with this image'
   },
   {
     name: 'Bing',
