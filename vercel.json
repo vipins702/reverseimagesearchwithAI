@@ -1,7 +1,7 @@
 {
   "functions": {
     "api/upload-image.ts": {
-      "runtime": "edge"
+      "runtime": "vercel-edge@2.0.0"
     }
   },
   "buildCommand": "npm run build",
