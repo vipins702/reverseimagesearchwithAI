@@ -1,19 +1,22 @@
 
+
 import { put } from '@vercel/blob';
-import { NextRequest, NextResponse } from 'next/server';
 
 
-export const runtime = 'edge';
 
-export default async function handler(req: NextRequest) {
-  // Get the Vercel Blob token from environment variables (Edge runtime: use globalThis)
-  const blobToken = (globalThis as any).BLOB_READ_WRITE_TOKEN || process.env?.BLOB_READ_WRITE_TOKEN;
+export default async function handler(req: Request): Promise<Response> {
+  // Get the Vercel Blob token from environment variables
+  const blobToken = process.env.BLOB_READ_WRITE_TOKEN;
   if (!blobToken) {
-    return NextResponse.json({ error: 'Blob token not configured' }, { status: 500 });
+    return new Response(JSON.stringify({ error: 'Blob token not configured' }), {
+      status: 500,
+      headers: { 'Content-Type': 'application/json' },
+    });
   }
+
   // Handle CORS preflight
   if (req.method === 'OPTIONS') {
-    return new NextResponse(null, {
+    return new Response(null, {
       status: 200,
       headers: {
         'Access-Control-Allow-Origin': '*',
@@ -24,27 +27,30 @@ export default async function handler(req: NextRequest) {
   }
 
   if (req.method !== 'POST') {
-    return NextResponse.json({ error: 'Method not allowed' }, { status: 405 });
+    return new Response(JSON.stringify({ error: 'Method not allowed' }), {
+      status: 405,
+      headers: { 'Content-Type': 'application/json' },
+    });
   }
 
   try {
     const { imageData, filename } = await req.json();
 
     if (!imageData || !filename) {
-      return NextResponse.json({ error: 'Missing image data or filename' }, { status: 400 });
+      return new Response(JSON.stringify({ error: 'Missing image data or filename' }), {
+        status: 400,
+        headers: { 'Content-Type': 'application/json' },
+      });
     }
 
     // Validate file size (10MB limit)
     const base64Data = imageData.split(',')[1];
-    // Use Web API for base64 decoding in Edge runtime
-    const binaryString = atob(base64Data);
-    const len = binaryString.length;
-    const bytes = new Uint8Array(len);
-    for (let i = 0; i < len; i++) {
-      bytes[i] = binaryString.charCodeAt(i);
-    }
-    if (bytes.length > 10 * 1024 * 1024) {
-      return NextResponse.json({ error: 'File size exceeds 10MB limit' }, { status: 400 });
+    const binaryString = Buffer.from(base64Data, 'base64');
+    if (binaryString.length > 10 * 1024 * 1024) {
+      return new Response(JSON.stringify({ error: 'File size exceeds 10MB limit' }), {
+        status: 400,
+        headers: { 'Content-Type': 'application/json' },
+      });
     }
 
     // Generate unique filename
@@ -54,24 +60,27 @@ export default async function handler(req: NextRequest) {
     const uniqueFilename = `reverse-search-${timestamp}-${randomId}.${fileExtension}`;
 
     // Upload to Vercel Blob Storage
-    const blob = await put(uniqueFilename, bytes, {
+    const blob = await put(uniqueFilename, binaryString, {
       access: 'public',
       contentType: `image/${fileExtension}`,
-      token: blobToken
+      token: blobToken,
     });
 
-    return NextResponse.json({
+    return new Response(JSON.stringify({
       success: true,
       publicUrl: blob.url,
-      filename: uniqueFilename
+      filename: uniqueFilename,
+    }), {
+      status: 200,
+      headers: { 'Content-Type': 'application/json' },
     });
 
   } catch (error) {
     console.error('Upload error:', error);
-    return NextResponse.json(
-      { error: 'Failed to upload image' }, 
-      { status: 500 }
-    );
+    return new Response(JSON.stringify({ error: 'Failed to upload image' }), {
+      status: 500,
+      headers: { 'Content-Type': 'application/json' },
+    });
   }
 }
 
