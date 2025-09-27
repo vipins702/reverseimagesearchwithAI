@@ -63,6 +63,41 @@ const searchEngines: SearchEngine[] = [
 
 
 const UploadPage = () => {
+  const [isPurging, setIsPurging] = useState(false);
+  const handlePurge = async () => {
+    if (!uploadedImage?.filename) return;
+    setIsPurging(true);
+    try {
+      const response = await fetch('/api/purge-image', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ filename: uploadedImage.filename })
+      });
+      if (!response.ok) {
+        throw new Error('Failed to purge image');
+      }
+      toast.success('Image purged from storage!', {
+        style: {
+          background: 'rgba(239, 68, 68, 0.1)',
+          color: '#fff',
+          border: '1px solid rgba(239, 68, 68, 0.3)',
+          backdropFilter: 'blur(20px)'
+        }
+      });
+      resetUpload();
+    } catch (error) {
+      toast.error('Failed to purge image', {
+        style: {
+          background: 'rgba(239, 68, 68, 0.1)',
+          color: '#fff',
+          border: '1px solid rgba(239, 68, 68, 0.3)',
+          backdropFilter: 'blur(20px)'
+        }
+      });
+    } finally {
+      setIsPurging(false);
+    }
+  };
   const [uploadedImage, setUploadedImage] = useState<UploadedImage | null>(null);
   const [isUploading, setIsUploading] = useState(false);
   const [uploadProgress, setUploadProgress] = useState(0);
@@ -407,6 +442,16 @@ const UploadPage = () => {
                             <p className="text-xs text-gray-500 break-all">
                               Public URL: {uploadedImage.publicUrl}
                             </p>
+                            <div className="mt-2 flex flex-col gap-2">
+                              <button
+                                onClick={handlePurge}
+                                disabled={isPurging}
+                                className="bg-red-500/80 hover:bg-red-600/80 text-white px-3 py-1 rounded text-xs font-semibold transition-all disabled:opacity-50"
+                              >
+                                {isPurging ? 'Purging...' : 'Purge Image Now'}
+                              </button>
+                              <span className="text-xs text-gray-400">Images are auto-deleted from storage after 2-3 days for privacy.</span>
+                            </div>
                           </div> :
                       isUploading ?
                       <div className="flex items-center gap-2 text-blue-400">
