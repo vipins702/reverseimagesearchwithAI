@@ -9,6 +9,15 @@ const Footer = () => {
       <div className="glass-strong border-t border-white/10">
         <div className="container mx-auto px-4 py-12">
           <div className="grid md:grid-cols-4 gap-8">
+            {/* Team */}
+            <div className="space-y-4">
+              <h3 className="text-lg font-semibold text-white">Meet Our Team</h3>
+              <ul className="space-y-2 text-gray-400">
+                <li>
+                  <span className="font-bold text-white">Vipin Singh</span> - Data Analysis Expert
+                </li>
+              </ul>
+            </div>
             {/* Brand */}
             <div className="space-y-4">
               <div className="flex items-center gap-3">

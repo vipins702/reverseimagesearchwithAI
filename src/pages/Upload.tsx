@@ -247,10 +247,18 @@ const UploadPage = () => {
   return (
     <>
       <Helmet>
-        <title>Upload Image - Cosmic Search | Start Your Reverse Image Search</title>
-        <meta name="description" content="Upload any image and start your reverse image search across Google, Bing, Yandex, and TinEye. Fast, secure, and privacy-protected image search." />
-        <meta name="keywords" content="upload image search, reverse image lookup, find image source, google image search, bing visual search, tineye search" />
+        <title>Reverse Image Search Tool | Find Image Source Instantly</title>
+        <meta name="description" content="Free reverse image search tool powered by AI. Find image sources, search by image, and discover similar photos across Google, Bing, Yandex, TinEye, and Reddit." />
+        <meta name="keywords" content="reverse image search, image search tool, find image source, search by image, Google Lens, Bing, TinEye, Yandex, Reddit, AI image search, photo lookup, online image search, visual search engine, image recognition, free reverse image search" />
         <link rel="canonical" href="https://search.lumi.ing/upload" />
+        {/* Open Graph tags */}
+        <meta property="og:title" content="Reverse Image Search Tool | Find Image Source Instantly" />
+        <meta property="og:description" content="Free reverse image search tool powered by AI. Find image sources, search by image, and discover similar photos across Google, Bing, Yandex, TinEye, and Reddit." />
+        <meta property="og:url" content="https://search.lumi.ing/upload" />
+        <meta property="og:type" content="website" />
+        {/* Twitter tags */}
+        <meta name="twitter:title" content="Reverse Image Search Tool | Find Image Source Instantly" />
+        <meta name="twitter:description" content="Free reverse image search tool powered by AI. Find image sources, search by image, and discover similar photos across Google, Bing, Yandex, TinEye, and Reddit." />
       </Helmet>
 
       <div className="pt-20 pb-16">
@@ -270,11 +278,9 @@ const UploadPage = () => {
 
                 <Sparkles className="w-8 h-8 text-blue-400" />
               </motion.div>
-              <h1 className="text-5xl md:text-7xl font-bold gradient-text-cosmic">Reverse Image Search
-
-              </h1>
+              <h1 className="text-3xl md:text-4xl font-bold gradient-text-cosmic">Reverse Image Search</h1>
             </div>
-            <p className="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
+            <p className="text-base text-gray-300 max-w-xl mx-auto leading-relaxed">
               Upload any image and discover its origins across the web with our premium reverse image search powered by cosmic technology
             </p>
           </motion.div>
@@ -315,7 +321,7 @@ const UploadPage = () => {
                       </div>
                       
                       <div>
-                        <h3 className="text-2xl font-semibold mb-3">
+                        <h3 className="text-lg font-semibold mb-2">
                           {isDragActive ? 'Drop your image here' : 'Upload your image'}
                         </h3>
                         <p className="text-gray-400 text-lg">
@@ -345,7 +351,7 @@ const UploadPage = () => {
                   {/* Image Preview */}
                   <div className="glass-strong rounded-3xl p-6">
                     <div className="flex items-center justify-between mb-6">
-                      <h3 className="text-2xl font-semibold flex items-center gap-3">
+                      <h3 className="text-lg font-semibold flex items-center gap-2">
                         <ImageIcon className="w-6 h-6 text-blue-400" />
                         Uploaded Image
                       </h3>
@@ -419,7 +425,7 @@ const UploadPage = () => {
 
                   {/* Search Engines */}
                   <div className="glass-strong rounded-3xl p-6">
-                    <h3 className="text-2xl font-semibold mb-6 flex items-center gap-3">
+                    <h3 className="text-lg font-semibold mb-4 flex items-center gap-2">
                       <Search className="w-6 h-6 text-purple-400" />
                       Search Engines
                     </h3>
