@@ -88,10 +88,59 @@ const Home = () => {
   return (
     <>
       <Helmet>
-        <title>Cosmic Search - Premium Reverse Image Search | Find Image Sources Instantly</title>
-        <meta name="description" content="Professional reverse image search tool. Upload any image and discover its origins across Google, Bing, Yandex, TinEye. Fast, secure, privacy-focused. Try free now!" />
-        <meta name="keywords" content="reverse image search, image search, find image source, reverse lookup, image finder, google images, bing visual search, tineye, yandex images" />
-        <link rel="canonical" href="https://search.lumi.ing/" />
+        <title>Free Duplicate Image Checker | Find & Remove Duplicate Photos Online</title>
+        <meta name="description" content="Use our free duplicate image checker to find, compare, and remove duplicate photos online. Fast, secure, and 100% free reverse image search for copyright protection and photo originality." />
+        <meta name="keywords" content="free duplicate image checker, free reverse image search, free image copyright verification, free photo originality checker, free image similarity detection, free image source finder, free stolen photo detector, free image comparison tool, free bulk image checker, free image authenticity checker, free image lookup service, free image verification for photographers, free image search for bloggers, free image protection tool, free image duplicate finder online, free image copyright protection, free image search for e-commerce, free image search for journalists, free image search for students" />
+        <link rel="canonical" href="https://checkduplicateimage.online/" />
+        {/* Open Graph tags */}
+        <meta property="og:title" content="Free Duplicate Image Checker | Find & Remove Duplicate Photos Online" />
+        <meta property="og:description" content="Use our free duplicate image checker to find, compare, and remove duplicate photos online. Fast, secure, and 100% free reverse image search for copyright protection and photo originality." />
+        <meta property="og:url" content="https://checkduplicateimage.online/" />
+        <meta property="og:type" content="website" />
+        {/* Twitter tags */}
+        <meta name="twitter:title" content="Free Duplicate Image Checker | Find & Remove Duplicate Photos Online" />
+        <meta name="twitter:description" content="Use our free duplicate image checker to find, compare, and remove duplicate photos online. Fast, secure, and 100% free reverse image search for copyright protection and photo originality." />
+        {/* FAQ Schema Markup for Google Rich Results */}
+        <script type="application/ld+json">{`
+        {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Is duplicate image checking free?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, our duplicate image checker is 100% free to use for all users."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I find duplicate images online for free?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Simply upload your photo and our tool will scan for duplicates across the web at no cost."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can I use this tool for copyright protection?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, our free service helps you verify image originality and protect your photos from theft."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is registration required to use the free duplicate image checker?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No registration or sign-up is required. Just upload and check instantly."
+              }
+            }
+          ]
+        }
+        `}</script>
       </Helmet>
 
       {/* Hero Section */}

@@ -143,10 +143,59 @@ const HowItWorks = () => {
   return (
     <>
       <Helmet>
-        <title>How It Works - Cosmic Search | Reverse Image Search Process</title>
-        <meta name="description" content="Learn how Cosmic Search's reverse image search works. Step-by-step guide to finding image sources across Google, Bing, Yandex, and TinEye with privacy protection." />
-        <meta name="keywords" content="how reverse image search works, image search process, find image source, google reverse search, bing visual search, tineye tutorial" />
-        <link rel="canonical" href="https://search.lumi.ing/how-it-works" />
+        <title>How Free Duplicate Image Checker Works | Reverse Image Search Guide 2025</title>
+        <meta name="description" content="Step-by-step guide to using our free duplicate image checker for reverse image search, copyright protection, and finding duplicate photos online. Learn how to protect your images and verify originality for free." />
+        <meta name="keywords" content="free duplicate image checker, free reverse image search, free image copyright verification, free photo originality checker, free image similarity detection, free image source finder, free stolen photo detector, free image comparison tool, free bulk image checker, free image authenticity checker, free image lookup service, free image verification for photographers, free image search for bloggers, free image protection tool, free image duplicate finder online, free image copyright protection, free image search for e-commerce, free image search for journalists, free image search for students" />
+        <link rel="canonical" href="https://checkduplicateimage.online/how-it-works" />
+        {/* Open Graph tags */}
+        <meta property="og:title" content="How Free Duplicate Image Checker Works | Reverse Image Search Guide 2025" />
+        <meta property="og:description" content="Step-by-step guide to using our free duplicate image checker for reverse image search, copyright protection, and finding duplicate photos online." />
+        <meta property="og:url" content="https://checkduplicateimage.online/how-it-works" />
+        <meta property="og:type" content="website" />
+        {/* Twitter tags */}
+        <meta name="twitter:title" content="How Free Duplicate Image Checker Works | Reverse Image Search Guide 2025" />
+        <meta name="twitter:description" content="Step-by-step guide to using our free duplicate image checker for reverse image search, copyright protection, and finding duplicate photos online." />
+        {/* FAQ Schema Markup for Google Rich Results */}
+        <script type="application/ld+json">{`
+        {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Is duplicate image checking free?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, our duplicate image checker is 100% free to use for all users."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I find duplicate images online for free?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Simply upload your photo and our tool will scan for duplicates across the web at no cost."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can I use this tool for copyright protection?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, our free service helps you verify image originality and protect your photos from theft."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is registration required to use the free duplicate image checker?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No registration or sign-up is required. Just upload and check instantly."
+              }
+            }
+          ]
+        }
+        `}</script>
       </Helmet>
 
       {/* Hero Section */}

@@ -82,10 +82,59 @@ const About = () => {
   return (
     <>
       <Helmet>
-        <title>About Us - Cosmic Search | Premium Reverse Image Search Technology</title>
-        <meta name="description" content="Learn about Cosmic Search's mission to provide the world's most advanced reverse image search technology. Meet our team and discover our commitment to privacy and innovation." />
-        <meta name="keywords" content="about cosmic search, reverse image search company, image search technology, computer vision, privacy-focused search" />
-        <link rel="canonical" href="https://search.lumi.ing/about" />
+        <title>About Free Duplicate Image Checker | Image Copyright Protection & Verification</title>
+        <meta name="description" content="Learn about our free duplicate image checker, our mission to protect images from theft, and our commitment to privacy, security, and innovation in reverse image search and copyright verification." />
+        <meta name="keywords" content="free duplicate image checker, free reverse image search, free image copyright verification, free photo originality checker, free image similarity detection, free image source finder, free stolen photo detector, free image comparison tool, free bulk image checker, free image authenticity checker, free image lookup service, free image verification for photographers, free image search for bloggers, free image protection tool, free image duplicate finder online, free image copyright protection, free image search for e-commerce, free image search for journalists, free image search for students" />
+        <link rel="canonical" href="https://checkduplicateimage.online/about" />
+        {/* Open Graph tags */}
+        <meta property="og:title" content="About Free Duplicate Image Checker | Image Copyright Protection & Verification" />
+        <meta property="og:description" content="Learn about our free duplicate image checker, our mission to protect images from theft, and our commitment to privacy, security, and innovation in reverse image search and copyright verification." />
+        <meta property="og:url" content="https://checkduplicateimage.online/about" />
+        <meta property="og:type" content="website" />
+        {/* Twitter tags */}
+        <meta name="twitter:title" content="About Free Duplicate Image Checker | Image Copyright Protection & Verification" />
+        <meta name="twitter:description" content="Learn about our free duplicate image checker, our mission to protect images from theft, and our commitment to privacy, security, and innovation in reverse image search and copyright verification." />
+        {/* FAQ Schema Markup for Google Rich Results */}
+        <script type="application/ld+json">{`
+        {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Is duplicate image checking free?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, our duplicate image checker is 100% free to use for all users."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I find duplicate images online for free?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Simply upload your photo and our tool will scan for duplicates across the web at no cost."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can I use this tool for copyright protection?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, our free service helps you verify image originality and protect your photos from theft."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is registration required to use the free duplicate image checker?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No registration or sign-up is required. Just upload and check instantly."
+              }
+            }
+          ]
+        }
+        `}</script>
       </Helmet>
 
       {/* Hero Section */}
