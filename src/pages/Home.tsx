@@ -95,9 +95,9 @@ const Home = () => {
       </Helmet>
 
       {/* Hero Section */}
-      <section className="relative pt-20 pb-32 overflow-hidden">
-        <div className="container mx-auto px-4">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <section className="relative pt-10 pb-16 overflow-hidden">
+          <div className="container mx-auto px-2">
+            <div className="grid lg:grid-cols-2 gap-6 items-center">
             <motion.div
               initial={{ opacity: 0, x: -50 }}
               animate={{ opacity: 1, x: 0 }}
@@ -105,30 +105,30 @@ const Home = () => {
               className="space-y-8"
             >
               <div className="space-y-6">
-                <h1 className="text-5xl md:text-7xl font-bold leading-tight">
+                <h1 className="text-3xl md:text-5xl font-bold leading-tight">
                   Find Any Image's
                   <span className="gradient-text-cosmic block">
                     Origin Instantly
                   </span>
                 </h1>
-                <p className="text-xl text-gray-300 leading-relaxed max-w-lg">
+                <p className="text-base text-gray-300 leading-relaxed max-w-md">
                   Professional reverse image search across multiple engines. 
                   Discover sources, verify authenticity, and protect your content 
                   with cosmic-powered technology.
                 </p>
               </div>
 
-              <div className="flex flex-col sm:flex-row gap-4">
+              <div className="flex flex-col sm:flex-row gap-2">
                 <Link
                   to="/upload"
-                  className="btn-cosmic bg-gradient-to-r from-blue-500 to-purple-600 px-8 py-4 rounded-xl font-semibold text-lg hover:shadow-2xl transition-all duration-300 flex items-center justify-center gap-2"
+                  className="btn-cosmic bg-gradient-to-r from-blue-500 to-purple-600 px-4 py-2 rounded-lg font-semibold text-base hover:shadow-2xl transition-all duration-300 flex items-center justify-center gap-2"
                 >
                   <Upload className="w-5 h-5" />
                   Start Free Search
                 </Link>
                 <Link
                   to="/how-it-works"
-                  className="glass px-8 py-4 rounded-xl font-semibold text-lg hover:bg-white/10 transition-all duration-300 flex items-center justify-center gap-2"
+                  className="glass px-4 py-2 rounded-lg font-semibold text-base hover:bg-white/10 transition-all duration-300 flex items-center justify-center gap-2"
                 >
                   <Play className="w-5 h-5" />
                   See How It Works
@@ -136,7 +136,7 @@ const Home = () => {
               </div>
 
               {/* Stats */}
-              <div className="grid grid-cols-4 gap-4 pt-8">
+              <div className="grid grid-cols-4 gap-2 pt-4">
                 {stats.map((stat, index) => (
                   <motion.div
                     key={stat.label}
@@ -145,8 +145,8 @@ const Home = () => {
                     transition={{ delay: 0.2 + index * 0.1 }}
                     className="text-center"
                   >
-                    <div className="text-2xl font-bold text-blue-400">{stat.number}</div>
-                    <div className="text-sm text-gray-400">{stat.label}</div>
+                    <div className="text-lg font-bold text-blue-400">{stat.number}</div>
+                    <div className="text-xs text-gray-400">{stat.label}</div>
                   </motion.div>
                 ))}
               </div>
@@ -158,24 +158,24 @@ const Home = () => {
               transition={{ duration: 0.8, delay: 0.2 }}
               className="relative"
             >
-              <div className="glass-strong rounded-3xl p-8 space-y-6">
-                <div className="aspect-video bg-gradient-to-br from-blue-500/20 to-purple-500/20 rounded-2xl flex items-center justify-center">
+              <div className="glass-strong rounded-2xl p-4 space-y-4">
+                <div className="aspect-video bg-gradient-to-br from-blue-500/20 to-purple-500/20 rounded-xl flex items-center justify-center">
                   <img 
                     src="https://images.pexels.com/photos/924824/pexels-photo-924824.jpeg?auto=compress&cs=tinysrgb&w=600"
                     alt="Reverse image search demonstration"
-                    className="w-full h-full object-cover rounded-2xl"
+                    className="w-full h-full object-cover rounded-xl"
                   />
                 </div>
                 <div className="space-y-3">
-                  <div className="flex items-center gap-2 text-green-400">
-                    <CheckCircle className="w-5 h-5" />
-                    <span className="font-medium">Image uploaded successfully</span>
+                  <div className="flex items-center gap-1 text-green-400">
+                    <CheckCircle className="w-4 h-4" />
+                    <span className="font-medium text-sm">Image uploaded successfully</span>
                   </div>
-                  <div className="grid grid-cols-2 gap-2">
+                  <div className="grid grid-cols-2 gap-1">
                     {['Google', 'Bing', 'Yandex', 'TinEye'].map((engine) => (
-                      <div key={engine} className="glass p-3 rounded-xl text-center">
-                        <div className="text-sm font-medium">{engine}</div>
-                        <div className="text-xs text-gray-400">Ready to search</div>
+                        <div key={engine} className="glass p-2 rounded-lg text-center">
+                          <div className="text-xs font-medium">{engine}</div>
+                          <div className="text-xs text-gray-400">Ready to search</div>
                       </div>
                     ))}
                   </div>
@@ -187,8 +187,8 @@ const Home = () => {
       </section>
 
       {/* Features Section */}
-      <section className="py-20">
-        <div className="container mx-auto px-4">
+      <section className="py-10">
+        <div className="container mx-auto px-2">
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -196,16 +196,16 @@ const Home = () => {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">
+            <h2 className="text-2xl md:text-3xl font-bold mb-4">
               Why Choose <span className="gradient-text-cosmic">Cosmic Search</span>
             </h2>
-            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+            <p className="text-base text-gray-300 max-w-2xl mx-auto">
               Advanced technology meets intuitive design for the most powerful 
               reverse image search experience available.
             </p>
           </motion.div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
             {features.map((feature, index) => {
               const Icon = feature.icon
               return (
@@ -217,11 +217,11 @@ const Home = () => {
                   viewport={{ once: true }}
                   className="glass-strong rounded-2xl p-6 hover:scale-105 transition-all duration-300"
                 >
-                  <div className={`w-12 h-12 bg-gradient-to-br ${feature.color} rounded-xl flex items-center justify-center mb-4`}>
-                    <Icon className="w-6 h-6 text-white" />
+                  <div className={`w-8 h-8 bg-gradient-to-br ${feature.color} rounded-lg flex items-center justify-center mb-2`}>
+                    <Icon className="w-4 h-4 text-white" />
                   </div>
-                  <h3 className="text-xl font-semibold mb-3">{feature.title}</h3>
-                  <p className="text-gray-400">{feature.description}</p>
+                  <h3 className="text-base font-semibold mb-2">{feature.title}</h3>
+                  <p className="text-gray-400 text-sm">{feature.description}</p>
                 </motion.div>
               )
             })}
@@ -229,8 +229,8 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Use Cases Section */}
-      <section className="py-20">
+  {/* Use Cases Section */}
+  <section className="py-10">
         <div className="container mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, y: 50 }}
@@ -239,16 +239,16 @@ const Home = () => {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">
+            <h2 className="text-2xl md:text-3xl font-bold mb-4">
               Real-World <span className="gradient-text-cosmic">Success Stories</span>
             </h2>
-            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+            <p className="text-base text-gray-300 max-w-2xl mx-auto">
               See how professionals across industries use Cosmic Search to solve 
               real problems and achieve measurable results.
             </p>
           </motion.div>
 
-          <div className="grid lg:grid-cols-3 gap-8">
+          <div className="grid lg:grid-cols-3 gap-4">
             {useCases.map((useCase, index) => (
               <motion.div
                 key={useCase.title}
@@ -258,19 +258,19 @@ const Home = () => {
                 viewport={{ once: true }}
                 className="glass-strong rounded-2xl overflow-hidden hover:scale-105 transition-all duration-300"
               >
-                <div className="aspect-video overflow-hidden">
+                <div className="aspect-video overflow-hidden rounded-lg">
                   <img 
                     src={useCase.image}
                     alt={useCase.title}
-                    className="w-full h-full object-cover hover:scale-110 transition-transform duration-500"
+                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-300 rounded-lg"
                   />
                 </div>
-                <div className="p-6 space-y-4">
-                  <h3 className="text-xl font-semibold">{useCase.title}</h3>
-                  <p className="text-gray-400">{useCase.description}</p>
-                  <div className="glass p-3 rounded-xl">
-                    <div className="text-sm text-blue-400 font-medium">Success Story:</div>
-                    <div className="text-sm text-gray-300">{useCase.scenario}</div>
+                <div className="p-3 space-y-2">
+                  <h3 className="text-base font-semibold">{useCase.title}</h3>
+                  <p className="text-gray-400 text-sm">{useCase.description}</p>
+                  <div className="glass p-2 rounded-lg">
+                    <div className="text-xs text-blue-400 font-medium">Success Story:</div>
+                    <div className="text-xs text-gray-300">{useCase.scenario}</div>
                   </div>
                 </div>
               </motion.div>
@@ -279,8 +279,8 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Testimonials Section */}
-      <section className="py-20">
+  {/* Testimonials Section */}
+  <section className="py-10">
         <div className="container mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, y: 50 }}
@@ -289,16 +289,16 @@ const Home = () => {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">
+            <h2 className="text-2xl md:text-3xl font-bold mb-4">
               Trusted by <span className="gradient-text-cosmic">Professionals</span>
             </h2>
-            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+            <p className="text-base text-gray-300 max-w-2xl mx-auto">
               Join thousands of satisfied users who rely on Cosmic Search for 
               their reverse image search needs.
             </p>
           </motion.div>
 
-          <div className="grid lg:grid-cols-3 gap-8">
+          <div className="grid lg:grid-cols-3 gap-4">
             {testimonials.map((testimonial, index) => (
               <motion.div
                 key={testimonial.name}
@@ -308,21 +308,21 @@ const Home = () => {
                 viewport={{ once: true }}
                 className="glass-strong rounded-2xl p-6 space-y-4"
               >
-                <div className="flex gap-1">
+                <div className="flex gap-0.5">
                   {[...Array(testimonial.rating)].map((_, i) => (
-                    <Star key={i} className="w-5 h-5 text-yellow-400 fill-current" />
+                    <Star key={i} className="w-4 h-4 text-yellow-400 fill-current" />
                   ))}
                 </div>
-                <p className="text-gray-300 italic">"{testimonial.content}"</p>
-                <div className="flex items-center gap-3">
+                <p className="text-gray-300 italic text-sm">"{testimonial.content}"</p>
+                <div className="flex items-center gap-2">
                   <img 
                     src={testimonial.avatar}
                     alt={testimonial.name}
-                    className="w-12 h-12 rounded-full object-cover"
+                    className="w-8 h-8 rounded-full object-cover"
                   />
                   <div>
-                    <div className="font-semibold">{testimonial.name}</div>
-                    <div className="text-sm text-gray-400">{testimonial.role}</div>
+                    <div className="font-semibold text-xs">{testimonial.name}</div>
+                    <div className="text-xs text-gray-400">{testimonial.role}</div>
                   </div>
                 </div>
               </motion.div>
@@ -332,8 +332,8 @@ const Home = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20">
-        <div className="container mx-auto px-4">
+      <section className="py-10">
+        <div className="container mx-auto px-2">
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -341,27 +341,27 @@ const Home = () => {
             viewport={{ once: true }}
             className="glass-strong rounded-3xl p-12 text-center space-y-8"
           >
-            <h2 className="text-4xl md:text-5xl font-bold">
+            <h2 className="text-2xl md:text-3xl font-bold">
               Ready to <span className="gradient-text-cosmic">Discover</span> Your Image's Story?
             </h2>
-            <p className="text-xl text-gray-300 max-w-2xl mx-auto">
+            <p className="text-base text-gray-300 max-w-xl mx-auto">
               Join millions of users who trust Cosmic Search for fast, accurate, 
               and secure reverse image searches. Start your search in seconds.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="flex flex-col sm:flex-row gap-2 justify-center">
               <Link
                 to="/upload"
-                className="btn-cosmic bg-gradient-to-r from-blue-500 to-purple-600 px-8 py-4 rounded-xl font-semibold text-lg hover:shadow-2xl transition-all duration-300 flex items-center justify-center gap-2"
+                className="btn-cosmic bg-gradient-to-r from-blue-500 to-purple-600 px-4 py-2 rounded-lg font-semibold text-base hover:shadow-2xl transition-all duration-300 flex items-center justify-center gap-2"
               >
-                <Upload className="w-5 h-5" />
+                <Upload className="w-4 h-4" />
                 Start Free Search
-                <ArrowRight className="w-5 h-5" />
+                <ArrowRight className="w-4 h-4" />
               </Link>
               <Link
                 to="/how-it-works"
-                className="glass px-8 py-4 rounded-xl font-semibold text-lg hover:bg-white/10 transition-all duration-300 flex items-center justify-center gap-2"
+                className="glass px-4 py-2 rounded-lg font-semibold text-base hover:bg-white/10 transition-all duration-300 flex items-center justify-center gap-2"
               >
-                <Eye className="w-5 h-5" />
+                <Eye className="w-4 h-4" />
                 Watch Demo
               </Link>
             </div>

@@ -261,8 +261,8 @@ const UploadPage = () => {
         <meta name="twitter:description" content="Free reverse image search tool powered by AI. Find image sources, search by image, and discover similar photos across Google, Bing, Yandex, TinEye, and Reddit." />
       </Helmet>
 
-      <div className="pt-20 pb-16">
-        <div className="container mx-auto px-4">
+      <div className="pt-12 pb-8 min-h-screen flex flex-col justify-start">
+        <div className="container mx-auto px-4 max-w-screen-xl w-full">
           {/* Header */}
           <motion.div
             initial={{ opacity: 0, y: -50 }}
@@ -286,7 +286,7 @@ const UploadPage = () => {
           </motion.div>
 
           {/* Main Content */}
-          <div className="max-w-4xl mx-auto">
+          <div className="max-w-2xl mx-auto">
             <AnimatePresence mode="wait">
               {!uploadedImage ? (
               /* Upload Section */
@@ -296,7 +296,7 @@ const UploadPage = () => {
                 animate={{ opacity: 1, scale: 1 }}
                 exit={{ opacity: 0, scale: 0.9 }}
                 transition={{ duration: 0.5 }}
-                className="glass-strong rounded-3xl p-8 md:p-12">
+                className="glass-strong rounded-xl p-4 md:p-6">
 
                   <div
                   {...getRootProps()}
@@ -321,7 +321,7 @@ const UploadPage = () => {
                       </div>
                       
                       <div>
-                        <h3 className="text-lg font-semibold mb-2">
+                        <h3 className="text-base font-semibold mb-1">
                           {isDragActive ? 'Drop your image here' : 'Upload your image'}
                         </h3>
                         <p className="text-gray-400 text-lg">
@@ -332,7 +332,7 @@ const UploadPage = () => {
                       <motion.button
                       whileHover={{ scale: 1.05 }}
                       whileTap={{ scale: 0.95 }}
-                      className="btn-cosmic bg-gradient-to-r from-blue-500 to-purple-600 px-8 py-4 rounded-xl font-semibold text-lg hover:shadow-2xl transition-all duration-300">
+                      className="btn-cosmic bg-gradient-to-r from-blue-500 to-purple-600 px-4 py-2 rounded-lg font-semibold text-sm hover:shadow-2xl transition-all duration-300">
 
                         Choose File
                       </motion.button>
