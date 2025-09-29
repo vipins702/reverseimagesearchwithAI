@@ -112,7 +112,7 @@ const Home = () => {
               className="space-y-8"
             >
               <div className="space-y-6">
-                <h1>Find Duplicate Images Instantly</h1>
+                <h1 className="text-3xl md:text-4xl font-bold gradient-text-cosmic">Find Duplicate Images Instantly</h1>
                 <p className="tagline">Upload an image or paste a URL — Cosmic Search scans for identical and similar images across the web.</p>
               </div>
               <div className="trust-badges flex flex-col sm:flex-row gap-2 mb-2">
