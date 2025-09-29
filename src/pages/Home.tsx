@@ -86,67 +86,25 @@ const Home = () => {
   ]
 
   return (
-    <>
+  <>
       <Helmet>
-        <title>Free Duplicate Image Checker | Find & Remove Duplicate Photos Online</title>
-        <meta name="description" content="Use our free duplicate image checker to find, compare, and remove duplicate photos online. Fast, secure, and 100% free reverse image search for copyright protection and photo originality." />
-        <meta name="keywords" content="free duplicate image checker, free reverse image search, free image copyright verification, free photo originality checker, free image similarity detection, free image source finder, free stolen photo detector, free image comparison tool, free bulk image checker, free image authenticity checker, free image lookup service, free image verification for photographers, free image search for bloggers, free image protection tool, free image duplicate finder online, free image copyright protection, free image search for e-commerce, free image search for journalists, free image search for students" />
+        <title>Cosmic Search — Check Duplicate Image Online | Find Image Matches</title>
+        <meta name="description" content="CheckDuplicateImage.online (Cosmic Search) helps you find duplicate and similar images quickly. Upload an image or paste a URL to discover matches and sources. Fast, private, and free." />
         <link rel="canonical" href="https://checkduplicateimage.online/" />
-        {/* Open Graph tags */}
-        <meta property="og:title" content="Free Duplicate Image Checker | Find & Remove Duplicate Photos Online" />
-        <meta property="og:description" content="Use our free duplicate image checker to find, compare, and remove duplicate photos online. Fast, secure, and 100% free reverse image search for copyright protection and photo originality." />
+        {/* OG/Twitter meta tags for social shares */}
+        <meta property="og:title" content="Cosmic Search — Check Duplicate Image Online" />
+        <meta property="og:description" content="Find duplicate and similar images instantly. Fast, private, and free." />
         <meta property="og:url" content="https://checkduplicateimage.online/" />
         <meta property="og:type" content="website" />
-        {/* Twitter tags */}
-        <meta name="twitter:title" content="Free Duplicate Image Checker | Find & Remove Duplicate Photos Online" />
-        <meta name="twitter:description" content="Use our free duplicate image checker to find, compare, and remove duplicate photos online. Fast, secure, and 100% free reverse image search for copyright protection and photo originality." />
-        {/* FAQ Schema Markup for Google Rich Results */}
-        <script type="application/ld+json">{`
-        {
-          "@context": "https://schema.org",
-          "@type": "FAQPage",
-          "mainEntity": [
-            {
-              "@type": "Question",
-              "name": "Is duplicate image checking free?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Yes, our duplicate image checker is 100% free to use for all users."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "How do I find duplicate images online for free?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Simply upload your photo and our tool will scan for duplicates across the web at no cost."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Can I use this tool for copyright protection?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Yes, our free service helps you verify image originality and protect your photos from theft."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Is registration required to use the free duplicate image checker?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "No registration or sign-up is required. Just upload and check instantly."
-              }
-            }
-          ]
-        }
-        `}</script>
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Cosmic Search — Check Duplicate Image Online" />
+        <meta name="twitter:description" content="Find duplicate and similar images instantly. Fast, private, and free." />
       </Helmet>
 
       {/* Hero Section */}
-        <section className="relative pt-10 pb-16 overflow-hidden">
-          <div className="container mx-auto px-2">
-            <div className="grid lg:grid-cols-2 gap-6 items-center">
+      <section className="relative pt-10 pb-16 overflow-hidden">
+        <div className="container mx-auto px-2">
+          <div className="grid lg:grid-cols-2 gap-6 items-center">
             <motion.div
               initial={{ opacity: 0, x: -50 }}
               animate={{ opacity: 1, x: 0 }}
@@ -154,19 +112,14 @@ const Home = () => {
               className="space-y-8"
             >
               <div className="space-y-6">
-                <h1 className="text-3xl md:text-5xl font-bold leading-tight">
-                  Find Any Image's
-                  <span className="gradient-text-cosmic block">
-                    Origin Instantly
-                  </span>
-                </h1>
-                <p className="text-base text-gray-300 leading-relaxed max-w-md">
-                  Professional reverse image search across multiple engines. 
-                  Discover sources, verify authenticity, and protect your content 
-                  with cosmic-powered technology.
-                </p>
+                <h1>Find Duplicate Images Instantly</h1>
+                <p className="tagline">Upload an image or paste a URL — Cosmic Search scans for identical and similar images across the web.</p>
               </div>
-
+              <div className="trust-badges flex flex-col sm:flex-row gap-2 mb-2">
+                <span>🔒 Secure (HTTPS)</span>
+                <span>⚡ Fast results</span>
+                <span>🆓 No account required</span>
+              </div>
               <div className="flex flex-col sm:flex-row gap-2">
                 <Link
                   to="/upload"
@@ -183,8 +136,7 @@ const Home = () => {
                   See How It Works
                 </Link>
               </div>
-
-              {/* Stats */}
+              <p className="privacy text-xs text-gray-400 mb-2">We don’t store your images — processed and removed after the scan.</p>
               <div className="grid grid-cols-4 gap-2 pt-4">
                 {stats.map((stat, index) => (
                   <motion.div
@@ -200,7 +152,6 @@ const Home = () => {
                 ))}
               </div>
             </motion.div>
-
             <motion.div
               initial={{ opacity: 0, x: 50 }}
               animate={{ opacity: 1, x: 0 }}
@@ -221,7 +172,7 @@ const Home = () => {
                     <span className="font-medium text-sm">Image uploaded successfully</span>
                   </div>
                   <div className="grid grid-cols-2 gap-1">
-                    {['Google', 'Bing', 'Yandex', 'TinEye'].map((engine) => (
+                    {["Google", "Bing", "Yandex", "TinEye"].map((engine) => (
                         <div key={engine} className="glass p-2 rounded-lg text-center">
                           <div className="text-xs font-medium">{engine}</div>
                           <div className="text-xs text-gray-400">Ready to search</div>
