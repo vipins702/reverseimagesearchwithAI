@@ -29,11 +29,11 @@ const About = () => {
     title: 'User Focused',
     description: 'Every feature is designed with user experience and satisfaction in mind.',
     color: 'from-red-500 to-red-600'
-  }];
-
-
-  const milestones = [
-  {
+                <h1 className="text-3xl md:text-5xl font-bold">
+                  About Cosmic Search
+                </h1>
+                <p className="text-base text-gray-300 max-w-xl mx-auto leading-relaxed">
+                  Cosmic Search (CheckDuplicateImage.online) is a free, secure, and private tool to find duplicate and similar images online. We do not store your images. For questions, contact us at <a href="mailto:hello@checkduplicateimage.online">hello@checkduplicateimage.online</a>.
     year: '2023',
     title: 'Company Founded',
     description: 'Started with a vision to make reverse image search accessible to everyone'
@@ -82,10 +82,9 @@ const About = () => {
   return (
     <>
       <Helmet>
-        <title>About Free Duplicate Image Checker | Image Copyright Protection & Verification</title>
-        <meta name="description" content="Learn about our free duplicate image checker, our mission to protect images from theft, and our commitment to privacy, security, and innovation in reverse image search and copyright verification." />
-        <meta name="keywords" content="free duplicate image checker, free reverse image search, free image copyright verification, free photo originality checker, free image similarity detection, free image source finder, free stolen photo detector, free image comparison tool, free bulk image checker, free image authenticity checker, free image lookup service, free image verification for photographers, free image search for bloggers, free image protection tool, free image duplicate finder online, free image copyright protection, free image search for e-commerce, free image search for journalists, free image search for students" />
-        <link rel="canonical" href="https://checkduplicateimage.online/about" />
+  <title>About Cosmic Search — Duplicate Image Finder</title>
+  <meta name="description" content="About Cosmic Search: our mission, privacy policy, and how we handle image processing. Learn why we built this reverse image search tool." />
+  <link rel="canonical" href="https://checkduplicateimage.online/about" />
         {/* Open Graph tags */}
         <meta property="og:title" content="About Free Duplicate Image Checker | Image Copyright Protection & Verification" />
         <meta property="og:description" content="Learn about our free duplicate image checker, our mission to protect images from theft, and our commitment to privacy, security, and innovation in reverse image search and copyright verification." />
@@ -147,7 +146,7 @@ const About = () => {
             className="text-center space-y-8">
 
             <h1 className="text-3xl md:text-5xl font-bold">
-              About <span className="gradient-text-cosmic text-4xl">Reverse Image Search</span>
+              About Cosmic Search
             </h1>
             <p className="text-base text-gray-300 max-w-xl mx-auto leading-relaxed">
               We're on a mission to democratize reverse image search technology, 

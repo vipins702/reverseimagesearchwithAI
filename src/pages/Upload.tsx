@@ -282,10 +282,9 @@ const UploadPage = () => {
   return (
     <>
       <Helmet>
-        <title>Free Duplicate Image Checker | Find & Remove Duplicate Photos Online</title>
-        <meta name="description" content="Use our free duplicate image checker to find, compare, and remove duplicate photos online. Fast, secure, and 100% free reverse image search for copyright protection and photo originality." />
-        <meta name="keywords" content="free duplicate image checker, free reverse image search, free image copyright verification, free photo originality checker, free image similarity detection, free image source finder, free stolen photo detector, free image comparison tool, free bulk image checker, free image authenticity checker, free image lookup service, free image verification for photographers, free image search for bloggers, free image protection tool, free image duplicate finder online, free image copyright protection, free image search for e-commerce, free image search for journalists, free image search for students" />
-        <link rel="canonical" href="https://checkduplicateimage.online/upload" />
+  <title>Upload Image to Find Duplicates — Cosmic Search</title>
+  <meta name="description" content="Upload a photo or paste an image URL to find duplicate images and similar photos across the web. Try Cosmic Search's quick reverse image search." />
+  <link rel="canonical" href="https://checkduplicateimage.online/upload" />
         {/* Open Graph tags */}
         <meta property="og:title" content="Free Duplicate Image Checker | Find & Remove Duplicate Photos Online" />
         <meta property="og:description" content="Use our free duplicate image checker to find, compare, and remove duplicate photos online. Fast, secure, and 100% free reverse image search for copyright protection and photo originality." />
@@ -354,7 +353,7 @@ const UploadPage = () => {
 
                 <Sparkles className="w-8 h-8 text-blue-400" />
               </motion.div>
-              <h1 className="text-3xl md:text-4xl font-bold gradient-text-cosmic">Reverse Image Search</h1>
+              <h1 className="text-3xl md:text-4xl font-bold gradient-text-cosmic">Upload an Image — Find Duplicate Photos</h1>
             </div>
             <p className="text-base text-gray-300 max-w-xl mx-auto leading-relaxed">
               Upload any image and discover its origins across the web with our premium reverse image search powered by cosmic technology

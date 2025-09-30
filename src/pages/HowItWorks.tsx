@@ -143,10 +143,9 @@ const HowItWorks = () => {
   return (
     <>
       <Helmet>
-        <title>How Free Duplicate Image Checker Works | Reverse Image Search Guide 2025</title>
-        <meta name="description" content="Step-by-step guide to using our free duplicate image checker for reverse image search, copyright protection, and finding duplicate photos online. Learn how to protect your images and verify originality for free." />
-        <meta name="keywords" content="free duplicate image checker, free reverse image search, free image copyright verification, free photo originality checker, free image similarity detection, free image source finder, free stolen photo detector, free image comparison tool, free bulk image checker, free image authenticity checker, free image lookup service, free image verification for photographers, free image search for bloggers, free image protection tool, free image duplicate finder online, free image copyright protection, free image search for e-commerce, free image search for journalists, free image search for students" />
-        <link rel="canonical" href="https://checkduplicateimage.online/how-it-works" />
+  <title>How Cosmic Search Works — Reverse Image Search & Duplicate Detection</title>
+  <meta name="description" content="Learn how Cosmic Search finds duplicate and similar images using reverse image search and image matching algorithms. See privacy & processing details." />
+  <link rel="canonical" href="https://checkduplicateimage.online/how-it-works" />
         {/* Open Graph tags */}
         <meta property="og:title" content="How Free Duplicate Image Checker Works | Reverse Image Search Guide 2025" />
         <meta property="og:description" content="Step-by-step guide to using our free duplicate image checker for reverse image search, copyright protection, and finding duplicate photos online." />
@@ -208,7 +207,7 @@ const HowItWorks = () => {
             className="text-center space-y-8"
           >
             <h1 className="text-3xl md:text-5xl font-bold">
-              How <span className="gradient-text-cosmic">It Works</span>
+              How Cosmic Search Finds Duplicate Images
             </h1>
             <p className="text-base text-gray-300 max-w-xl mx-auto leading-relaxed">
               Discover the technology behind the world's most advanced reverse image search. 
