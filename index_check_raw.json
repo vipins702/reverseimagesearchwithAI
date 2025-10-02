@@ -1,0 +1,98 @@
+[
+  {
+    "url": "https://checkduplicateimage.online/about",
+    "status": 200,
+    "resp_time": 129,
+    "headers": {
+      "Accept-Ranges": "bytes",
+      "Access-Control-Allow-Origin": "*",
+      "Age": "96458",
+      "Cache-Control": "public, max-age=0, must-revalidate",
+      "Content-Disposition": "inline",
+      "Content-Encoding": "br",
+      "Content-Length": "1248",
+      "Content-Type": "text/html; charset=utf-8",
+      "Date": "Thu, 02 Oct 2025 05:41:11 GMT",
+      "Etag": "\"a2a2ce9f815d0c37132719f235ac3711\"",
+      "Last-Modified": "Wed, 01 Oct 2025 02:53:33 GMT",
+      "Server": "Vercel",
+      "Strict-Transport-Security": "max-age=63072000",
+      "X-Vercel-Cache": "HIT",
+      "X-Vercel-Id": "bom1::cqstv-1759383671837-71b1b5a9bb60"
+    },
+    "body": "\n<!doctype html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\" />\n    <link rel=\"icon\" href=\"https://lumi.new/lumi.ing/logo.png\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    \n    <!-- Primary Meta Tags -->\n    <title>Cosmic Search - Premium Reverse Image Search | Find Image Sources Instantly</title>\n    <meta name=\"title\" content=\"Cosmic Search - Premium Reverse Image Search | Find Image Sources Instantly\">\n    <meta name=\"description\" content=\"Professional reverse image search tool. Upload any image and discover its origins across Google, Bing, Yandex, TinEye. Fast, secure, and privacy-focused. Try free now!\">\n    <meta name=\"keywords\" content=\"reverse image search, image search, find image source, reverse lookup, image finder, google images, bing visual search, tineye, yandex images, photo search, image recognition, duplicate image finder, copyright check, image verification\">\n    <meta name=\"robots\" content=\"index, follow\">\n    <meta name=\"language\" content=\"English\">\n    <meta name=\"author\" content=\"Cosmic Search\">\n    <meta name=\"google-site-verification\" content=\"Fmpo3cB8INhYopPlHZbjm0T-9_OC8Bv-_lslOtHtkfU\" />\n    \n    <!-- Open Graph / Facebook -->\n    <meta property=\"og:type\" content=\"website\">\n    <meta property=\"og:url\" content=\"https://search.lumi.ing/\">\n    <meta property=\"og:title\" content=\"Cosmic Search - Premium Reverse Image Search\">\n    <meta property=\"og:description\" content=\"Professional reverse image search tool. Upload any image and discover its origins across multiple search engines. Fast, secure, and privacy-focused.\">\n    <meta property=\"og:image\" content=\"https://images.pexels.com/photos/924824/pexels-photo-924824.jpeg?auto=compress&cs=tinysrgb&w=1200&h=630&fit=crop\">\n    <meta property=\"og:site_name\" content=\"Cosmic Search\">\n    \n    <!-- Twitter -->\n    <meta property=\"twitter:card\" content=\"summary_large_image\">\n    <meta property=\"twitter:url\" content=\"https://search.lumi.ing/\">\n    <meta property=\"twitter:title\" content=\"Cosmic Search - Premium Reverse Image Search\">\n    <meta property=\"twitter:description\" content=\"Professional reverse image search tool. Upload any image and discover its origins across multiple search engines.\">\n    <meta property=\"twitter:image\" content=\"https://images.pexels.com/photos/924824/pexels-photo-924824.jpeg?auto=compress&cs=tinysrgb&w=1200&h=630&fit=crop\">\n    \n    <!-- Additional SEO -->\n    <meta name=\"theme-color\" content=\"#3B82F6\">\n    <link rel=\"canonical\" href=\"https://search.lumi.ing/\">\n    \n    <!-- Structured Data -->\n    <script type=\"application/ld+json\">\n    {\n      \"@context\": \"https://schema.org\",\n      \"@type\": \"WebApplication\",\n      \"name\": \"Cosmic Search\",\n      \"description\": \"Premium reverse image search tool for finding image sources across multiple search engines\",\n      \"url\": \"https://search.lumi.ing/\",\n      \"applicationCategory\": \"UtilitiesApplication\",\n      \"operatingSystem\": \"Web Browser\",\n      \"offers\": {\n        \"@type\": \"Offer\",\n        \"price\": \"0\",\n        \"priceCurrency\": \"USD\"\n      },\n      \"creator\": {\n        \"@type\": \"Organization\",\n        \"name\": \"Cosmic Search\"\n      }\n    }\n    </script>\n    \n    <!-- Preconnect for performance -->\n    <link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">\n    <link rel=\"preconnect\" href=\"https://images.pexels.com\">\n    <script type=\"module\" crossorigin src=\"/assets/index-Cs-YDKu5.js\"></script>\n    <link rel=\"stylesheet\" crossorigin href=\"/assets/index-BQoQud7U.css\">\n  </head>\n  <body>\n    <div id=\"root\"></div>\n  </body>\n</html>\n",
+    "error": null
+  },
+  {
+    "url": "https://checkduplicateimage.online/",
+    "status": 200,
+    "resp_time": 134,
+    "headers": {
+      "Accept-Ranges": "bytes",
+      "Access-Control-Allow-Origin": "*",
+      "Age": "96458",
+      "Cache-Control": "public, max-age=0, must-revalidate",
+      "Content-Disposition": "inline",
+      "Content-Encoding": "br",
+      "Content-Length": "1248",
+      "Content-Type": "text/html; charset=utf-8",
+      "Date": "Thu, 02 Oct 2025 05:41:11 GMT",
+      "Etag": "\"a2a2ce9f815d0c37132719f235ac3711\"",
+      "Last-Modified": "Wed, 01 Oct 2025 02:53:33 GMT",
+      "Server": "Vercel",
+      "Strict-Transport-Security": "max-age=63072000",
+      "X-Vercel-Cache": "HIT",
+      "X-Vercel-Id": "bom1::kcq4d-1759383671849-e1e511d9c469"
+    },
+    "body": "\n<!doctype html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\" />\n    <link rel=\"icon\" href=\"https://lumi.new/lumi.ing/logo.png\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    \n    <!-- Primary Meta Tags -->\n    <title>Cosmic Search - Premium Reverse Image Search | Find Image Sources Instantly</title>\n    <meta name=\"title\" content=\"Cosmic Search - Premium Reverse Image Search | Find Image Sources Instantly\">\n    <meta name=\"description\" content=\"Professional reverse image search tool. Upload any image and discover its origins across Google, Bing, Yandex, TinEye. Fast, secure, and privacy-focused. Try free now!\">\n    <meta name=\"keywords\" content=\"reverse image search, image search, find image source, reverse lookup, image finder, google images, bing visual search, tineye, yandex images, photo search, image recognition, duplicate image finder, copyright check, image verification\">\n    <meta name=\"robots\" content=\"index, follow\">\n    <meta name=\"language\" content=\"English\">\n    <meta name=\"author\" content=\"Cosmic Search\">\n    <meta name=\"google-site-verification\" content=\"Fmpo3cB8INhYopPlHZbjm0T-9_OC8Bv-_lslOtHtkfU\" />\n    \n    <!-- Open Graph / Facebook -->\n    <meta property=\"og:type\" content=\"website\">\n    <meta property=\"og:url\" content=\"https://search.lumi.ing/\">\n    <meta property=\"og:title\" content=\"Cosmic Search - Premium Reverse Image Search\">\n    <meta property=\"og:description\" content=\"Professional reverse image search tool. Upload any image and discover its origins across multiple search engines. Fast, secure, and privacy-focused.\">\n    <meta property=\"og:image\" content=\"https://images.pexels.com/photos/924824/pexels-photo-924824.jpeg?auto=compress&cs=tinysrgb&w=1200&h=630&fit=crop\">\n    <meta property=\"og:site_name\" content=\"Cosmic Search\">\n    \n    <!-- Twitter -->\n    <meta property=\"twitter:card\" content=\"summary_large_image\">\n    <meta property=\"twitter:url\" content=\"https://search.lumi.ing/\">\n    <meta property=\"twitter:title\" content=\"Cosmic Search - Premium Reverse Image Search\">\n    <meta property=\"twitter:description\" content=\"Professional reverse image search tool. Upload any image and discover its origins across multiple search engines.\">\n    <meta property=\"twitter:image\" content=\"https://images.pexels.com/photos/924824/pexels-photo-924824.jpeg?auto=compress&cs=tinysrgb&w=1200&h=630&fit=crop\">\n    \n    <!-- Additional SEO -->\n    <meta name=\"theme-color\" content=\"#3B82F6\">\n    <link rel=\"canonical\" href=\"https://search.lumi.ing/\">\n    \n    <!-- Structured Data -->\n    <script type=\"application/ld+json\">\n    {\n      \"@context\": \"https://schema.org\",\n      \"@type\": \"WebApplication\",\n      \"name\": \"Cosmic Search\",\n      \"description\": \"Premium reverse image search tool for finding image sources across multiple search engines\",\n      \"url\": \"https://search.lumi.ing/\",\n      \"applicationCategory\": \"UtilitiesApplication\",\n      \"operatingSystem\": \"Web Browser\",\n      \"offers\": {\n        \"@type\": \"Offer\",\n        \"price\": \"0\",\n        \"priceCurrency\": \"USD\"\n      },\n      \"creator\": {\n        \"@type\": \"Organization\",\n        \"name\": \"Cosmic Search\"\n      }\n    }\n    </script>\n    \n    <!-- Preconnect for performance -->\n    <link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">\n    <link rel=\"preconnect\" href=\"https://images.pexels.com\">\n    <script type=\"module\" crossorigin src=\"/assets/index-Cs-YDKu5.js\"></script>\n    <link rel=\"stylesheet\" crossorigin href=\"/assets/index-BQoQud7U.css\">\n  </head>\n  <body>\n    <div id=\"root\"></div>\n  </body>\n</html>\n",
+    "error": null
+  },
+  {
+    "url": "https://checkduplicateimage.online/how-it-works",
+    "status": 200,
+    "resp_time": 163,
+    "headers": {
+      "Accept-Ranges": "bytes",
+      "Access-Control-Allow-Origin": "*",
+      "Age": "96458",
+      "Cache-Control": "public, max-age=0, must-revalidate",
+      "Content-Disposition": "inline",
+      "Content-Encoding": "br",
+      "Content-Length": "1248",
+      "Content-Type": "text/html; charset=utf-8",
+      "Date": "Thu, 02 Oct 2025 05:41:11 GMT",
+      "Etag": "\"a2a2ce9f815d0c37132719f235ac3711\"",
+      "Last-Modified": "Wed, 01 Oct 2025 02:53:33 GMT",
+      "Server": "Vercel",
+      "Strict-Transport-Security": "max-age=63072000",
+      "X-Vercel-Cache": "HIT",
+      "X-Vercel-Id": "bom1::r67zl-1759383671843-b3038ec71db8"
+    },
+    "body": "\n<!doctype html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\" />\n    <link rel=\"icon\" href=\"https://lumi.new/lumi.ing/logo.png\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    \n    <!-- Primary Meta Tags -->\n    <title>Cosmic Search - Premium Reverse Image Search | Find Image Sources Instantly</title>\n    <meta name=\"title\" content=\"Cosmic Search - Premium Reverse Image Search | Find Image Sources Instantly\">\n    <meta name=\"description\" content=\"Professional reverse image search tool. Upload any image and discover its origins across Google, Bing, Yandex, TinEye. Fast, secure, and privacy-focused. Try free now!\">\n    <meta name=\"keywords\" content=\"reverse image search, image search, find image source, reverse lookup, image finder, google images, bing visual search, tineye, yandex images, photo search, image recognition, duplicate image finder, copyright check, image verification\">\n    <meta name=\"robots\" content=\"index, follow\">\n    <meta name=\"language\" content=\"English\">\n    <meta name=\"author\" content=\"Cosmic Search\">\n    <meta name=\"google-site-verification\" content=\"Fmpo3cB8INhYopPlHZbjm0T-9_OC8Bv-_lslOtHtkfU\" />\n    \n    <!-- Open Graph / Facebook -->\n    <meta property=\"og:type\" content=\"website\">\n    <meta property=\"og:url\" content=\"https://search.lumi.ing/\">\n    <meta property=\"og:title\" content=\"Cosmic Search - Premium Reverse Image Search\">\n    <meta property=\"og:description\" content=\"Professional reverse image search tool. Upload any image and discover its origins across multiple search engines. Fast, secure, and privacy-focused.\">\n    <meta property=\"og:image\" content=\"https://images.pexels.com/photos/924824/pexels-photo-924824.jpeg?auto=compress&cs=tinysrgb&w=1200&h=630&fit=crop\">\n    <meta property=\"og:site_name\" content=\"Cosmic Search\">\n    \n    <!-- Twitter -->\n    <meta property=\"twitter:card\" content=\"summary_large_image\">\n    <meta property=\"twitter:url\" content=\"https://search.lumi.ing/\">\n    <meta property=\"twitter:title\" content=\"Cosmic Search - Premium Reverse Image Search\">\n    <meta property=\"twitter:description\" content=\"Professional reverse image search tool. Upload any image and discover its origins across multiple search engines.\">\n    <meta property=\"twitter:image\" content=\"https://images.pexels.com/photos/924824/pexels-photo-924824.jpeg?auto=compress&cs=tinysrgb&w=1200&h=630&fit=crop\">\n    \n    <!-- Additional SEO -->\n    <meta name=\"theme-color\" content=\"#3B82F6\">\n    <link rel=\"canonical\" href=\"https://search.lumi.ing/\">\n    \n    <!-- Structured Data -->\n    <script type=\"application/ld+json\">\n    {\n      \"@context\": \"https://schema.org\",\n      \"@type\": \"WebApplication\",\n      \"name\": \"Cosmic Search\",\n      \"description\": \"Premium reverse image search tool for finding image sources across multiple search engines\",\n      \"url\": \"https://search.lumi.ing/\",\n      \"applicationCategory\": \"UtilitiesApplication\",\n      \"operatingSystem\": \"Web Browser\",\n      \"offers\": {\n        \"@type\": \"Offer\",\n        \"price\": \"0\",\n        \"priceCurrency\": \"USD\"\n      },\n      \"creator\": {\n        \"@type\": \"Organization\",\n        \"name\": \"Cosmic Search\"\n      }\n    }\n    </script>\n    \n    <!-- Preconnect for performance -->\n    <link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">\n    <link rel=\"preconnect\" href=\"https://images.pexels.com\">\n    <script type=\"module\" crossorigin src=\"/assets/index-Cs-YDKu5.js\"></script>\n    <link rel=\"stylesheet\" crossorigin href=\"/assets/index-BQoQud7U.css\">\n  </head>\n  <body>\n    <div id=\"root\"></div>\n  </body>\n</html>\n",
+    "error": null
+  },
+  {
+    "url": "https://checkduplicateimage.online/upload",
+    "status": 200,
+    "resp_time": 161,
+    "headers": {
+      "Accept-Ranges": "bytes",
+      "Access-Control-Allow-Origin": "*",
+      "Age": "96458",
+      "Cache-Control": "public, max-age=0, must-revalidate",
+      "Content-Disposition": "inline",
+      "Content-Encoding": "br",
+      "Content-Length": "1248",
+      "Content-Type": "text/html; charset=utf-8",
+      "Date": "Thu, 02 Oct 2025 05:41:11 GMT",
+      "Etag": "\"a2a2ce9f815d0c37132719f235ac3711\"",
+      "Last-Modified": "Wed, 01 Oct 2025 02:53:33 GMT",
+      "Server": "Vercel",
+      "Strict-Transport-Security": "max-age=63072000",
+      "X-Vercel-Cache": "HIT",
+      "X-Vercel-Id": "bom1::cqstv-1759383671878-23aa996c18d7"
+    },
+    "body": "\n<!doctype html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\" />\n    <link rel=\"icon\" href=\"https://lumi.new/lumi.ing/logo.png\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    \n    <!-- Primary Meta Tags -->\n    <title>Cosmic Search - Premium Reverse Image Search | Find Image Sources Instantly</title>\n    <meta name=\"title\" content=\"Cosmic Search - Premium Reverse Image Search | Find Image Sources Instantly\">\n    <meta name=\"description\" content=\"Professional reverse image search tool. Upload any image and discover its origins across Google, Bing, Yandex, TinEye. Fast, secure, and privacy-focused. Try free now!\">\n    <meta name=\"keywords\" content=\"reverse image search, image search, find image source, reverse lookup, image finder, google images, bing visual search, tineye, yandex images, photo search, image recognition, duplicate image finder, copyright check, image verification\">\n    <meta name=\"robots\" content=\"index, follow\">\n    <meta name=\"language\" content=\"English\">\n    <meta name=\"author\" content=\"Cosmic Search\">\n    <meta name=\"google-site-verification\" content=\"Fmpo3cB8INhYopPlHZbjm0T-9_OC8Bv-_lslOtHtkfU\" />\n    \n    <!-- Open Graph / Facebook -->\n    <meta property=\"og:type\" content=\"website\">\n    <meta property=\"og:url\" content=\"https://search.lumi.ing/\">\n    <meta property=\"og:title\" content=\"Cosmic Search - Premium Reverse Image Search\">\n    <meta property=\"og:description\" content=\"Professional reverse image search tool. Upload any image and discover its origins across multiple search engines. Fast, secure, and privacy-focused.\">\n    <meta property=\"og:image\" content=\"https://images.pexels.com/photos/924824/pexels-photo-924824.jpeg?auto=compress&cs=tinysrgb&w=1200&h=630&fit=crop\">\n    <meta property=\"og:site_name\" content=\"Cosmic Search\">\n    \n    <!-- Twitter -->\n    <meta property=\"twitter:card\" content=\"summary_large_image\">\n    <meta property=\"twitter:url\" content=\"https://search.lumi.ing/\">\n    <meta property=\"twitter:title\" content=\"Cosmic Search - Premium Reverse Image Search\">\n    <meta property=\"twitter:description\" content=\"Professional reverse image search tool. Upload any image and discover its origins across multiple search engines.\">\n    <meta property=\"twitter:image\" content=\"https://images.pexels.com/photos/924824/pexels-photo-924824.jpeg?auto=compress&cs=tinysrgb&w=1200&h=630&fit=crop\">\n    \n    <!-- Additional SEO -->\n    <meta name=\"theme-color\" content=\"#3B82F6\">\n    <link rel=\"canonical\" href=\"https://search.lumi.ing/\">\n    \n    <!-- Structured Data -->\n    <script type=\"application/ld+json\">\n    {\n      \"@context\": \"https://schema.org\",\n      \"@type\": \"WebApplication\",\n      \"name\": \"Cosmic Search\",\n      \"description\": \"Premium reverse image search tool for finding image sources across multiple search engines\",\n      \"url\": \"https://search.lumi.ing/\",\n      \"applicationCategory\": \"UtilitiesApplication\",\n      \"operatingSystem\": \"Web Browser\",\n      \"offers\": {\n        \"@type\": \"Offer\",\n        \"price\": \"0\",\n        \"priceCurrency\": \"USD\"\n      },\n      \"creator\": {\n        \"@type\": \"Organization\",\n        \"name\": \"Cosmic Search\"\n      }\n    }\n    </script>\n    \n    <!-- Preconnect for performance -->\n    <link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">\n    <link rel=\"preconnect\" href=\"https://images.pexels.com\">\n    <script type=\"module\" crossorigin src=\"/assets/index-Cs-YDKu5.js\"></script>\n    <link rel=\"stylesheet\" crossorigin href=\"/assets/index-BQoQud7U.css\">\n  </head>\n  <body>\n    <div id=\"root\"></div>\n  </body>\n</html>\n",
+    "error": null
+  }
+]

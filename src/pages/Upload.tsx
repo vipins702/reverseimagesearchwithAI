@@ -3,7 +3,7 @@ import React, { useState, useCallback } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useDropzone } from 'react-dropzone';
-import { Upload, Search, Image as ImageIcon, Sparkles, Zap, Globe, Eye, Download, X, CheckCircle, AlertCircle, Loader2 } from 'lucide-react';
+import { Upload, Search, Image as ImageIcon, Sparkles, Zap, Globe, Eye, X, CheckCircle, AlertCircle, Loader2 } from 'lucide-react';
 import toast from 'react-hot-toast';
 
 interface UploadedImage {
@@ -23,33 +23,26 @@ interface SearchEngine {
 
 const searchEngines: SearchEngine[] = [
   {
-    name: 'Google',
+    name: 'Google Lens',
     icon: <Globe className="w-5 h-5" />,
     color: 'from-blue-500 to-blue-600',
     // Use Google Lens for better support (mobile and desktop)
     searchUrl: (url) => `https://lens.google.com/uploadbyurl?url=${encodeURIComponent(url)}`,
-    description: 'Google Lens (best for most users)'
+    description: 'Google Lens Visual Search - Advanced AI-powered reverse image search to find duplicate images, similar photos, and identify objects. Best for product identification, text extraction, and comprehensive image analysis.'
   },
   {
-    name: 'Karma Decay',
-    icon: <Zap className="w-5 h-5" />,
-    color: 'from-yellow-500 to-yellow-700',
-    searchUrl: (url) => `https://karmadecay.com/search?q=${encodeURIComponent(url)}`,
-    description: 'Find Reddit posts with this image'
-  },
-  {
-    name: 'Bing',
+    name: 'Bing Visual Search',
     icon: <Search className="w-5 h-5" />,
     color: 'from-green-500 to-green-600',
     searchUrl: (url) => `https://www.bing.com/images/search?q=imgurl:${encodeURIComponent(url)}&view=detailv2&iss=sbi`,
-    description: "Microsoft's visual search"
+    description: 'Microsoft Bing Image Search - Discover visually similar images, find product sources, and identify objects in photos. Excellent for shopping and product identification.'
   },
   {
-    name: 'Yandex',
+    name: 'Yandex Images',
     icon: <Eye className="w-5 h-5" />,
     color: 'from-red-500 to-red-600',
     searchUrl: (url) => `https://yandex.com/images/search?rpt=imageview&url=${encodeURIComponent(url)}`,
-    description: 'Great for Russian content'
+    description: 'Yandex Reverse Image Finder - Specialized in Eastern European content, face recognition, and finding images from Russian websites. Great for comprehensive global search coverage.'
   },
   {
     name: 'TinEye',
@@ -57,7 +50,7 @@ const searchEngines: SearchEngine[] = [
     color: 'from-purple-500 to-purple-600',
     // Use TinEye's direct search URL (sometimes requires public image URL)
     searchUrl: (url) => `https://www.tineye.com/search?url=${encodeURIComponent(url)}`,
-    description: 'Reverse image specialist'
+    description: 'TinEye Image Tracker - The first reverse image search engine. Perfect for copyright protection, finding image theft, and tracking how your images are used online.'
   }
 ];
 
@@ -282,17 +275,44 @@ const UploadPage = () => {
   return (
     <>
       <Helmet>
-  <title>Upload Image to Find Duplicates — Cosmic Search</title>
-  <meta name="description" content="Upload a photo or paste an image URL to find duplicate images and similar photos across the web. Try Cosmic Search's quick reverse image search." />
-  <link rel="canonical" href="https://checkduplicateimage.online/upload" />
+  <title>Free Reverse Image Search Tool - Find Duplicate Images Online Fast</title>
+  <meta name="description" content="Free reverse image search to find duplicate photos, similar images & original sources instantly. Upload any image - no registration required. Powered by Google Lens, Bing & more." />
+  <link rel="canonical" href="https://checkduplicateimage.online/reverse-image-search" />
         {/* Open Graph tags */}
-        <meta property="og:title" content="Free Duplicate Image Checker | Find & Remove Duplicate Photos Online" />
-        <meta property="og:description" content="Use our free duplicate image checker to find, compare, and remove duplicate photos online. Fast, secure, and 100% free reverse image search for copyright protection and photo originality." />
-        <meta property="og:url" content="https://checkduplicateimage.online/upload" />
+        <meta property="og:title" content="Free Reverse Image Search Tool - Find Duplicate Images Online Fast" />
+        <meta property="og:description" content="Free reverse image search to find duplicate photos, similar images & original sources instantly. Upload any image - no registration required. Powered by Google Lens, Bing & more." />
+        <meta property="og:url" content="https://checkduplicateimage.online/reverse-image-search" />
         <meta property="og:type" content="website" />
         {/* Twitter tags */}
-        <meta name="twitter:title" content="Free Duplicate Image Checker | Find & Remove Duplicate Photos Online" />
-        <meta name="twitter:description" content="Use our free duplicate image checker to find, compare, and remove duplicate photos online. Fast, secure, and 100% free reverse image search for copyright protection and photo originality." />
+        <meta name="twitter:title" content="Free Reverse Image Search Tool - Find Duplicate Images Online Fast" />
+        <meta name="twitter:description" content="Free reverse image search to find duplicate photos, similar images & original sources instantly. Upload any image - no registration required. Powered by Google Lens, Bing & more." />
+        {/* SoftwareApplication Schema Markup */}
+        <script type="application/ld+json">{`
+        {
+          "@context": "https://schema.org",
+          "@type": "SoftwareApplication",
+          "name": "Free Reverse Image Search Tool",
+          "description": "Find duplicate images, similar photos, and original sources instantly with our free reverse image search tool. No registration required.",
+          "url": "https://checkduplicateimage.online/reverse-image-search",
+          "applicationCategory": "MultimediaApplication",
+          "operatingSystem": "Web Browser",
+          "softwareVersion": "2.0",
+          "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+          },
+          "featureList": [
+            "Reverse image search",
+            "Duplicate image detection",
+            "Similar image finding",
+            "Multi-engine search support",
+            "Google Lens integration",
+            "No registration required"
+          ],
+          "screenshot": "https://checkduplicateimage.online/og-image.jpg"
+        }
+        `}</script>
         {/* FAQ Schema Markup for Google Rich Results */}
         <script type="application/ld+json">{`
         {
@@ -301,10 +321,10 @@ const UploadPage = () => {
           "mainEntity": [
             {
               "@type": "Question",
-              "name": "Is duplicate image checking free?",
+              "name": "Is this reverse image search tool free?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Yes, our duplicate image checker is 100% free to use for all users."
+                "text": "Yes, our reverse image search tool is 100% free to use. No registration, no hidden fees, no limits."
               }
             },
             {
@@ -312,24 +332,45 @@ const UploadPage = () => {
               "name": "How do I find duplicate images online for free?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Simply upload your photo and our tool will scan for duplicates across the web at no cost."
+                "text": "Simply upload your photo and our tool will search across Google Lens, Bing, Yandex, and TinEye to find duplicates and similar images at no cost."
               }
             },
             {
               "@type": "Question",
-              "name": "Can I use this tool for copyright protection?",
+              "name": "What image formats are supported?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Yes, our free service helps you verify image originality and protect your photos from theft."
+                "text": "We support JPG, PNG, and WebP image formats up to 10MB in size for reverse image search."
               }
             },
             {
               "@type": "Question",
-              "name": "Is registration required to use the free duplicate image checker?",
+              "name": "Which search engines can I use?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "No registration or sign-up is required. Just upload and check instantly."
+                "text": "Our tool supports Google Lens, Bing Visual Search, Yandex Images, and TinEye for comprehensive reverse image searching."
               }
+            }
+          ]
+        }
+        `}</script>
+        {/* BreadcrumbList Schema */}
+        <script type="application/ld+json">{`
+        {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://checkduplicateimage.online/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Reverse Image Search",
+              "item": "https://checkduplicateimage.online/reverse-image-search"
             }
           ]
         }
@@ -353,11 +394,28 @@ const UploadPage = () => {
 
                 <Sparkles className="w-8 h-8 text-blue-400" />
               </motion.div>
-              <h1 className="text-3xl md:text-4xl font-bold gradient-text-cosmic">Upload an Image — Find Duplicate Photos</h1>
+              <h1 className="text-3xl md:text-4xl font-bold gradient-text-cosmic">Free Reverse Image Search - Find Duplicate Images Online</h1>
             </div>
-            <p className="text-base text-gray-300 max-w-xl mx-auto leading-relaxed">
-              Upload any image and discover its origins across the web with our premium reverse image search powered by cosmic technology
+            <p className="text-base text-gray-600 max-w-2xl mx-auto leading-relaxed mb-6">
+              Upload any image to instantly find duplicates, similar photos, and original sources across the web. Free reverse image search tool powered by Google Lens, Bing, Yandex & TinEye.
             </p>
+            <div className="max-w-4xl mx-auto grid md:grid-cols-3 gap-4 text-sm">
+              <div className="glass p-4 rounded-xl text-center">
+                <div className="text-2xl mb-2">🔍</div>
+                <h3 className="font-semibold text-blue-400 mb-1">Find Duplicate Images</h3>
+                <p className="text-gray-400 text-xs">Discover where your photos appear online and protect against unauthorized use</p>
+              </div>
+              <div className="glass p-4 rounded-xl text-center">
+                <div className="text-2xl mb-2">🛒</div>
+                <h3 className="font-semibold text-green-400 mb-1">Product Research</h3>
+                <p className="text-gray-400 text-xs">Find original sources, compare prices, and identify unknown products instantly</p>
+              </div>
+              <div className="glass p-4 rounded-xl text-center">
+                <div className="text-2xl mb-2">✅</div>
+                <h3 className="font-semibold text-purple-400 mb-1">Verify Authenticity</h3>
+                <p className="text-gray-400 text-xs">Check image authenticity and find original sources of viral photos</p>
+              </div>
+            </div>
           </motion.div>
 
           {/* Main Content */}
@@ -412,6 +470,28 @@ const UploadPage = () => {
                         Choose File
                       </motion.button>
                     </motion.div>
+                  </div>
+                  
+                  {/* Search Engine Preview Icons */}
+                  <div className="mt-8 text-center">
+                    <p className="text-sm text-gray-400 mb-4">Powered by leading reverse image search engines:</p>
+                    <div className="flex justify-center items-center gap-6 flex-wrap">
+                      {searchEngines.map((engine, index) => (
+                        <motion.div
+                          key={engine.name}
+                          initial={{ opacity: 0, scale: 0.8 }}
+                          animate={{ opacity: 1, scale: 1 }}
+                          transition={{ delay: index * 0.1 }}
+                          className="flex items-center gap-2 glass px-3 py-2 rounded-lg hover:bg-white/10 transition-colors"
+                        >
+                          <div className={`w-6 h-6 bg-gradient-to-br ${engine.color} rounded-lg flex items-center justify-center`}>
+                            {React.cloneElement(engine.icon as React.ReactElement, { className: "w-3 h-3 text-gray-900" })}
+                          </div>
+                          <span className="text-xs font-medium text-gray-900">{engine.name.split(' ')[0]}</span>
+                        </motion.div>
+                      ))}
+                    </div>
+                    <p className="text-xs text-gray-500 mt-3">Upload an image above to search across all engines simultaneously</p>
                   </div>
                 </motion.div>) : (
 
@@ -508,22 +588,64 @@ const UploadPage = () => {
                     </div>
                   </div>
 
+                  {/* How to Use Instructions */}
+                  <div className="glass-strong rounded-3xl p-6 mb-8">
+                    <h3 className="text-lg font-semibold mb-4 flex items-center gap-2">
+                      <Eye className="w-6 h-6 text-blue-400" />
+                      How to Use Reverse Image Search Engines
+                    </h3>
+                    <div className="grid md:grid-cols-2 gap-4 text-sm text-gray-600">
+                      <div className="space-y-2">
+                        <h4 className="font-semibold text-blue-400">🔍 Find Duplicate Images:</h4>
+                        <ul className="space-y-1 text-xs">
+                          <li>• Upload any photo to find exact matches</li>
+                          <li>• Discover where your images appear online</li>
+                          <li>• Check for unauthorized usage or theft</li>
+                        </ul>
+                      </div>
+                      <div className="space-y-2">
+                        <h4 className="font-semibold text-green-400">🛒 Product & Shopping:</h4>
+                        <ul className="space-y-1 text-xs">
+                          <li>• Find original product sources</li>
+                          <li>• Compare prices across websites</li>
+                          <li>• Identify unknown products or items</li>
+                        </ul>
+                      </div>
+                      <div className="space-y-2">
+                        <h4 className="font-semibold text-purple-400">📸 Copyright Protection:</h4>
+                        <ul className="space-y-1 text-xs">
+                          <li>• Track unauthorized image usage</li>
+                          <li>• Protect your photography work</li>
+                          <li>• Monitor brand image violations</li>
+                        </ul>
+                      </div>
+                      <div className="space-y-2">
+                        <h4 className="font-semibold text-red-400">✅ Verify Authenticity:</h4>
+                        <ul className="space-y-1 text-xs">
+                          <li>• Check if images are fake or real</li>
+                          <li>• Find original source of viral photos</li>
+                          <li>• Verify news and social media images</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
                   {/* Search Engines */}
                   <div className="glass-strong rounded-3xl p-6">
                     <h3 className="text-lg font-semibold mb-4 flex items-center gap-2">
                       <Search className="w-6 h-6 text-purple-400" />
-                      Search Engines
+                      Choose Your Reverse Image Search Engine
                     </h3>
                     
-                    <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                    <div className="grid lg:grid-cols-2 gap-4">
                       {searchEngines.map((engine, index) =>
                     <motion.button
                       key={engine.name}
                       initial={{ opacity: 0, y: 20 }}
                       animate={{ opacity: 1, y: 0 }}
                       transition={{ delay: index * 0.1 }}
-                      whileHover={{ scale: 1.05, y: -5 }}
-                      whileTap={{ scale: 0.95 }}
+                      whileHover={{ scale: 1.02, y: -2 }}
+                      whileTap={{ scale: 0.98 }}
                       onClick={() => handleSearch(engine)}
                       disabled={!uploadedImage.publicUrl}
                       className={`
@@ -532,11 +654,20 @@ const UploadPage = () => {
                             ${uploadedImage.publicUrl ? 'hover:border-white/30' : 'opacity-50 cursor-not-allowed'}
                           `}>
 
-                          <div className={`w-12 h-12 bg-gradient-to-br ${engine.color} rounded-xl flex items-center justify-center mb-4 mx-auto`}>
-                            {engine.icon}
+                          <div className="flex items-start gap-4">
+                            <div className={`w-12 h-12 bg-gradient-to-br ${engine.color} rounded-xl flex items-center justify-center flex-shrink-0`}>
+                              {engine.icon}
+                            </div>
+                            <div className="flex-1">
+                              <h4 className="font-semibold text-lg mb-2">{engine.name}</h4>
+                              <p className="text-gray-600 text-sm leading-relaxed">{engine.description}</p>
+                              {uploadedImage.publicUrl && (
+                                <div className="mt-3 text-xs text-blue-400 font-medium">
+                                  Click to search →
+                                </div>
+                              )}
+                            </div>
                           </div>
-                          <h4 className="font-semibold text-lg mb-2 text-center">{engine.name}</h4>
-                          <p className="text-gray-400 text-sm text-center">{engine.description}</p>
                         </motion.button>
                     )}
                     </div>
@@ -566,16 +697,168 @@ const UploadPage = () => {
             </AnimatePresence>
           </div>
 
-          {/* Footer */}
+          {/* SEO Content Section */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.6, duration: 0.8 }}
+            className="mt-12 max-w-4xl mx-auto">
+            
+            <div className="glass-strong rounded-3xl p-8">
+              <h2 className="text-2xl font-bold mb-4 gradient-text-cosmic text-center">
+                🚀 Why Choose Our Free Reverse Image Search Tool?
+              </h2>
+              <div className="grid md:grid-cols-2 gap-6 text-sm text-gray-600">
+                <div>
+                  <h3 className="font-semibold text-blue-400 mb-3">🔍 Advanced Image Recognition</h3>
+                  <ul className="space-y-2 text-xs leading-relaxed">
+                    <li>• <strong>Multi-engine search:</strong> Google Lens, Bing Visual Search, Yandex Images, TinEye</li>
+                    <li>• <strong>AI-powered detection:</strong> Find similar images even with modifications</li>
+                    <li>• <strong>Reverse image lookup:</strong> Discover original sources and duplicates instantly</li>
+                    <li>• <strong>Image similarity search:</strong> Find visually related photos and graphics</li>
+                  </ul>
+                </div>
+                <div>
+                  <h3 className="font-semibold text-green-400 mb-3">✅ 100% Free & Secure</h3>
+                  <ul className="space-y-2 text-xs leading-relaxed">
+                    <li>• <strong>No registration required:</strong> Upload and search images instantly</li>
+                    <li>• <strong>Privacy-focused:</strong> Images auto-deleted after 2-3 days</li>
+                    <li>• <strong>Fast uploads:</strong> Secure cloud storage with Vercel CDN</li>
+                    <li>• <strong>No limits:</strong> Search as many images as you need for free</li>
+                  </ul>
+                </div>
+              </div>
+              
+              <div className="mt-6 p-4 bg-gradient-to-r from-blue-500/10 to-purple-500/10 rounded-xl border border-blue-500/20">
+                <h3 className="font-semibold text-purple-400 mb-2 text-center">🎯 Perfect For:</h3>
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-3 text-xs text-center">
+                  <div className="space-y-1">
+                    <div className="text-lg">📸</div>
+                    <span className="text-gray-900 font-medium">Copyright Protection</span>
+                  </div>
+                  <div className="space-y-1">
+                    <div className="text-lg">🛒</div>
+                    <span className="text-gray-900 font-medium">Product Research</span>
+                  </div>
+                  <div className="space-y-1">
+                    <div className="text-lg">🕵️</div>
+                    <span className="text-gray-900 font-medium">Image Verification</span>
+                  </div>
+                  <div className="space-y-1">
+                    <div className="text-lg">🔎</div>
+                    <span className="text-gray-900 font-medium">Duplicate Detection</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </motion.div>
+
+          {/* Available Search Engines Info */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.8, duration: 0.8 }}
+            className="mt-16 max-w-4xl mx-auto">
+            
+            <div className="text-center mb-8">
+              <h2 className="text-2xl font-bold mb-3 gradient-text-cosmic">
+                🔍 Multi-Engine Reverse Image Search - Google, Bing, Yandex & TinEye
+              </h2>
+              <p className="text-gray-600 text-sm">
+                Choose from the world's most powerful image recognition engines to find duplicates, sources, and similar images
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
+              {searchEngines.map((engine, index) => (
+                <motion.div
+                  key={engine.name}
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.9 + index * 0.1 }}
+                  className="glass-strong rounded-xl p-4 text-center hover:scale-105 transition-all duration-300"
+                >
+                  <div className={`w-12 h-12 bg-gradient-to-br ${engine.color} rounded-xl flex items-center justify-center mx-auto mb-3`}>
+                    {React.cloneElement(engine.icon as React.ReactElement, { className: "w-6 h-6 text-gray-900" })}
+                  </div>
+                  <h3 className="font-semibold text-sm mb-2">{engine.name}</h3>
+                  <p className="text-gray-400 text-xs leading-relaxed">
+                    {engine.description.split('.')[0]}.
+                  </p>
+                  <div className="mt-3 flex items-center justify-center gap-1">
+                    <div className="w-2 h-2 bg-green-400 rounded-full"></div>
+                    <span className="text-xs text-green-400 font-medium">Available</span>
+                  </div>
+                </motion.div>
+              ))}
+            </div>
+
+            <div className="mt-8 text-center glass-strong rounded-2xl p-6">
+              <h3 className="text-lg font-semibold mb-3 text-blue-400">
+                🚀 How Our Free Reverse Image Search Works
+              </h3>
+              <div className="grid md:grid-cols-3 gap-4 text-sm text-gray-600 mb-4">
+                <div className="flex items-start gap-3">
+                  <span className="text-2xl">1️⃣</span>
+                  <div>
+                    <p className="font-semibold text-gray-900">Upload Any Image</p>
+                    <p className="text-xs">Drag & drop or click to upload JPG, PNG, WebP files up to 10MB</p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-3">
+                  <span className="text-2xl">2️⃣</span>
+                  <div>
+                    <p className="font-semibold text-gray-900">Choose Search Engine</p>
+                    <p className="text-xs">Select Google Lens, Bing Visual Search, Yandex, or TinEye</p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-3">
+                  <span className="text-2xl">3️⃣</span>
+                  <div>
+                    <p className="font-semibold text-gray-900">Find Duplicates & Sources</p>
+                    <p className="text-xs">Discover similar images, original sources, and duplicate photos</p>
+                  </div>
+                </div>
+              </div>
+              
+              <div className="text-xs text-gray-400 border-t border-gray-700 pt-4">
+                <p><strong>Supported formats:</strong> JPEG, PNG, WebP | <strong>Max file size:</strong> 10MB | <strong>Processing time:</strong> 2-5 seconds</p>
+                <p className="mt-1"><strong>Search capabilities:</strong> Exact duplicates, similar images, reverse lookup, image source finding, copyright checking</p>
+              </div>
+            </div>
+          </motion.div>
+
+          {/* SEO Footer & Keywords */}
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ delay: 1, duration: 0.8 }}
-            className="text-center mt-16 text-gray-400">
-
-            <p className="text-sm">
-              Privacy-focused • Images stored on Vercel CDN • Secure public URLs • No personal data collected
-            </p>
+            transition={{ delay: 1.2, duration: 0.8 }}
+            className="text-center mt-16">
+            
+            <div className="glass-strong rounded-2xl p-6 mb-8">
+              <h3 className="text-lg font-semibold mb-4 text-purple-400">
+                🏷️ Popular Image Search Keywords
+              </h3>
+              <div className="flex flex-wrap justify-center gap-2 text-xs">
+                {['reverse image search', 'find duplicate images', 'image similarity search', 'google lens search', 'bing visual search', 'free image finder', 'photo duplicate checker', 'reverse photo lookup', 'image source finder', 'copyright image check', 'similar image detection', 'reverse image API'].map((keyword, index) => (
+                  <span key={index} className="px-3 py-1 bg-gradient-to-r from-blue-500/20 to-purple-500/20 border border-blue-500/30 rounded-full text-gray-600 hover:bg-white/10 transition-colors">
+                    {keyword}
+                  </span>
+                ))}
+              </div>
+              <p className="text-xs text-gray-400 mt-4">
+                Our free reverse image search tool supports all these search types and more. No registration required.
+              </p>
+            </div>
+            
+            <div className="text-gray-400">
+              <p className="text-sm mb-2">
+                🔐 <strong>Privacy & Security:</strong> Images auto-deleted after 2-3 days • Secure Vercel CDN storage • No personal data collected
+              </p>
+              <p className="text-xs">
+                <strong>Free Reverse Image Search</strong> | <strong>Duplicate Image Detection</strong> | <strong>Multi-Engine Support</strong> | <strong>No Registration Required</strong>
+              </p>
+            </div>
           </motion.div>
         </div>
       </div>

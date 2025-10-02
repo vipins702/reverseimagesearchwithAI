@@ -1,0 +1,5 @@
+outputurl,status,resp_time,noindex_header,noindex_meta,canonical,title_len,meta_desc_len,internal_links,in_sitemap,robots_disallow,notes
+https://checkduplicateimage.online/about,200,129,,"index, follow",https://search.lumi.ing/,75,167,0,FALSE,,not_in_sitemap;canonical_other_domain;no_internal_links
+https://checkduplicateimage.online/,200,134,,"index, follow",https://search.lumi.ing/,75,167,0,FALSE,,not_in_sitemap;canonical_other_domain;no_internal_links
+https://checkduplicateimage.online/how-it-works,200,163,,"index, follow",https://search.lumi.ing/,75,167,0,FALSE,,not_in_sitemap;canonical_other_domain;no_internal_links
+https://checkduplicateimage.online/upload,200,161,,"index, follow",https://search.lumi.ing/,75,167,0,FALSE,,not_in_sitemap;canonical_other_domain;no_internal_links

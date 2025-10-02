@@ -1,5 +1,4 @@
 
-import React from 'react'
 import { Routes, Route } from 'react-router-dom'
 import { Toaster } from 'react-hot-toast'
 import Navbar from './components/Navbar'
@@ -12,7 +11,7 @@ import ScrollToTop from './components/ScrollToTop'
 
 function App() {
   return (
-    <div className="min-h-screen cosmic-bg text-white">
+    <div className="min-h-screen cosmic-bg text-gray-900">
       <Toaster position="top-right" />
       <ScrollToTop />
       
@@ -31,7 +30,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/how-it-works" element={<HowItWorks />} />
-          <Route path="/upload" element={<Upload />} />
+          <Route path="/reverse-image-search" element={<Upload />} />
         </Routes>
       </main>
       

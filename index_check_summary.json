@@ -1,0 +1,58 @@
+[
+  {
+    "outputurl": "https://checkduplicateimage.online/about",
+    "status": 200,
+    "resp_time": 129,
+    "noindex_header": "",
+    "noindex_meta": "index, follow",
+    "canonical": "https://search.lumi.ing/",
+    "title_len": 75,
+    "meta_desc_len": 167,
+    "internal_links": 0,
+    "in_sitemap": "FALSE",
+    "robots_disallow": "",
+    "notes": "not_in_sitemap;canonical_other_domain;no_internal_links"
+  },
+  {
+    "outputurl": "https://checkduplicateimage.online/",
+    "status": 200,
+    "resp_time": 134,
+    "noindex_header": "",
+    "noindex_meta": "index, follow",
+    "canonical": "https://search.lumi.ing/",
+    "title_len": 75,
+    "meta_desc_len": 167,
+    "internal_links": 0,
+    "in_sitemap": "FALSE",
+    "robots_disallow": "",
+    "notes": "not_in_sitemap;canonical_other_domain;no_internal_links"
+  },
+  {
+    "outputurl": "https://checkduplicateimage.online/how-it-works",
+    "status": 200,
+    "resp_time": 163,
+    "noindex_header": "",
+    "noindex_meta": "index, follow",
+    "canonical": "https://search.lumi.ing/",
+    "title_len": 75,
+    "meta_desc_len": 167,
+    "internal_links": 0,
+    "in_sitemap": "FALSE",
+    "robots_disallow": "",
+    "notes": "not_in_sitemap;canonical_other_domain;no_internal_links"
+  },
+  {
+    "outputurl": "https://checkduplicateimage.online/upload",
+    "status": 200,
+    "resp_time": 161,
+    "noindex_header": "",
+    "noindex_meta": "index, follow",
+    "canonical": "https://search.lumi.ing/",
+    "title_len": 75,
+    "meta_desc_len": 167,
+    "internal_links": 0,
+    "in_sitemap": "FALSE",
+    "robots_disallow": "",
+    "notes": "not_in_sitemap;canonical_other_domain;no_internal_links"
+  }
+]
