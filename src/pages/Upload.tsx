@@ -318,12 +318,11 @@ const UploadPage = () => {
           "screenshot": "https://checkduplicateimage.online/og-image.jpg"
         }
         `}</script>
-        {/* BreadcrumbList Schema - Google Recommended Format */}
+        {/* BreadcrumbList Schema - Clean Format Without Top-Level Name */}
         <script type="application/ld+json">{`
         {
           "@context": "https://schema.org",
           "@type": "BreadcrumbList",
-          "name": "Site Navigation",
           "itemListElement": [
             {
               "@type": "ListItem",
