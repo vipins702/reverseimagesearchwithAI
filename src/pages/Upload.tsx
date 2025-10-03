@@ -314,48 +314,7 @@ const UploadPage = () => {
           "screenshot": "https://checkduplicateimage.online/og-image.jpg"
         }
         `}</script>
-        {/* FAQ Schema Markup for Google Rich Results */}
-        <script type="application/ld+json">{`
-        {
-          "@context": "https://schema.org",
-          "@type": "FAQPage",
-          "mainEntity": [
-            {
-              "@type": "Question",
-              "name": "Is this reverse image search tool free?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Yes, our reverse image search tool is 100% free to use. No registration, no hidden fees, no limits."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "How do I find duplicate images online for free?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Simply upload your photo and our tool will search across Google Lens, Bing, Yandex, and TinEye to find duplicates and similar images at no cost."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "What image formats are supported?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "We support JPG, PNG, and WebP image formats up to 10MB in size for reverse image search."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Which search engines can I use?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Our tool supports Google Lens, Bing Visual Search, Yandex Images, and TinEye for comprehensive reverse image searching."
-              }
-            }
-          ]
-        }
-        `}</script>
-        {/* BreadcrumbList Schema */}
+        {/* BreadcrumbList Schema */
         <script type="application/ld+json">{`
         {
           "@context": "https://schema.org",

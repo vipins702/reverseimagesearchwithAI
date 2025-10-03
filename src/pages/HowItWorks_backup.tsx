@@ -1,6 +1,67 @@
 import { useState } from 'react'
 import { Helmet } from 'react-helmet-async'
-import { motion } from 'framer-motion'
+import { motio        }
+        `}</script>
+        {/* FAQ Schema Markup for Google Rich Results */}
+        <script type="application/ld+json">{`
+        {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "name": "FAQ for Reverse Image Search Guide",
+          "@id": "https://checkduplicateimage.online/how-it-works#faq",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How does reverse image search work?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Our tool uploads your image to multiple search engines (Google Lens, Bing, Yandex, TinEye) and finds visually similar or identical images across the web using advanced AI algorithms."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is this reverse image search tool really free?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, 100% free with no registration required. We provide unlimited searches with no hidden fees or premium upgrades needed."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What image formats are supported?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "We support JPG, PNG, and WebP formats with a maximum file size of 10MB for optimal search results."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How long does it take to find duplicate images?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Most searches complete in under 3 seconds. Our multi-engine approach provides comprehensive results quickly."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is my uploaded image stored or shared?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No, your privacy is protected. Images are automatically deleted immediately after the search completes. We never store or share your images."
+              }
+            }
+          ]
+        }
+        `}</script>
+        {/* Open Graph tags */}
+        <meta property="og:title" content="How Reverse Image Search Works - Find Duplicate Images Step by Step Guide" />
+        <meta property="og:description" content="Learn how our free reverse image search works to find duplicate images. Step-by-step guide using Google Lens, Bing, Yandex & TinEye. No registration required." />
+        <meta property="og:url" content="https://checkduplicateimage.online/how-it-works" />
+        <meta property="og:type" content="website" />
+        {/* Twitter tags */}
+        <meta name="twitter:title" content="How Reverse Image Search Works - Find Duplicate Images Step by Step Guide" />
+        <meta name="twitter:description" content="Learn how our free reverse image search works to find duplicate images. Step-by-step guide using Google Lens, Bing, Yandex & TinEye. No registration required." />
+      </Helmet>ramer-motion'
 import { Upload, Search, Eye, CheckCircle, ArrowRight, ChevronDown } from 'lucide-react'
 
 const HowItWorks = () => {
@@ -82,78 +143,25 @@ const HowItWorks = () => {
             },
             {
               "@type": "HowToStep",
-              "name": "Search across multiple engines",
-              "text": "Our tool automatically searches Google Lens, Bing, Yandex, and TinEye simultaneously",
+              "name": "Multi-engine search",
+              "text": "Our system searches Google Lens, Bing Visual Search, Yandex Images, and TinEye simultaneously",
               "url": "https://checkduplicateimage.online/reverse-image-search"
             },
             {
               "@type": "HowToStep",
-              "name": "Review results",
+              "name": "View results",
               "text": "Review duplicate images, similar photos, and original sources with direct links",
               "url": "https://checkduplicateimage.online/reverse-image-search"
             }
           ]
         }
         `}</script>
-        {/* FAQ Schema Markup for Google Rich Results */}
-        <script type="application/ld+json">{`
-        {
-          "@context": "https://schema.org",
-          "@type": "FAQPage",
-          "name": "FAQ for Reverse Image Search Guide",
-          "@id": "https://checkduplicateimage.online/how-it-works#faq",
-          "mainEntity": [
-            {
-              "@type": "Question",
-              "name": "How does reverse image search work?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Our tool uploads your image to multiple search engines (Google Lens, Bing, Yandex, TinEye) and finds visually similar or identical images across the web using advanced AI algorithms."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Is this reverse image search tool really free?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Yes, 100% free with no registration required. We provide unlimited searches with no hidden fees or premium upgrades needed."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "What image formats are supported?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "We support JPG, PNG, and WebP formats with a maximum file size of 10MB for optimal search results."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "How long does it take to find duplicate images?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Most searches complete in under 3 seconds. Our multi-engine approach provides comprehensive results quickly."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Is my uploaded image stored or shared?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "No, your privacy is protected. Images are automatically deleted immediately after the search completes. We never store or share your images."
-              }
-            }
-          ]
-        }
-        `}</script>
-        {/* Open Graph Meta Tags */}
+        {/* Open Graph tags */}
         <meta property="og:title" content="How Reverse Image Search Works - Find Duplicate Images Step by Step Guide" />
         <meta property="og:description" content="Learn how our free reverse image search works to find duplicate images. Step-by-step guide using Google Lens, Bing, Yandex & TinEye. No registration required." />
         <meta property="og:url" content="https://checkduplicateimage.online/how-it-works" />
         <meta property="og:type" content="website" />
-        <meta property="og:site_name" content="checkduplicateimage" />
-        {/* Twitter Card Meta Tags */}
-        <meta name="twitter:card" content="summary_large_image" />
+        {/* Twitter tags */}
         <meta name="twitter:title" content="How Reverse Image Search Works - Find Duplicate Images Step by Step Guide" />
         <meta name="twitter:description" content="Learn how our free reverse image search works to find duplicate images. Step-by-step guide using Google Lens, Bing, Yandex & TinEye. No registration required." />
       </Helmet>
@@ -187,57 +195,7 @@ const HowItWorks = () => {
         </div>
       </section>
 
-      {/* Steps Section */}
-      <section className="py-16">
-        <div className="container mx-auto px-4">
-          <motion.div
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
-            className="text-center mb-16"
-          >
-            <h2 className="text-2xl md:text-3xl font-bold mb-4">
-              <span className="gradient-text-cosmic">3 Simple Steps</span> to Find Duplicate Images
-            </h2>
-            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              Our streamlined process makes it easy to find duplicate images and similar photos across multiple search engines in seconds.
-            </p>
-          </motion.div>
-
-          <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-            {steps.map((step, index) => {
-              const Icon = step.icon
-              return (
-                <motion.div
-                  key={index}
-                  initial={{ opacity: 0, y: 50 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.6, delay: index * 0.2 }}
-                  viewport={{ once: true }}
-                  className="text-center"
-                >
-                  <div className="glass-strong rounded-3xl p-8 hover:scale-105 transition-all duration-300">
-                    <div className="relative mb-6">
-                      <div className={`w-16 h-16 bg-gradient-to-br ${step.color} rounded-2xl flex items-center justify-center mb-4 mx-auto`}>
-                        <Icon className="w-8 h-8 text-white" />
-                      </div>
-                      <div className="absolute -top-2 -right-2 w-8 h-8 bg-gradient-to-br from-yellow-400 to-orange-500 rounded-full flex items-center justify-center">
-                        <span className="text-white font-bold text-sm">{index + 1}</span>
-                      </div>
-                    </div>
-                    
-                    <h3 className="text-xl font-semibold mb-3 text-gray-900">{step.title}</h3>
-                    <p className="text-gray-600 leading-relaxed">{step.description}</p>
-                  </div>
-                </motion.div>
-              )
-            })}
-          </div>
-        </div>
-      </section>
-
-      {/* Search Engines Section */}
+      {/* Process Steps */}
       <section className="py-16">
         <div className="container mx-auto px-4">
           <motion.div
@@ -248,25 +206,82 @@ const HowItWorks = () => {
             className="text-center mb-12"
           >
             <h2 className="text-2xl md:text-3xl font-bold mb-4">
-              <span className="gradient-text-cosmic">Powered by Leading</span> Search Engines
+              <span className="gradient-text-cosmic">3 Simple Steps</span> to Find Duplicate Images
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              We integrate with the most powerful image search engines to provide comprehensive results for your reverse image searches.
+              Our reverse image search process is designed for speed and accuracy, delivering comprehensive results in seconds.
             </p>
           </motion.div>
 
-          <div className="grid md:grid-cols-4 gap-6">
+          <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+            {steps.map((step, index) => {
+              const Icon = step.icon
+              return (
+                <motion.div
+                  key={step.title}
+                  initial={{ opacity: 0, y: 50 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.8, delay: index * 0.2 }}
+                  viewport={{ once: true }}
+                  className="glass-strong rounded-3xl p-8 text-center hover:scale-105 transition-all duration-300"
+                >
+                  <div className="flex items-center justify-center mb-6">
+                    <div className="relative">
+                      <div className={`w-16 h-16 bg-gradient-to-br ${step.color} rounded-2xl flex items-center justify-center mb-4`}>
+                        <Icon className="w-8 h-8 text-white" />
+                      </div>
+                      <div className="absolute -top-2 -right-2 w-8 h-8 bg-gradient-to-br from-blue-400 to-purple-400 rounded-full flex items-center justify-center text-white font-bold text-sm">
+                        {index + 1}
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <h3 className="text-xl font-semibold mb-3 text-gray-900">{step.title}</h3>
+                  <p className="text-gray-600">{step.description}</p>
+                  
+                  <div className="mt-4 pt-4 border-t border-gray-700">
+                    <div className="flex items-center justify-center gap-2 text-green-400 text-sm">
+                      <CheckCircle className="w-4 h-4" />
+                      <span>Fast & Accurate</span>
+                    </div>
+                  </div>
+                </motion.div>
+              )
+            })}
+          </div>
+        </div>
+      </section>
+
+      {/* Features Section */}
+      <section className="py-16 bg-gradient-to-br from-blue-900/20 to-purple-900/20">
+        <div className="container mx-auto px-4">
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            className="text-center mb-12"
+          >
+            <h2 className="text-2xl md:text-3xl font-bold mb-4">
+              <span className="gradient-text-cosmic">Multi-Engine</span> Reverse Image Search Technology
+            </h2>
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+              We combine the power of multiple search engines to give you the most comprehensive results possible.
+            </p>
+          </motion.div>
+
+          <div className="grid md:grid-cols-4 gap-6 max-w-6xl mx-auto">
             {[
               { name: 'Google Lens', icon: '🔍', description: 'AI-powered visual search' },
-              { name: 'Bing Visual', icon: '🔎', description: 'Microsoft\'s image engine' },
-              { name: 'Yandex Images', icon: '🖼️', description: 'Advanced image matching' },
-              { name: 'TinEye', icon: '👁️', description: 'Reverse image pioneer' }
+              { name: 'Bing Visual', icon: '🎯', description: 'Microsoft\'s image recognition' },
+              { name: 'Yandex Images', icon: '👁️', description: 'Russian search engine' },
+              { name: 'TinEye', icon: '⚡', description: 'Reverse image pioneer' }
             ].map((engine, index) => (
               <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 30 }}
+                key={engine.name}
+                initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
+                transition={{ duration: 0.8, delay: index * 0.1 }}
                 viewport={{ once: true }}
                 className="glass-strong rounded-2xl p-6 text-center hover:scale-105 transition-all duration-300"
               >
@@ -348,32 +363,29 @@ const HowItWorks = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
-            className="text-center max-w-3xl mx-auto"
+            className="glass-strong rounded-3xl p-12 text-center space-y-6 max-w-3xl mx-auto"
           >
-            <div className="glass-strong rounded-3xl p-8 md:p-12">
-              <h2 className="text-2xl md:text-3xl font-bold mb-4 gradient-text-cosmic">
-                Ready to Find Your Duplicate Images?
-              </h2>
-              <p className="text-lg text-gray-600 mb-8">
-                Upload your image now and discover duplicates, similar photos, and original sources across multiple search engines - completely free!
-              </p>
-              
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <a
-                  href="/reverse-image-search"
-                  className="btn-cosmic bg-gradient-to-r from-blue-500 to-purple-600 px-8 py-3 rounded-lg font-semibold text-lg hover:shadow-2xl transition-all duration-300 flex items-center justify-center gap-2"
-                >
-                  Start Searching Images
-                  <ArrowRight className="w-5 h-5" />
-                </a>
-                
-                <a
-                  href="/about"
-                  className="px-8 py-3 rounded-lg font-semibold text-lg border-2 border-gray-300 text-gray-700 hover:border-blue-400 hover:text-blue-600 transition-all duration-300"
-                >
-                  Learn More About Us
-                </a>
-              </div>
+            <h2 className="text-2xl md:text-3xl font-bold">
+              Ready to <span className="gradient-text-cosmic">Find Duplicate Images</span> Now?
+            </h2>
+            <p className="text-lg text-gray-600">
+              Start your free reverse image search and discover where your images appear online. No registration required.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <a
+                href="/reverse-image-search"
+                className="btn-cosmic bg-gradient-to-r from-blue-500 to-purple-600 px-8 py-4 rounded-lg font-semibold text-lg hover:shadow-2xl transition-all duration-300 flex items-center justify-center gap-2"
+              >
+                <Upload className="w-5 h-5" />
+                Start Free Reverse Image Search
+                <ArrowRight className="w-5 h-5" />
+              </a>
+            </div>
+            <div className="flex flex-wrap justify-center gap-6 text-sm text-gray-400">
+              <span>✓ 100% Free</span>
+              <span>✓ No Registration</span>
+              <span>✓ Multi-Engine Search</span>
+              <span>✓ Instant Results</span>
             </div>
           </motion.div>
         </div>

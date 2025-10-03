@@ -36,8 +36,20 @@ const Home = () => {
       <Helmet>
         <title>Free Reverse Image Search - Find Duplicate Images Online Instantly</title>
         <meta name="description" content="Free reverse image search tool powered by Google Lens, Bing & Yandex. Find duplicate photos, similar images & original sources instantly. No registration required." />
+        <meta name="keywords" content="reverse image search, duplicate image finder, image search engine, find similar images, google lens, bing visual search, yandex images, tineye, photo search, image recognition" />
+        <meta name="author" content="checkduplicateimage" />
         <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
         <link rel="canonical" href="https://checkduplicateimage.online/" />
+        {/* Open Graph Meta Tags */}
+        <meta property="og:title" content="Free Reverse Image Search - Find Duplicate Images Online Instantly" />
+        <meta property="og:description" content="Free reverse image search tool powered by Google Lens, Bing & Yandex. Find duplicate photos, similar images & original sources instantly. No registration required." />
+        <meta property="og:url" content="https://checkduplicateimage.online/" />
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="checkduplicateimage" />
+        {/* Twitter Card Meta Tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Free Reverse Image Search - Find Duplicate Images Online Instantly" />
+        <meta name="twitter:description" content="Free reverse image search tool powered by Google Lens, Bing & Yandex. Find duplicate photos, similar images & original sources instantly. No registration required." />
         {/* Schema Markup for SEO */}
         <script type="application/ld+json">{`
         {

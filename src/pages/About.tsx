@@ -29,20 +29,36 @@ const About = () => {
       <Helmet>
         <title>About Free Reverse Image Search Tool - Duplicate Image Finder Online</title>
         <meta name="description" content="Learn about our free reverse image search tool and duplicate image finder. Multi-engine search across Google Lens, Bing, Yandex & TinEye. No registration required." />
+        <meta name="keywords" content="about reverse image search, duplicate image finder, free image search tool, google lens, bing visual search, yandex images, tineye" />
+        <meta name="author" content="checkduplicateimage" />
         <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
         <link rel="canonical" href="https://checkduplicateimage.online/about" />
-        {/* Schema Markup */}
+        {/* Open Graph Meta Tags */}
+        <meta property="og:title" content="About Free Reverse Image Search Tool - Duplicate Image Finder Online" />
+        <meta property="og:description" content="Learn about our free reverse image search tool and duplicate image finder. Multi-engine search across Google Lens, Bing, Yandex & TinEye. No registration required." />
+        <meta property="og:url" content="https://checkduplicateimage.online/about" />
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="checkduplicateimage" />
+        {/* Twitter Card Meta Tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="About Free Reverse Image Search Tool - Duplicate Image Finder Online" />
+        <meta name="twitter:description" content="Learn about our free reverse image search tool and duplicate image finder. Multi-engine search across Google Lens, Bing, Yandex & TinEye. No registration required." />
+        {/* Enhanced Organization Schema */}
         <script type="application/ld+json">{`
         {
           "@context": "https://schema.org",
           "@type": "Organization",
-          "name": "Free Reverse Image Search Tool",
+          "name": "checkduplicateimage",
+          "alternateName": "Free Reverse Image Search Tool",
           "url": "https://checkduplicateimage.online/",
-          "description": "Free reverse image search tool powered by multiple search engines to find duplicate images, similar photos, and original sources.",
+          "description": "Free reverse image search tool powered by multiple search engines to find duplicate images, similar photos, and original sources. No registration required.",
           "foundingDate": "2024",
+          "knowsAbout": ["reverse image search", "duplicate image detection", "image recognition", "visual search"],
           "sameAs": [
-            "https://checkduplicateimage.online/"
+            "https://checkduplicateimage.online/",
+            "https://github.com/vipins702/reverseimagesearchwithAI"
           ],
+          "keywords": "reverse image search, duplicate image finder, free image search, google lens, bing visual search",
           "hasOfferCatalog": {
             "@type": "OfferCatalog",
             "name": "Reverse Image Search Services",
