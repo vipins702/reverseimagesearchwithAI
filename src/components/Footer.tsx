@@ -14,7 +14,7 @@ const Footer = () => {
                 <Sparkles className="w-5 h-5 text-blue-600" />
               </div>
               <span className="text-lg font-bold gradient-text-cosmic">
-                CheckDuplicateImage
+                checkduplicateimage
               </span>
             </div>
 
@@ -39,7 +39,7 @@ const Footer = () => {
 
             {/* Copyright */}
             <p className="text-gray-500 text-sm">
-              © 2024 CheckDuplicateImage
+              © 2024 checkduplicateimage
             </p>
           </div>
         </div>
