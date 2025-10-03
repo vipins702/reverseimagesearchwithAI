@@ -277,6 +277,7 @@ const UploadPage = () => {
       <Helmet>
   <title>Free Reverse Image Search Tool - Find Duplicate Images Online Fast</title>
   <meta name="description" content="Free reverse image search to find duplicate photos, similar images & original sources instantly. Upload any image - no registration required. Powered by Google Lens, Bing & more." />
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
   <link rel="canonical" href="https://checkduplicateimage.online/reverse-image-search" />
         {/* Open Graph tags */}
         <meta property="og:title" content="Free Reverse Image Search Tool - Find Duplicate Images Online Fast" />
@@ -359,6 +360,7 @@ const UploadPage = () => {
         {
           "@context": "https://schema.org",
           "@type": "BreadcrumbList",
+          "name": "Site Navigation",
           "itemListElement": [
             {
               "@type": "ListItem",

@@ -55,6 +55,7 @@ const HowItWorks = () => {
       <Helmet>
         <title>How Reverse Image Search Works - Find Duplicate Images Step by Step Guide</title>
         <meta name="description" content="Learn how our free reverse image search works to find duplicate images. Step-by-step guide using Google Lens, Bing, Yandex & TinEye. No registration required." />
+        <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
         <link rel="canonical" href="https://checkduplicateimage.online/how-it-works" />
         {/* Schema Markup */}
         <script type="application/ld+json">{`

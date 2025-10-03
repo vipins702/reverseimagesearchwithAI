@@ -36,6 +36,7 @@ const Home = () => {
       <Helmet>
         <title>Free Reverse Image Search - Find Duplicate Images Online Instantly</title>
         <meta name="description" content="Free reverse image search tool powered by Google Lens, Bing & Yandex. Find duplicate photos, similar images & original sources instantly. No registration required." />
+        <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
         <link rel="canonical" href="https://checkduplicateimage.online/" />
         {/* Schema Markup for SEO */}
         <script type="application/ld+json">{`

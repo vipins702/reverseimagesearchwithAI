@@ -29,6 +29,7 @@ const About = () => {
       <Helmet>
         <title>About Free Reverse Image Search Tool - Duplicate Image Finder Online</title>
         <meta name="description" content="Learn about our free reverse image search tool and duplicate image finder. Multi-engine search across Google Lens, Bing, Yandex & TinEye. No registration required." />
+        <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
         <link rel="canonical" href="https://checkduplicateimage.online/about" />
         {/* Schema Markup */}
         <script type="application/ld+json">{`
