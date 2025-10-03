@@ -275,18 +275,22 @@ const UploadPage = () => {
   return (
     <>
       <Helmet>
-  <title>Free Reverse Image Search Tool - Find Duplicate Images Online Fast</title>
-  <meta name="description" content="Free reverse image search to find duplicate photos, similar images & original sources instantly. Upload any image - no registration required. Powered by Google Lens, Bing & more." />
-  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
-  <link rel="canonical" href="https://checkduplicateimage.online/reverse-image-search" />
-        {/* Open Graph tags */}
-        <meta property="og:title" content="Free Reverse Image Search Tool - Find Duplicate Images Online Fast" />
-        <meta property="og:description" content="Free reverse image search to find duplicate photos, similar images & original sources instantly. Upload any image - no registration required. Powered by Google Lens, Bing & more." />
+        <title>Free Reverse Image Search Tool - Upload & Find Duplicate Images</title>
+        <meta name="description" content="Upload any image to find duplicates, similar photos & original sources across Google Lens, Bing, Yandex & TinEye. Free reverse image search tool - no registration required." />
+        <meta name="keywords" content="upload image search, reverse image search tool, find duplicate images, google lens search, bing visual search, yandex image search, tineye search, image upload" />
+        <meta name="author" content="checkduplicateimage" />
+        <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+        <link rel="canonical" href="https://checkduplicateimage.online/reverse-image-search" />
+        {/* Open Graph Meta Tags */}
+        <meta property="og:title" content="Free Reverse Image Search Tool - Upload & Find Duplicate Images" />
+        <meta property="og:description" content="Upload any image to find duplicates, similar photos & original sources across Google Lens, Bing, Yandex & TinEye. Free reverse image search tool - no registration required." />
         <meta property="og:url" content="https://checkduplicateimage.online/reverse-image-search" />
         <meta property="og:type" content="website" />
-        {/* Twitter tags */}
-        <meta name="twitter:title" content="Free Reverse Image Search Tool - Find Duplicate Images Online Fast" />
-        <meta name="twitter:description" content="Free reverse image search to find duplicate photos, similar images & original sources instantly. Upload any image - no registration required. Powered by Google Lens, Bing & more." />
+        <meta property="og:site_name" content="checkduplicateimage" />
+        {/* Twitter Card Meta Tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Free Reverse Image Search Tool - Upload & Find Duplicate Images" />
+        <meta name="twitter:description" content="Upload any image to find duplicates, similar photos & original sources across Google Lens, Bing, Yandex & TinEye. Free reverse image search tool - no registration required." />
         {/* SoftwareApplication Schema Markup */}
         <script type="application/ld+json">{`
         {
@@ -314,7 +318,48 @@ const UploadPage = () => {
           "screenshot": "https://checkduplicateimage.online/og-image.jpg"
         }
         `}</script>
-        {/* BreadcrumbList Schema */
+        {/* FAQ Schema Markup for Google Rich Results */}
+        <script type="application/ld+json">{`
+        {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Is this reverse image search tool free?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, our reverse image search tool is 100% free to use. No registration, no hidden fees, no limits."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I find duplicate images online for free?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Simply upload your photo and our tool will search across Google Lens, Bing, Yandex, and TinEye to find duplicates and similar images at no cost."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What image formats are supported?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "We support JPG, PNG, and WebP image formats up to 10MB in size for reverse image search."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Which search engines can I use?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Our tool supports Google Lens, Bing Visual Search, Yandex Images, and TinEye for comprehensive reverse image searching."
+              }
+            }
+          ]
+        }
+        `}</script>
+        {/* BreadcrumbList Schema */}
         <script type="application/ld+json">{`
         {
           "@context": "https://schema.org",
