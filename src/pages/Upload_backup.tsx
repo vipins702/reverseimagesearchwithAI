@@ -318,7 +318,7 @@ const UploadPage = () => {
           "screenshot": "https://checkduplicateimage.online/og-image.jpg"
         }
         `}</script>
-        {/* BreadcrumbList Schema */}
+        {/* BreadcrumbList Schema */
         <script type="application/ld+json">{`
         {
           "@context": "https://schema.org",
