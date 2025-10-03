@@ -318,11 +318,13 @@ const UploadPage = () => {
           "screenshot": "https://checkduplicateimage.online/og-image.jpg"
         }
         `}</script>
-        {/* BreadcrumbList Schema - Clean Format Without Top-Level Name */}
+        {/* Canonical BreadcrumbList Schema */}
         <script type="application/ld+json">{`
         {
           "@context": "https://schema.org",
           "@type": "BreadcrumbList",
+          "@id": "https://checkduplicateimage.online/reverse-image-search#breadcrumb",
+          "name": "Breadcrumbs — Reverse Image Search",
           "itemListElement": [
             {
               "@type": "ListItem",

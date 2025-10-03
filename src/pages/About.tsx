@@ -75,6 +75,35 @@ const About = () => {
           }
         }
         `}</script>
+        {/* Canonical BreadcrumbList Schema */}
+        <script type="application/ld+json">{`
+        {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "@id": "https://checkduplicateimage.online/about#breadcrumb",
+          "name": "Breadcrumbs — About Us",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "item": {
+                "@type": "WebPage",
+                "@id": "https://checkduplicateimage.online/",
+                "name": "Home"
+              }
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "item": {
+                "@type": "WebPage",
+                "@id": "https://checkduplicateimage.online/about",
+                "name": "About Us"
+              }
+            }
+          ]
+        }
+        `}</script>
         {/* Open Graph tags */}
         <meta property="og:title" content="About Free Reverse Image Search Tool - Duplicate Image Finder Online" />
         <meta property="og:description" content="Learn about our free reverse image search tool and duplicate image finder. Multi-engine search across Google Lens, Bing, Yandex & TinEye. No registration required." />

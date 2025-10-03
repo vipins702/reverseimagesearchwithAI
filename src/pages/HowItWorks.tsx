@@ -146,6 +146,35 @@ const HowItWorks = () => {
           ]
         }
         `}</script>
+        {/* Canonical BreadcrumbList Schema */}
+        <script type="application/ld+json">{`
+        {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "@id": "https://checkduplicateimage.online/how-it-works#breadcrumb",
+          "name": "Breadcrumbs — How It Works",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "item": {
+                "@type": "WebPage",
+                "@id": "https://checkduplicateimage.online/",
+                "name": "Home"
+              }
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "item": {
+                "@type": "WebPage",
+                "@id": "https://checkduplicateimage.online/how-it-works",
+                "name": "How It Works"
+              }
+            }
+          ]
+        }
+        `}</script>
         {/* Open Graph Meta Tags */}
         <meta property="og:title" content="How Reverse Image Search Works - Find Duplicate Images Step by Step Guide" />
         <meta property="og:description" content="Learn how our free reverse image search works to find duplicate images. Step-by-step guide using Google Lens, Bing, Yandex & TinEye. No registration required." />

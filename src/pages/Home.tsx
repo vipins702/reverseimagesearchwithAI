@@ -65,6 +65,26 @@ const Home = () => {
           }
         }
         `}</script>
+        {/* Canonical BreadcrumbList Schema */}
+        <script type="application/ld+json">{`
+        {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "@id": "https://checkduplicateimage.online/#breadcrumb",
+          "name": "Breadcrumbs — Home",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "item": {
+                "@type": "WebPage",
+                "@id": "https://checkduplicateimage.online/",
+                "name": "Home"
+              }
+            }
+          ]
+        }
+        `}</script>
         {/* OG/Twitter meta tags for social shares */}
         <meta property="og:title" content="Free Reverse Image Search - Find Duplicate Images Online Instantly" />
         <meta property="og:description" content="Free reverse image search tool powered by Google Lens, Bing & Yandex. Find duplicate photos, similar images & original sources instantly. No registration required." />
