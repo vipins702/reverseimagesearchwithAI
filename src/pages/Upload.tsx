@@ -318,24 +318,29 @@ const UploadPage = () => {
           "screenshot": "https://checkduplicateimage.online/og-image.jpg"
         }
         `}</script>
-        {/* BreadcrumbList Schema */}
+        {/* BreadcrumbList Schema - Google Recommended Format */}
         <script type="application/ld+json">{`
         {
           "@context": "https://schema.org",
           "@type": "BreadcrumbList",
-          "name": "Site Navigation",
           "itemListElement": [
             {
               "@type": "ListItem",
               "position": 1,
-              "name": "Home",
-              "item": "https://checkduplicateimage.online/"
+              "item": {
+                "@type": "WebPage",
+                "@id": "https://checkduplicateimage.online/",
+                "name": "Home"
+              }
             },
             {
               "@type": "ListItem",
               "position": 2,
-              "name": "Reverse Image Search",
-              "item": "https://checkduplicateimage.online/reverse-image-search"
+              "item": {
+                "@type": "WebPage",
+                "@id": "https://checkduplicateimage.online/reverse-image-search",
+                "name": "Reverse Image Search"
+              }
             }
           ]
         }
