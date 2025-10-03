@@ -323,6 +323,7 @@ const UploadPage = () => {
         {
           "@context": "https://schema.org",
           "@type": "BreadcrumbList",
+          "name": "Site Navigation",
           "itemListElement": [
             {
               "@type": "ListItem",
