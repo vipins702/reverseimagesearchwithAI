@@ -7,6 +7,7 @@ import Home from './pages/Home'
 import About from './pages/About'
 import HowItWorks from './pages/HowItWorks'
 import Upload from './pages/Upload'
+import Privacy from './pages/Privacy'
 import ScrollToTop from './components/ScrollToTop'
 
 function App() {
@@ -31,6 +32,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/how-it-works" element={<HowItWorks />} />
           <Route path="/reverse-image-search" element={<Upload />} />
+          <Route path="/privacy" element={<Privacy />} />
         </Routes>
       </main>
       

@@ -4,6 +4,7 @@ import { Helmet } from 'react-helmet-async';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useDropzone } from 'react-dropzone';
 import { Upload, Search, Image as ImageIcon, Sparkles, Zap, Globe, Eye, X, CheckCircle, AlertCircle, Loader2 } from 'lucide-react';
+import RelatedLinks from '../components/RelatedLinks';
 import toast from 'react-hot-toast';
 
 interface UploadedImage {
@@ -832,6 +833,11 @@ const UploadPage = () => {
               </p>
             </div>
           </motion.div>
+        </div>
+
+        {/* Related Links */}
+        <div className="container mx-auto px-4 py-12">
+          <RelatedLinks currentPath="/reverse-image-search" />
         </div>
       </div>
     </>);

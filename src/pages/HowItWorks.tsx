@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { Helmet } from 'react-helmet-async'
 import { motion } from 'framer-motion'
 import { Upload, Search, Eye, CheckCircle, ArrowRight, ChevronDown } from 'lucide-react'
+import RelatedLinks from '../components/RelatedLinks'
 
 const HowItWorks = () => {
   const [openFaq, setOpenFaq] = useState<number | null>(null)
@@ -406,6 +407,11 @@ const HowItWorks = () => {
             </div>
           </motion.div>
         </div>
+      </section>
+
+      {/* Related Links */}
+      <section className="py-12 container mx-auto px-4">
+        <RelatedLinks currentPath="/how-it-works" />
       </section>
     </>
   )
