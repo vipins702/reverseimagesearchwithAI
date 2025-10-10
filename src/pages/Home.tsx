@@ -289,13 +289,13 @@ const Home = () => {
       </section>
 
       {/* Search Engine Logos Section */}
-      <section className="py-8 cosmic-bg">
+      <section className="py-4 cosmic-bg">
         <div className="container mx-auto px-4">
           <motion.div 
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 1.8 }}
-            className="flex flex-wrap justify-center items-center gap-8 text-sm text-gray-500"
+            className="flex flex-wrap justify-center items-center gap-6 text-sm text-gray-500"
           >
             <span className="flex items-center gap-2">
               <div className="w-6 h-6 rounded-full bg-gradient-to-r from-blue-500 to-green-500"></div>
@@ -318,7 +318,7 @@ const Home = () => {
       </section>
 
       {/* Features Section - Bento Grid Design */}
-      <section className="pt-16 pb-24 cosmic-bg">
+      <section className="pt-8 pb-24 cosmic-bg">
         <div className="container mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, y: 50 }}
