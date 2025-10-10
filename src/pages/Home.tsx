@@ -289,7 +289,7 @@ const Home = () => {
       </section>
 
       {/* Search Engine Logos Section */}
-      <section className="py-12 cosmic-bg">
+      <section className="py-8 cosmic-bg">
         <div className="container mx-auto px-4">
           <motion.div 
             initial={{ opacity: 0, y: 20 }}
@@ -318,7 +318,7 @@ const Home = () => {
       </section>
 
       {/* Features Section - Bento Grid Design */}
-      <section className="py-24 cosmic-bg">
+      <section className="pt-16 pb-24 cosmic-bg">
         <div className="container mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, y: 50 }}
