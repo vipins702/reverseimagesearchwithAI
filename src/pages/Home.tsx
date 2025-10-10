@@ -318,14 +318,14 @@ const Home = () => {
       </section>
 
       {/* Features Section - Bento Grid Design */}
-      <section className="pt-8 pb-24 cosmic-bg">
+      <section className="pt-2 pb-24 cosmic-bg">
         <div className="container mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
-            className="text-center mb-16 space-y-4"
+            className="text-center mb-12 space-y-4"
           >
             <h2 className="text-3xl md:text-5xl font-bold heading-premium mb-6">
               Why Choose Our <span className="gradient-text-cosmic">Free Reverse Image Search</span>?
