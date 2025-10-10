@@ -94,7 +94,7 @@ const Home = () => {
               "name": "What is reverse image search and how does it work?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Reverse image search is a technique that allows you to upload an image and find similar images, duplicates, or the original source online. Our tool analyzes your uploaded image and searches across multiple engines including Google Lens, Bing Visual Search, Yandex Images, and TinEye to find matching or similar photos."
+                "text": "Reverse image search is a technique that allows you to upload an image and find similar images, duplicates, or the original source online. Our tool analyzes your uploaded image and searches across multiple engines including Google Lens, Bing Visual Search, Yandex Images, and TinEye to find matching or similar photos. The technology uses advanced computer vision algorithms to extract unique visual features from your image—such as colors, shapes, patterns, and objects—then compares these features against billions of indexed images across the web."
               }
             },
             {
@@ -102,7 +102,23 @@ const Home = () => {
               "name": "Is this reverse image search tool completely free?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Yes! Our reverse image search tool is 100% free with no hidden charges, subscription fees, or usage limits. You can search for duplicate images, find similar photos, and locate original sources without any cost or registration required."
+                "text": "Yes! Our reverse image search tool is 100% free with no hidden charges, subscription fees, or usage limits. You can search for duplicate images, find similar photos, and locate original sources without any cost or registration required. Unlike many competing services that require paid subscriptions for advanced features or unlimited searches, we believe powerful image search technology should be accessible to everyone."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What image formats are supported for reverse image search?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Our tool supports all major image formats including JPG, PNG, GIF, WebP, and BMP. You can upload images up to 10MB in size. For best results, use high-quality images with clear details. The higher the resolution and quality of your uploaded image, the more accurate the search results will be."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How accurate is the reverse image search?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Our multi-engine approach provides highly accurate results by combining the power of Google Lens, Bing Visual Search, Yandex Images, and TinEye. Each search engine has its own strengths: Google Lens excels at object and product recognition, Bing offers strong visual similarity matching, Yandex provides superior coverage for Eastern European content, and TinEye specializes in finding exact image matches."
               }
             },
             {
@@ -110,7 +126,47 @@ const Home = () => {
               "name": "Can I use this tool to find stolen or copied images?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Absolutely! Our reverse image search tool is perfect for photographers, artists, and content creators who want to check if their images have been used without permission. It helps you find where your images appear online and identify potential copyright infringement."
+                "text": "Absolutely! Our reverse image search tool is perfect for photographers, artists, and content creators who want to check if their images have been used without permission. It helps you find where your images appear online and identify potential copyright infringement. Simply upload your original image, and our tool will scan billions of web pages across multiple search engines to find all instances where your image appears."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Do you store uploaded images on your servers?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No, we prioritize your privacy. Images are temporarily processed for search purposes and automatically deleted from our servers within 24 hours. We don't store, collect, or share your uploaded images with third parties. Your image is only kept in memory during the search process and is immediately removed from our systems once the results are delivered."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How long does it take to get reverse image search results?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Our average search time is under 3 seconds! Thanks to our optimized infrastructure and direct API integrations with major search engines, you'll receive results almost instantly. We process your image and query all four search engines (Google Lens, Bing, Yandex, and TinEye) simultaneously, which is why we can deliver comprehensive results so quickly."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can I search for images on mobile devices?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes! Our reverse image search tool is fully responsive and works perfectly on smartphones, tablets, and desktop computers. The mobile experience is optimized for touch interfaces, allowing you to easily upload images from your photo gallery or take a new photo with your camera to search immediately."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What's the difference between reverse image search and Google Lens?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Google Lens is one specific reverse image search engine developed by Google, while our tool combines Google Lens with three other powerful search engines: Bing Visual Search, Yandex Images, and TinEye. This multi-engine approach gives you much broader coverage and more comprehensive results than using Google Lens alone."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How can I get better reverse image search results?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "To get the best results, use high-resolution, clear images with good lighting and minimal blur. Crop out watermarks or logos that might interfere with matching. Use images that clearly show the subject you want to find, avoiding cluttered backgrounds. For product searches, use images showing the product from a clear angle. Higher quality images always produce more accurate and comprehensive search results."
               }
             }
           ]
@@ -317,6 +373,71 @@ const Home = () => {
         </div>
       </section>
 
+      {/* How Reverse Image Search Works - Detailed Explanation */}
+      <section className="py-20 bg-gradient-to-b from-white to-gray-50">
+        <div className="container mx-auto px-4">
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            className="max-w-5xl mx-auto"
+          >
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-bold mb-6">
+                How Does <span className="gradient-text-cosmic">Reverse Image Search</span> Work?
+              </h2>
+              <p className="text-xl text-gray-600 leading-relaxed">
+                Understanding the technology behind finding duplicate images and tracking image sources across the internet
+              </p>
+            </div>
+
+            <div className="glass-strong rounded-3xl p-8 md:p-12 space-y-8">
+              <div className="prose prose-lg max-w-none">
+                <p className="text-gray-700 leading-relaxed mb-6">
+                  Reverse image search is a powerful technology that allows you to upload an image and discover where else it appears online, 
+                  find similar images, identify the original source, and locate higher-resolution versions. Unlike traditional text-based search, 
+                  reverse image search uses advanced computer vision algorithms and artificial intelligence to analyze the visual content of your image.
+                </p>
+
+                <h3 className="text-2xl font-bold text-gray-900 mb-4">The Technology Behind Reverse Image Search</h3>
+                <p className="text-gray-700 leading-relaxed mb-6">
+                  Our free reverse image search tool leverages cutting-edge AI and machine learning algorithms to analyze your uploaded image. 
+                  The process begins by extracting unique visual features from your image—including colors, shapes, patterns, textures, and object recognition. 
+                  These features are then converted into a digital fingerprint or "image signature" that can be compared against billions of images indexed by major search engines.
+                </p>
+
+                <h3 className="text-2xl font-bold text-gray-900 mb-4">Multi-Engine Search for Comprehensive Results</h3>
+                <p className="text-gray-700 leading-relaxed mb-6">
+                  What sets our tool apart is the ability to search across multiple powerful search engines simultaneously. We integrate with <strong>Google Lens</strong>, 
+                  which uses Google's vast image database and AI capabilities to identify objects, landmarks, and products. <strong>Bing Visual Search</strong> provides 
+                  additional coverage with Microsoft's image recognition technology. <strong>Yandex Images</strong> offers superior results for Eastern European and 
+                  Russian content, while <strong>TinEye</strong> specializes in finding exact matches and tracking image usage across the web since 2008.
+                </p>
+
+                <h3 className="text-2xl font-bold text-gray-900 mb-4">The Search Process Explained</h3>
+                <div className="bg-gradient-to-r from-blue-50 to-purple-50 rounded-xl p-6 mb-6">
+                  <ol className="list-decimal list-inside space-y-3 text-gray-700">
+                    <li><strong>Image Upload:</strong> You upload your image in any common format (JPG, PNG, GIF, WebP, or BMP)</li>
+                    <li><strong>Feature Extraction:</strong> Our system analyzes the visual elements and creates a unique digital signature</li>
+                    <li><strong>Multi-Engine Query:</strong> The image signature is sent to Google Lens, Bing, Yandex, and TinEye simultaneously</li>
+                    <li><strong>Result Aggregation:</strong> Matching and similar images are collected from all search engines</li>
+                    <li><strong>Instant Display:</strong> Results appear in seconds, showing duplicates, similar images, and source websites</li>
+                  </ol>
+                </div>
+
+                <p className="text-gray-700 leading-relaxed">
+                  This comprehensive approach ensures you get the most complete results possible, whether you're trying to find the original source of an image, 
+                  track down unauthorized use of your photos, identify products from pictures, or verify the authenticity of images you find online. 
+                  Best of all, our service is completely free, requires no registration, and respects your privacy by automatically deleting uploaded images 
+                  within 24 hours.
+                </p>
+              </div>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
       {/* Features Section - Bento Grid Design */}
       <section className="pt-20 pb-24 cosmic-bg">
         <div className="container mx-auto px-4">
@@ -375,35 +496,242 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Use Cases Section */}
-      <section className="py-16 bg-gradient-to-br from-blue-900/20 to-purple-900/20">
+      {/* Use Cases Section - Expanded */}
+      <section className="py-20 bg-gradient-to-br from-blue-900/20 to-purple-900/20">
         <div className="container mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
-            className="text-center max-w-4xl mx-auto"
+            className="max-w-6xl mx-auto"
           >
-            <h2 className="text-2xl md:text-3xl font-bold mb-6">
-              Perfect for <span className="gradient-text-cosmic">Every Use Case</span>
-            </h2>
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-bold mb-6">
+                Perfect for <span className="gradient-text-cosmic">Every Use Case</span>
+              </h2>
+              <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+                From protecting your creative work to verifying online content, our reverse image search tool serves countless purposes
+              </p>
+            </div>
+            
             <div className="grid md:grid-cols-3 gap-8">
-              <div className="glass-strong p-6 rounded-2xl">
-                <div className="text-4xl mb-4">📸</div>
-                <h3 className="text-lg font-semibold mb-2 text-gray-900">Copyright Protection</h3>
-                <p className="text-gray-600 text-sm">Find unauthorized use of your photos and protect your intellectual property</p>
-              </div>
-              <div className="glass-strong p-6 rounded-2xl">
-                <div className="text-4xl mb-4">🛒</div>
-                <h3 className="text-lg font-semibold mb-2 text-gray-900">Product Research</h3>
-                <p className="text-gray-600 text-sm">Discover original product sources and find better suppliers online</p>
-              </div>
-              <div className="glass-strong p-6 rounded-2xl">
-                <div className="text-4xl mb-4">✅</div>
-                <h3 className="text-lg font-semibold mb-2 text-gray-900">Image Verification</h3>
-                <p className="text-gray-600 text-sm">Verify authenticity of images and detect fake or manipulated photos</p>
-              </div>
+              <motion.div 
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.1 }}
+                viewport={{ once: true }}
+                className="glass-strong p-8 rounded-2xl hover-lift"
+              >
+                <div className="text-5xl mb-6">📸</div>
+                <h3 className="text-2xl font-bold mb-4 text-gray-900">Copyright Protection & Image Tracking</h3>
+                <p className="text-gray-700 leading-relaxed mb-4">
+                  Photographers, artists, and content creators can use our free reverse image search tool to monitor where their images appear online. 
+                  Discover unauthorized use of your photos, track down image theft, and protect your intellectual property rights.
+                </p>
+                <p className="text-gray-600 text-sm">
+                  Perfect for: Professional photographers, digital artists, stock photo contributors, graphic designers, and creative agencies
+                </p>
+              </motion.div>
+
+              <motion.div 
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.2 }}
+                viewport={{ once: true }}
+                className="glass-strong p-8 rounded-2xl hover-lift"
+              >
+                <div className="text-5xl mb-6">🛒</div>
+                <h3 className="text-2xl font-bold mb-4 text-gray-900">Product Research & Shopping</h3>
+                <p className="text-gray-700 leading-relaxed mb-4">
+                  Found a product you love but don't know where to buy it? Upload the image to find the original source, discover similar products, 
+                  compare prices across different retailers, and identify the manufacturer or brand behind any product photo.
+                </p>
+                <p className="text-gray-600 text-sm">
+                  Perfect for: Online shoppers, e-commerce sellers, dropshippers, product researchers, and bargain hunters
+                </p>
+              </motion.div>
+
+              <motion.div 
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.3 }}
+                viewport={{ once: true }}
+                className="glass-strong p-8 rounded-2xl hover-lift"
+              >
+                <div className="text-5xl mb-6">✅</div>
+                <h3 className="text-2xl font-bold mb-4 text-gray-900">Image Verification & Fact-Checking</h3>
+                <p className="text-gray-700 leading-relaxed mb-4">
+                  Verify the authenticity of images you encounter online, detect manipulated or fake photos, check if news images are from the claimed source, 
+                  and combat misinformation by finding the original context of viral images.
+                </p>
+                <p className="text-gray-600 text-sm">
+                  Perfect for: Journalists, researchers, fact-checkers, social media users, and anyone concerned about online misinformation
+                </p>
+              </motion.div>
+            </div>
+
+            {/* Additional Use Cases */}
+            <div className="grid md:grid-cols-2 gap-8 mt-8">
+              <motion.div 
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.4 }}
+                viewport={{ once: true }}
+                className="glass p-6 rounded-xl"
+              >
+                <h4 className="text-lg font-bold mb-3 text-gray-900 flex items-center gap-2">
+                  <span className="text-2xl">🔍</span>
+                  SEO & Content Marketing
+                </h4>
+                <p className="text-gray-600 text-sm">
+                  Find out who's using your branded images, discover content opportunities, monitor your visual content's reach, 
+                  and ensure your images are properly attributed across the web.
+                </p>
+              </motion.div>
+
+              <motion.div 
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.5 }}
+                viewport={{ once: true }}
+                className="glass p-6 rounded-xl"
+              >
+                <h4 className="text-lg font-bold mb-3 text-gray-900 flex items-center gap-2">
+                  <span className="text-2xl">🎨</span>
+                  Design & Inspiration
+                </h4>
+                <p className="text-gray-600 text-sm">
+                  Find higher resolution versions of images, locate the original designer or artist, discover similar design styles, 
+                  and build inspiration boards with properly sourced content.
+                </p>
+              </motion.div>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Key Benefits Section */}
+      <section className="py-20 bg-white">
+        <div className="container mx-auto px-4">
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            className="max-w-6xl mx-auto"
+          >
+            <div className="text-center mb-16">
+              <h2 className="text-3xl md:text-4xl font-bold mb-6">
+                Why Our <span className="gradient-text-cosmic">Free Reverse Image Search</span> Stands Out
+              </h2>
+              <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+                Experience the most powerful and user-friendly reverse image search tool with features designed for your convenience
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.1 }}
+                viewport={{ once: true }}
+                className="glass-strong p-6 rounded-2xl"
+              >
+                <div className="w-14 h-14 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl flex items-center justify-center mb-4">
+                  <Search className="w-7 h-7 text-white" />
+                </div>
+                <h3 className="text-xl font-bold mb-3 text-gray-900">Multi-Engine Search Power</h3>
+                <p className="text-gray-600 leading-relaxed">
+                  Unlike single-engine tools, we search across Google Lens, Bing Visual Search, Yandex Images, and TinEye simultaneously. 
+                  This comprehensive approach gives you 4x more coverage and significantly higher chances of finding your image matches.
+                </p>
+              </motion.div>
+
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.2 }}
+                viewport={{ once: true }}
+                className="glass-strong p-6 rounded-2xl"
+              >
+                <div className="w-14 h-14 bg-gradient-to-br from-green-500 to-green-600 rounded-xl flex items-center justify-center mb-4">
+                  <Shield className="w-7 h-7 text-white" />
+                </div>
+                <h3 className="text-xl font-bold mb-3 text-gray-900">100% Free Forever</h3>
+                <p className="text-gray-600 leading-relaxed">
+                  No hidden fees, no subscription plans, no premium tiers. Our reverse image search tool is completely free with unlimited searches. 
+                  We believe everyone should have access to powerful image search technology without paying a dime.
+                </p>
+              </motion.div>
+
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.3 }}
+                viewport={{ once: true }}
+                className="glass-strong p-6 rounded-2xl"
+              >
+                <div className="w-14 h-14 bg-gradient-to-br from-purple-500 to-purple-600 rounded-xl flex items-center justify-center mb-4">
+                  <Zap className="w-7 h-7 text-white" />
+                </div>
+                <h3 className="text-xl font-bold mb-3 text-gray-900">Lightning-Fast Results</h3>
+                <p className="text-gray-600 leading-relaxed">
+                  Get results in under 3 seconds thanks to our optimized infrastructure and direct API integrations with major search engines. 
+                  No waiting, no delays—just instant, accurate results every time you search.
+                </p>
+              </motion.div>
+
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.4 }}
+                viewport={{ once: true }}
+                className="glass-strong p-6 rounded-2xl"
+              >
+                <div className="w-14 h-14 bg-gradient-to-br from-pink-500 to-pink-600 rounded-xl flex items-center justify-center mb-4">
+                  <CheckCircle className="w-7 h-7 text-white" />
+                </div>
+                <h3 className="text-xl font-bold mb-3 text-gray-900">No Registration Required</h3>
+                <p className="text-gray-600 leading-relaxed">
+                  Start searching immediately without creating an account, providing email addresses, or filling out forms. 
+                  We respect your time and privacy—just upload your image and get results instantly.
+                </p>
+              </motion.div>
+
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.5 }}
+                viewport={{ once: true }}
+                className="glass-strong p-6 rounded-2xl"
+              >
+                <div className="w-14 h-14 bg-gradient-to-br from-cyan-500 to-cyan-600 rounded-xl flex items-center justify-center mb-4">
+                  <Shield className="w-7 h-7 text-white" />
+                </div>
+                <h3 className="text-xl font-bold mb-3 text-gray-900">Privacy-First Approach</h3>
+                <p className="text-gray-600 leading-relaxed">
+                  Your uploaded images are automatically deleted within 24 hours. We don't store, analyze, or share your personal data with third parties. 
+                  Your privacy is our top priority, and we never track or profile our users.
+                </p>
+              </motion.div>
+
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.6 }}
+                viewport={{ once: true }}
+                className="glass-strong p-6 rounded-2xl"
+              >
+                <div className="w-14 h-14 bg-gradient-to-br from-orange-500 to-orange-600 rounded-xl flex items-center justify-center mb-4">
+                  <Upload className="w-7 h-7 text-white" />
+                </div>
+                <h3 className="text-xl font-bold mb-3 text-gray-900">Support for All Image Formats</h3>
+                <p className="text-gray-600 leading-relaxed">
+                  Upload images in JPG, PNG, GIF, WebP, BMP, and other popular formats up to 10MB in size. 
+                  Our tool handles all common image types, ensuring compatibility no matter what format your image is in.
+                </p>
+              </motion.div>
             </div>
           </motion.div>
         </div>
@@ -431,27 +759,43 @@ const Home = () => {
             {[
               {
                 question: "What is reverse image search and how does it work?",
-                answer: "Reverse image search is a technique that allows you to upload an image and find similar images, duplicates, or the original source online. Our tool analyzes your uploaded image and searches across multiple engines including Google Lens, Bing Visual Search, Yandex Images, and TinEye to find matching or similar photos."
+                answer: "Reverse image search is a technique that allows you to upload an image and find similar images, duplicates, or the original source online. Our tool analyzes your uploaded image and searches across multiple engines including Google Lens, Bing Visual Search, Yandex Images, and TinEye to find matching or similar photos. The technology uses advanced computer vision algorithms to extract unique visual features from your image—such as colors, shapes, patterns, and objects—then compares these features against billions of indexed images across the web. This process happens in seconds, giving you comprehensive results from multiple search engines simultaneously."
               },
               {
                 question: "Is this reverse image search tool completely free?",
-                answer: "Yes! Our reverse image search tool is 100% free with no hidden charges, subscription fees, or usage limits. You can search for duplicate images, find similar photos, and locate original sources without any cost or registration required."
+                answer: "Yes! Our reverse image search tool is 100% free with no hidden charges, subscription fees, or usage limits. You can search for duplicate images, find similar photos, and locate original sources without any cost or registration required. Unlike many competing services that require paid subscriptions for advanced features or unlimited searches, we believe powerful image search technology should be accessible to everyone. There are no premium tiers, no feature restrictions, and no limits on the number of searches you can perform daily."
               },
               {
                 question: "What image formats are supported for reverse image search?",
-                answer: "Our tool supports all major image formats including JPG, PNG, GIF, WebP, and BMP. You can upload images up to 10MB in size. For best results, use high-quality images with clear details."
+                answer: "Our tool supports all major image formats including JPG, PNG, GIF, WebP, and BMP. You can upload images up to 10MB in size. For best results, use high-quality images with clear details. The higher the resolution and quality of your uploaded image, the more accurate the search results will be. We automatically optimize and process your image for compatibility with all four search engines (Google Lens, Bing, Yandex, and TinEye) to ensure maximum accuracy and coverage."
               },
               {
                 question: "How accurate is the reverse image search?",
-                answer: "Our multi-engine approach provides highly accurate results by combining the power of Google Lens, Bing Visual Search, Yandex Images, and TinEye. This comprehensive search increases the chances of finding duplicate images and similar photos across the internet."
+                answer: "Our multi-engine approach provides highly accurate results by combining the power of Google Lens, Bing Visual Search, Yandex Images, and TinEye. This comprehensive search increases the chances of finding duplicate images and similar photos across the internet. Each search engine has its own strengths: Google Lens excels at object and product recognition, Bing offers strong visual similarity matching, Yandex provides superior coverage for Eastern European content, and TinEye specializes in finding exact image matches. By searching all four simultaneously, you get the most complete and accurate results possible."
               },
               {
                 question: "Can I use this tool to find stolen or copied images?",
-                answer: "Absolutely! Our reverse image search tool is perfect for photographers, artists, and content creators who want to check if their images have been used without permission. It helps you find where your images appear online and identify potential copyright infringement."
+                answer: "Absolutely! Our reverse image search tool is perfect for photographers, artists, and content creators who want to check if their images have been used without permission. It helps you find where your images appear online and identify potential copyright infringement. Simply upload your original image, and our tool will scan billions of web pages across multiple search engines to find all instances where your image appears. This is invaluable for protecting your intellectual property, sending DMCA takedown notices, and monitoring unauthorized use of your creative work."
               },
               {
                 question: "Do you store uploaded images on your servers?",
-                answer: "No, we prioritize your privacy. Images are temporarily processed for search purposes and automatically deleted from our servers within 24 hours. We don't store, collect, or share your uploaded images with third parties."
+                answer: "No, we prioritize your privacy. Images are temporarily processed for search purposes and automatically deleted from our servers within 24 hours. We don't store, collect, or share your uploaded images with third parties. Your image is only kept in memory during the search process and is immediately removed from our systems once the results are delivered. We never use your images for training AI models, building databases, or any other purpose beyond providing your search results. Your privacy and data security are our top priorities."
+              },
+              {
+                question: "How long does it take to get reverse image search results?",
+                answer: "Our average search time is under 3 seconds! Thanks to our optimized infrastructure and direct API integrations with major search engines, you'll receive results almost instantly. The exact time may vary slightly depending on your internet connection speed and the size of your uploaded image, but most searches complete in 2-4 seconds. We process your image and query all four search engines (Google Lens, Bing, Yandex, and TinEye) simultaneously, which is why we can deliver comprehensive results so quickly."
+              },
+              {
+                question: "Can I search for images on mobile devices?",
+                answer: "Yes! Our reverse image search tool is fully responsive and works perfectly on smartphones, tablets, and desktop computers. The mobile experience is optimized for touch interfaces, allowing you to easily upload images from your photo gallery or take a new photo with your camera to search immediately. Whether you're using an iPhone, Android device, iPad, or any other mobile device, you'll have full access to all search features without any limitations."
+              },
+              {
+                question: "What's the difference between reverse image search and Google Lens?",
+                answer: "Google Lens is one specific reverse image search engine developed by Google, while our tool combines Google Lens with three other powerful search engines: Bing Visual Search, Yandex Images, and TinEye. This multi-engine approach gives you much broader coverage and more comprehensive results. While Google Lens is excellent for product identification and object recognition, TinEye specializes in finding exact matches, Yandex offers superior results for certain geographic regions, and Bing provides strong visual similarity matching. Using all four together maximizes your chances of finding what you're looking for."
+              },
+              {
+                question: "How can I get better reverse image search results?",
+                answer: "To get the best results from our reverse image search tool, follow these tips: (1) Use high-resolution, clear images with good lighting and minimal blur, (2) Crop out watermarks or logos that might interfere with matching, (3) Use images that clearly show the subject you want to find, avoiding cluttered backgrounds, (4) For product searches, use images showing the product from a clear angle, (5) Try uploading different versions of the same image if initial results aren't satisfactory. Higher quality images always produce more accurate and comprehensive search results."
               }
             ].map((faq, index) => (
               <motion.div
