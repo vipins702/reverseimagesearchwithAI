@@ -372,24 +372,24 @@ const UploadPage = () => {
                 <span className="text-5xl md:text-7xl">Image Sources</span>
               </h1>
             </div>
-            <p className="text-base text-gray-600 max-w-2xl mx-auto leading-relaxed mb-6">
+            <p className="text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed mb-6">
               Upload any image to instantly find duplicates, similar photos, and original sources across the web. Free reverse image search tool powered by Google Lens, Bing, Yandex & TinEye.
             </p>
             <div className="max-w-4xl mx-auto grid md:grid-cols-3 gap-4 text-sm">
               <div className="glass p-4 rounded-xl text-center">
                 <div className="text-2xl mb-2">🔍</div>
-                <h3 className="font-semibold text-blue-400 mb-1">Find Duplicate Images</h3>
-                <p className="text-gray-400 text-xs">Discover where your photos appear online and protect against unauthorized use</p>
+                <h3 className="font-semibold text-gray-800 mb-1">Find Duplicate Images</h3>
+                <p className="text-gray-600 text-sm">Discover where your photos appear online and protect against unauthorized use</p>
               </div>
               <div className="glass p-4 rounded-xl text-center">
                 <div className="text-2xl mb-2">🛒</div>
-                <h3 className="font-semibold text-green-400 mb-1">Product Research</h3>
-                <p className="text-gray-400 text-xs">Find original sources, compare prices, and identify unknown products instantly</p>
+                <h3 className="font-semibold text-gray-800 mb-1">Product Research</h3>
+                <p className="text-gray-600 text-sm">Find original sources, compare prices, and identify unknown products instantly</p>
               </div>
               <div className="glass p-4 rounded-xl text-center">
                 <div className="text-2xl mb-2">✅</div>
-                <h3 className="font-semibold text-purple-400 mb-1">Verify Authenticity</h3>
-                <p className="text-gray-400 text-xs">Check image authenticity and find original sources of viral photos</p>
+                <h3 className="font-semibold text-gray-800 mb-1">Verify Authenticity</h3>
+                <p className="text-gray-600 text-sm">Check image authenticity and find original sources of viral photos</p>
               </div>
             </div>
           </motion.div>
@@ -430,10 +430,10 @@ const UploadPage = () => {
                       </div>
                       
                       <div>
-                        <h3 className="text-base font-semibold mb-1">
+                        <h3 className="text-xl font-bold text-gray-800 mb-2">
                           {isDragActive ? 'Drop your image here' : 'Upload your image'}
                         </h3>
-                        <p className="text-gray-400 text-lg">
+                        <p className="text-gray-600 text-lg">
                           Drag & drop or click to select • JPG, PNG, WebP • Max 10MB
                         </p>
                       </div>
@@ -450,7 +450,7 @@ const UploadPage = () => {
                   
                   {/* Search Engine Preview Icons */}
                   <div className="mt-8 text-center">
-                    <p className="text-sm text-gray-400 mb-4">Powered by leading reverse image search engines:</p>
+                    <p className="text-sm text-gray-600 mb-4">Powered by leading reverse image search engines:</p>
                     <div className="flex justify-center items-center gap-6 flex-wrap">
                       {searchEngines.map((engine, index) => (
                         <motion.div
@@ -463,11 +463,11 @@ const UploadPage = () => {
                           <div className={`w-6 h-6 bg-gradient-to-br ${engine.color} rounded-lg flex items-center justify-center`}>
                             {React.cloneElement(engine.icon as React.ReactElement, { className: "w-3 h-3 text-gray-900" })}
                           </div>
-                          <span className="text-xs font-medium text-gray-900">{engine.name.split(' ')[0]}</span>
+                          <span className="text-sm font-semibold text-gray-800">{engine.name.split(' ')[0]}</span>
                         </motion.div>
                       ))}
                     </div>
-                    <p className="text-xs text-gray-500 mt-3">Upload an image above to search across all engines simultaneously</p>
+                    <p className="text-sm text-gray-600 mt-3">Upload an image above to search across all engines simultaneously</p>
                   </div>
                 </motion.div>) : (
 
@@ -482,8 +482,8 @@ const UploadPage = () => {
                   {/* Image Preview */}
                   <div className="glass-strong rounded-3xl p-6">
                     <div className="flex items-center justify-between mb-6">
-                      <h3 className="text-lg font-semibold flex items-center gap-2">
-                        <ImageIcon className="w-6 h-6 text-blue-400" />
+                      <h3 className="text-xl font-bold text-gray-800 flex items-center gap-2">
+                        <ImageIcon className="w-6 h-6 text-blue-500" />
                         Uploaded Image
                       </h3>
                       <motion.button
@@ -522,9 +522,9 @@ const UploadPage = () => {
                       <div className="space-y-4">
                         <div className="flex items-center gap-3">
                           <div className="w-3 h-3 bg-green-400 rounded-full" />
-                          <span className="font-medium">{uploadedImage.file.name}</span>
+                          <span className="font-semibold text-gray-800">{uploadedImage.file.name}</span>
                         </div>
-                        <div className="text-gray-400 space-y-2">
+                        <div className="text-gray-600 space-y-2">
                           <p>Size: {(uploadedImage.file.size / 1024 / 1024).toFixed(2)} MB</p>
                           <p>Type: {uploadedImage.file.type}</p>
                         </div>
@@ -566,38 +566,38 @@ const UploadPage = () => {
 
                   {/* How to Use Instructions */}
                   <div className="glass-strong rounded-3xl p-6 mb-8">
-                    <h3 className="text-lg font-semibold mb-4 flex items-center gap-2">
-                      <Eye className="w-6 h-6 text-blue-400" />
+                    <h3 className="text-xl font-bold text-gray-800 mb-4 flex items-center gap-2">
+                      <Eye className="w-6 h-6 text-blue-500" />
                       How to Use Reverse Image Search Engines
                     </h3>
-                    <div className="grid md:grid-cols-2 gap-4 text-sm text-gray-600">
+                    <div className="grid md:grid-cols-2 gap-4 text-sm text-gray-700">
                       <div className="space-y-2">
-                        <h4 className="font-semibold text-blue-400">🔍 Find Duplicate Images:</h4>
-                        <ul className="space-y-1 text-xs">
+                        <h4 className="font-bold text-gray-800">🔍 Find Duplicate Images:</h4>
+                        <ul className="space-y-1 text-sm">
                           <li>• Upload any photo to find exact matches</li>
                           <li>• Discover where your images appear online</li>
                           <li>• Check for unauthorized usage or theft</li>
                         </ul>
                       </div>
                       <div className="space-y-2">
-                        <h4 className="font-semibold text-green-400">🛒 Product & Shopping:</h4>
-                        <ul className="space-y-1 text-xs">
+                        <h4 className="font-bold text-gray-800">🛒 Product & Shopping:</h4>
+                        <ul className="space-y-1 text-sm">
                           <li>• Find original product sources</li>
                           <li>• Compare prices across websites</li>
                           <li>• Identify unknown products or items</li>
                         </ul>
                       </div>
                       <div className="space-y-2">
-                        <h4 className="font-semibold text-purple-400">📸 Copyright Protection:</h4>
-                        <ul className="space-y-1 text-xs">
+                        <h4 className="font-bold text-gray-800">📸 Copyright Protection:</h4>
+                        <ul className="space-y-1 text-sm">
                           <li>• Track unauthorized image usage</li>
                           <li>• Protect your photography work</li>
                           <li>• Monitor brand image violations</li>
                         </ul>
                       </div>
                       <div className="space-y-2">
-                        <h4 className="font-semibold text-red-400">✅ Verify Authenticity:</h4>
-                        <ul className="space-y-1 text-xs">
+                        <h4 className="font-bold text-gray-800">✅ Verify Authenticity:</h4>
+                        <ul className="space-y-1 text-sm">
                           <li>• Check if images are fake or real</li>
                           <li>• Find original source of viral photos</li>
                           <li>• Verify news and social media images</li>
@@ -608,8 +608,8 @@ const UploadPage = () => {
 
                   {/* Search Engines */}
                   <div className="glass-strong rounded-3xl p-6">
-                    <h3 className="text-lg font-semibold mb-4 flex items-center gap-2">
-                      <Search className="w-6 h-6 text-purple-400" />
+                    <h3 className="text-xl font-bold text-gray-800 mb-4 flex items-center gap-2">
+                      <Search className="w-6 h-6 text-purple-500" />
                       Choose Your Reverse Image Search Engine
                     </h3>
                     
@@ -635,8 +635,8 @@ const UploadPage = () => {
                               {engine.icon}
                             </div>
                             <div className="flex-1">
-                              <h4 className="font-semibold text-lg mb-2">{engine.name}</h4>
-                              <p className="text-gray-600 text-sm leading-relaxed">{engine.description}</p>
+                              <h4 className="font-bold text-lg text-gray-800 mb-2">{engine.name}</h4>
+                              <p className="text-gray-700 text-sm leading-relaxed">{engine.description}</p>
                               {uploadedImage.publicUrl && (
                                 <div className="mt-3 text-xs text-blue-400 font-medium">
                                   Click to search →

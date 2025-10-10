@@ -9,12 +9,14 @@ import HowItWorks from './pages/HowItWorks'
 import Upload from './pages/Upload'
 import Privacy from './pages/Privacy'
 import ScrollToTop from './components/ScrollToTop'
+import CustomCursor from './components/CustomCursor'
 
 function App() {
   return (
     <div className="min-h-screen cosmic-bg text-gray-900">
       <Toaster position="top-right" />
       <ScrollToTop />
+      <CustomCursor />
       
       {/* Floating cosmic elements */}
       <div className="fixed inset-0 pointer-events-none overflow-hidden">

@@ -147,7 +147,7 @@ const Home = () => {
       </Helmet>
 
       {/* Hero Section - 2025 Crystal Clear Design */}
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden cosmic-bg pt-20 pb-16">
+      <section className="relative flex items-center justify-center overflow-hidden cosmic-bg pt-16 pb-8 min-h-[70vh] md:min-h-[85vh]">
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-6xl mx-auto">
             <motion.div
@@ -289,7 +289,7 @@ const Home = () => {
       </section>
 
       {/* Search Engine Logos Section */}
-      <section className="py-4 cosmic-bg">
+      <section className="py-12 cosmic-bg mt-8">
         <div className="container mx-auto px-4">
           <motion.div 
             initial={{ opacity: 0, y: 20 }}
@@ -318,14 +318,19 @@ const Home = () => {
       </section>
 
       {/* Features Section - Bento Grid Design */}
-      <section className="pt-2 pb-24 cosmic-bg">
+      <section className="pt-20 pb-24 cosmic-bg">
         <div className="container mx-auto px-4">
+          {/* Elegant divider */}
+          <div className="flex justify-center mb-16">
+            <div className="w-24 h-0.5 bg-gradient-to-r from-transparent via-purple-400/30 to-transparent"></div>
+          </div>
+          
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
-            className="text-center mb-12 space-y-4"
+            className="text-center mb-12 space-y-6"
           >
             <h2 className="text-3xl md:text-5xl font-bold heading-premium mb-6">
               Why Choose Our <span className="gradient-text-cosmic">Free Reverse Image Search</span>?

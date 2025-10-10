@@ -5,6 +5,22 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Spacing and layout fixes */
+/* Prevent leftover negative margin classes from creating gaps */
+.-mt-8 { margin-top: 0 !important; }
+
+/* Fix spacing issues for sections with cosmic-bg (except hero) */
+section.cosmic-bg:not(.hero-section) {
+  min-height: auto !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+/* Ensure proper section spacing */
+section.mt-0 {
+  margin-top: 0 !important;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -571,4 +587,98 @@ body {
 ::-moz-selection {
   background: rgba(139, 92, 246, 0.2);
   color: #7C3AED;
+}
+
+/* Custom Cursor Trail Effects */
+body {
+  cursor: none;
+}
+
+.cursor-trail {
+  position: fixed;
+  width: 20px;
+  height: 20px;
+  background: radial-gradient(circle, rgba(139, 92, 246, 0.8) 0%, rgba(59, 130, 246, 0.6) 40%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9999;
+  transition: all 0.1s ease;
+  transform: translate(-50%, -50%);
+}
+
+.cursor-main {
+  position: fixed;
+  width: 12px;
+  height: 12px;
+  background: linear-gradient(135deg, #8B5CF6, #06B6D4);
+  border: 2px solid rgba(255, 255, 255, 0.9);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 10000;
+  transition: all 0.05s ease;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 20px rgba(139, 92, 246, 0.5);
+}
+
+.cursor-hover {
+  transform: translate(-50%, -50%) scale(1.5);
+  background: linear-gradient(135deg, #7C3AED, #0891B2);
+  box-shadow: 0 0 30px rgba(124, 58, 237, 0.7);
+}
+
+.cursor-click {
+  transform: translate(-50%, -50%) scale(0.8);
+  background: linear-gradient(135deg, #EC4899, #F59E0B);
+}
+
+/* Interactive Elements Cursor */
+a, button, .btn-cosmic, .glass, .hover-lift {
+  cursor: none !important;
+}
+
+/* Cursor Trail Particles */
+.cursor-particle {
+  position: fixed;
+  width: 4px;
+  height: 4px;
+  background: rgba(139, 92, 246, 0.6);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9998;
+  animation: particle-fade 0.8s ease-out forwards;
+}
+
+@keyframes particle-fade {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+}
+
+/* Magnetic Effect for Interactive Elements */
+.magnetic {
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.magnetic:hover {
+  transform: scale(1.05);
+}
+
+/* Cursor Text Following */
+.cursor-text {
+  position: fixed;
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  pointer-events: none;
+  z-index: 9999;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  transform: translate(-50%, -120%);
 }
