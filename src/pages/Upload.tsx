@@ -606,41 +606,124 @@ const UploadPage = () => {
                     </div>
                   </div>
 
-                  {/* Search Engines */}
-                  <div className="glass-strong rounded-3xl p-6">
-                    <h3 className="text-xl font-bold text-gray-800 mb-4 flex items-center gap-2">
-                      <Search className="w-6 h-6 text-purple-500" />
-                      Choose Your Reverse Image Search Engine
-                    </h3>
+                  {/* Search Engines - Enhanced with Attention-Grabbing Design */}
+                  <motion.div 
+                    initial={{ opacity: 0, scale: 0.95 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    transition={{ delay: 0.3 }}
+                    className="glass-strong rounded-3xl p-8 border-2 border-purple-400/30 shadow-2xl relative overflow-hidden"
+                  >
+                    {/* Animated Background Gradient */}
+                    <div className="absolute inset-0 bg-gradient-to-r from-purple-500/5 via-blue-500/5 to-purple-500/5 animate-pulse" />
                     
-                    <div className="grid lg:grid-cols-2 gap-4">
+                    {/* Attention Indicator */}
+                    <div className="absolute -top-1 -right-1">
+                      <motion.div
+                        animate={{ 
+                          scale: [1, 1.2, 1],
+                          opacity: [0.5, 1, 0.5]
+                        }}
+                        transition={{ 
+                          duration: 2,
+                          repeat: Infinity,
+                          ease: "easeInOut"
+                        }}
+                        className="w-24 h-24 bg-gradient-to-br from-purple-500/20 to-blue-500/20 rounded-full blur-2xl"
+                      />
+                    </div>
+
+                    <div className="relative z-10">
+                      {/* Header with Animation */}
+                      <motion.div 
+                        initial={{ y: -10, opacity: 0 }}
+                        animate={{ y: 0, opacity: 1 }}
+                        transition={{ delay: 0.4 }}
+                        className="text-center mb-8"
+                      >
+                        <div className="inline-flex items-center gap-3 mb-4">
+                          <motion.div
+                            animate={{ rotate: [0, 10, -10, 0] }}
+                            transition={{ duration: 2, repeat: Infinity }}
+                          >
+                            <Search className="w-8 h-8 text-purple-500" />
+                          </motion.div>
+                          <h3 className="text-2xl md:text-3xl font-bold gradient-text-cosmic">
+                            Choose Your Search Engine
+                          </h3>
+                          <motion.div
+                            animate={{ rotate: [0, -10, 10, 0] }}
+                            transition={{ duration: 2, repeat: Infinity }}
+                          >
+                            <Zap className="w-8 h-8 text-blue-500" />
+                          </motion.div>
+                        </div>
+                        <p className="text-lg text-gray-700 font-medium">
+                          👇 Click any engine below to start your reverse image search 👇
+                        </p>
+                        {uploadedImage.publicUrl && (
+                          <motion.p 
+                            animate={{ opacity: [0.5, 1, 0.5] }}
+                            transition={{ duration: 1.5, repeat: Infinity }}
+                            className="text-sm text-green-600 font-bold mt-2 flex items-center justify-center gap-2"
+                          >
+                            <CheckCircle className="w-4 h-4" />
+                            Image ready! Select an engine to search
+                          </motion.p>
+                        )}
+                      </motion.div>
+                    
+                    <div className="grid lg:grid-cols-2 gap-6">
                       {searchEngines.map((engine, index) =>
                     <motion.button
                       key={engine.name}
                       initial={{ opacity: 0, y: 20 }}
                       animate={{ opacity: 1, y: 0 }}
-                      transition={{ delay: index * 0.1 }}
-                      whileHover={{ scale: 1.02, y: -2 }}
-                      whileTap={{ scale: 0.98 }}
+                      transition={{ delay: 0.5 + index * 0.1 }}
+                      whileHover={{ scale: 1.05, y: -4 }}
+                      whileTap={{ scale: 0.95 }}
                       onClick={() => handleSearch(engine)}
                       disabled={!uploadedImage.publicUrl}
                       className={`
-                            search-btn p-6 glass rounded-2xl text-left
-                            transition-all duration-300 hover:shadow-2xl
-                            ${uploadedImage.publicUrl ? 'hover:border-white/30' : 'opacity-50 cursor-not-allowed'}
+                            group relative p-6 rounded-2xl text-left
+                            transition-all duration-300
+                            ${uploadedImage.publicUrl 
+                              ? 'bg-gradient-to-br from-white/80 to-white/40 hover:from-white hover:to-white/60 shadow-lg hover:shadow-2xl border-2 border-white/50 hover:border-purple-400/50 cursor-pointer' 
+                              : 'bg-gray-100/50 opacity-50 cursor-not-allowed border-2 border-gray-300/30'}
                           `}>
 
-                          <div className="flex items-start gap-4">
-                            <div className={`w-12 h-12 bg-gradient-to-br ${engine.color} rounded-xl flex items-center justify-center flex-shrink-0`}>
+                          {/* Hover Glow Effect */}
+                          {uploadedImage.publicUrl && (
+                            <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-purple-500/0 via-blue-500/0 to-purple-500/0 group-hover:from-purple-500/10 group-hover:via-blue-500/10 group-hover:to-purple-500/10 transition-all duration-300" />
+                          )}
+
+                          <div className="relative flex items-start gap-4">
+                            <motion.div 
+                              whileHover={{ rotate: 360 }}
+                              transition={{ duration: 0.6 }}
+                              className={`w-14 h-14 bg-gradient-to-br ${engine.color} rounded-xl flex items-center justify-center flex-shrink-0 shadow-lg`}
+                            >
                               {engine.icon}
-                            </div>
+                            </motion.div>
                             <div className="flex-1">
-                              <h4 className="font-bold text-lg text-gray-800 mb-2">{engine.name}</h4>
-                              <p className="text-gray-700 text-sm leading-relaxed">{engine.description}</p>
+                              <h4 className="font-bold text-xl text-gray-900 mb-2 group-hover:text-purple-700 transition-colors">
+                                {engine.name}
+                              </h4>
+                              <p className="text-gray-700 text-sm leading-relaxed mb-3">{engine.description}</p>
                               {uploadedImage.publicUrl && (
-                                <div className="mt-3 text-xs text-blue-400 font-medium">
-                                  Click to search →
-                                </div>
+                                <motion.div 
+                                  initial={{ x: -10, opacity: 0 }}
+                                  animate={{ x: 0, opacity: 1 }}
+                                  transition={{ delay: 0.2 }}
+                                  className="mt-3 flex items-center gap-2 text-sm font-bold text-purple-600"
+                                >
+                                  Click to search 
+                                  <motion.span
+                                    animate={{ x: [0, 5, 0] }}
+                                    transition={{ duration: 1, repeat: Infinity }}
+                                  >
+                                    →
+                                  </motion.span>
+                                </motion.div>
                               )}
                             </div>
                           </div>
@@ -648,28 +731,27 @@ const UploadPage = () => {
                     )}
                     </div>
                     
-                    {!uploadedImage.publicUrl && !isUploading &&
-                  <motion.div
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    className="mt-6 text-center text-gray-400">
-
+                    {!uploadedImage.publicUrl && !isUploading && (
+                      <motion.div
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        className="mt-6 text-center text-gray-400">
                         <p>Upload failed. Please try uploading your image again.</p>
                       </motion.div>
-                  }
+                    )}
                     
-                    {isUploading &&
-                  <motion.div
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    className="mt-6 text-center text-gray-400">
-
+                    {isUploading && (
+                      <motion.div
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        className="mt-6 text-center text-gray-400">
                         <p>Please wait for the image to finish uploading before searching</p>
                       </motion.div>
-                  }
-                  </div>
-                </motion.div>)
-              }
+                    )}
+                    </div>
+                  </motion.div>
+                </motion.div>
+              )}
             </AnimatePresence>
           </div>
 
