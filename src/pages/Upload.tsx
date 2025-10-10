@@ -350,7 +350,7 @@ const UploadPage = () => {
         `}</script>
       </Helmet>
 
-      <div className="pt-12 pb-8 min-h-screen flex flex-col justify-start">
+      <div className="pt-20 md:pt-28 pb-8 min-h-screen flex flex-col justify-start">
         <div className="container mx-auto px-4 max-w-screen-xl w-full">
           {/* Header */}
           <motion.div
@@ -367,9 +367,9 @@ const UploadPage = () => {
 
                 <Sparkles className="w-8 h-8 text-blue-400" />
               </motion.div>
-              <h1 className="text-4xl md:text-6xl font-bold heading-premium gradient-text-cosmic">
+              <h1 className="text-3xl md:text-5xl font-bold heading-premium gradient-text-cosmic">
                 Upload & Find <br className="hidden md:block" />
-                <span className="text-5xl md:text-7xl">Image Sources</span>
+                <span className="text-4xl md:text-6xl">Image Sources</span>
               </h1>
             </div>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed mb-6">

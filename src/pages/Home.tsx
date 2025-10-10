@@ -203,7 +203,7 @@ const Home = () => {
       </Helmet>
 
       {/* Hero Section - 2025 Crystal Clear Design */}
-      <section className="relative flex items-center justify-center overflow-hidden cosmic-bg pt-16 pb-8 min-h-[70vh] md:min-h-[85vh]">
+      <section className="relative flex items-center justify-center overflow-hidden cosmic-bg pt-24 md:pt-32 pb-8 min-h-[70vh] md:min-h-[85vh]">
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-6xl mx-auto">
             <motion.div
@@ -218,10 +218,10 @@ const Home = () => {
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.8, delay: 0.2 }}
-                  className="text-4xl md:text-6xl lg:text-7xl font-bold heading-premium gradient-text-cosmic leading-tight"
+                  className="text-3xl md:text-5xl lg:text-6xl font-bold heading-premium gradient-text-cosmic leading-tight mt-4"
                 >
                   Find Image Sources with <br/>
-                  <span className="text-5xl md:text-7xl lg:text-8xl">Free Reverse Search</span>
+                  <span className="text-4xl md:text-6xl lg:text-7xl">Free Reverse Search</span>
                 </motion.h1>
                 <motion.p 
                   initial={{ opacity: 0, y: 20 }}

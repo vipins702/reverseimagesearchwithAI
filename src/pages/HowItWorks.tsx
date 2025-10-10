@@ -189,7 +189,7 @@ const HowItWorks = () => {
       </Helmet>
 
       {/* Hero Section */}
-      <section className="pt-16 pb-12">
+      <section className="pt-24 md:pt-32 pb-12">
         <div className="container mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, y: 50 }}
@@ -197,7 +197,7 @@ const HowItWorks = () => {
             transition={{ duration: 0.8 }}
             className="text-center max-w-4xl mx-auto space-y-8"
           >
-            <h1 className="text-3xl md:text-4xl font-bold gradient-text-cosmic">
+            <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold gradient-text-cosmic mt-4">
               How Reverse Image Search Works - Find Duplicate Images
             </h1>
             <p className="text-lg text-gray-600 leading-relaxed">

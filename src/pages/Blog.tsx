@@ -99,7 +99,7 @@ const Blog = () => {
         `}</script>
       </Helmet>
 
-      <div className="pt-12 pb-8 min-h-screen">
+      <div className="pt-20 md:pt-28 pb-8 min-h-screen">
         <div className="container mx-auto px-4">
           {/* Header */}
           <motion.div
@@ -107,7 +107,7 @@ const Blog = () => {
             animate={{ opacity: 1, y: 0 }}
             className="text-center mb-16"
           >
-            <h1 className="text-4xl md:text-5xl font-bold mb-6 gradient-text-cosmic">
+            <h1 className="text-3xl md:text-4xl font-bold mb-6 gradient-text-cosmic mt-4">
               Reverse Image Search Blog
             </h1>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
