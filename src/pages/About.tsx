@@ -28,15 +28,15 @@ const About = () => {
   return (
     <>
       <Helmet>
-        <title>About Free Reverse Image Search Tool - Duplicate Image Finder Online</title>
-        <meta name="description" content="Learn about our free reverse image search tool and duplicate image finder. Multi-engine search across Google Lens, Bing, Yandex & TinEye. No registration required." />
-        <meta name="keywords" content="about reverse image search, duplicate image finder, free image search tool, google lens, bing visual search, yandex images, tineye" />
+        <title>About Our Free Reverse Image Search Tool - Find Similar Images Online</title>
+        <meta name="description" content="Discover the best free reverse image search tool for finding duplicates & similar photos. Multi-engine search with Google Lens, TinEye & more." />
+        <meta name="keywords" content="about reverse image search tool, best free image search, find similar images online free, reverse photo lookup, duplicate image detector, image source finder" />
         <meta name="author" content="checkduplicateimage" />
         <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
         <link rel="canonical" href="https://checkduplicateimage.online/about" />
         {/* Open Graph Meta Tags */}
-        <meta property="og:title" content="About Free Reverse Image Search Tool - Duplicate Image Finder Online" />
-        <meta property="og:description" content="Learn about our free reverse image search tool and duplicate image finder. Multi-engine search across Google Lens, Bing, Yandex & TinEye. No registration required." />
+        <meta property="og:title" content="About Our Free Reverse Image Search Tool - Find Similar Images Online" />
+        <meta property="og:description" content="Discover the best free reverse image search tool for finding duplicates & similar photos. Multi-engine search with Google Lens, TinEye & more." />
         <meta property="og:url" content="https://checkduplicateimage.online/about" />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="checkduplicateimage" />

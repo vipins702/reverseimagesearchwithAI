@@ -2,27 +2,32 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://checkduplicateimage.online/</loc>
-    <lastmod>2025-09-28T08:18:53+00:00</lastmod>
+    <lastmod>2025-10-10T10:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
     <priority>1.00</priority>
   </url>
   <url>
     <loc>https://checkduplicateimage.online/reverse-image-search</loc>
-    <lastmod>2025-10-02T08:18:53+00:00</lastmod>
+    <lastmod>2025-10-10T10:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://checkduplicateimage.online/about</loc>
+    <lastmod>2025-10-10T10:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>https://checkduplicateimage.online/how-it-works</loc>
-    <lastmod>2025-09-28T08:18:53+00:00</lastmod>
-    <priority>0.50</priority>
-  </url>
-  <url>
-    <loc>https://checkduplicateimage.online/about</loc>
-    <lastmod>2025-09-28T08:18:53+00:00</lastmod>
-    <priority>0.50</priority>
+    <lastmod>2025-10-10T10:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.80</priority>
   </url>
   <url>
     <loc>https://checkduplicateimage.online/privacy</loc>
-    <lastmod>2025-10-04T10:00:00+00:00</lastmod>
-    <priority>0.50</priority>
+    <lastmod>2025-10-10T10:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.60</priority>
   </url>
 </urlset>

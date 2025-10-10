@@ -149,7 +149,7 @@ const Privacy = () => {
               </p>
               
               <p className="text-sm text-gray-500 mt-8">
-                Last updated: October 4, 2025
+                Last updated: October 10, 2025
               </p>
             </div>
           </motion.div>

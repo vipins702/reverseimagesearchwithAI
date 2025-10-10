@@ -276,22 +276,22 @@ const UploadPage = () => {
   return (
     <>
       <Helmet>
-        <title>Free Reverse Image Search Tool - Upload & Find Duplicate Images</title>
-        <meta name="description" content="Upload any image to find duplicates, similar photos & original sources across Google Lens, Bing, Yandex & TinEye. Free reverse image search tool - no registration required." />
-        <meta name="keywords" content="upload image search, reverse image search tool, find duplicate images, google lens search, bing visual search, yandex image search, tineye search, image upload" />
+        <title>Upload Image to Find Duplicates - Free Reverse Image Search Tool</title>
+        <meta name="description" content="Drag & drop or upload any image to instantly find duplicates & similar photos online. Free reverse photo lookup tool with Google Lens & TinEye search." />
+        <meta name="keywords" content="upload image to search, drag drop image search, reverse photo lookup tool, duplicate image checker online, find similar images online free, image upload search" />
         <meta name="author" content="checkduplicateimage" />
         <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
         <link rel="canonical" href="https://checkduplicateimage.online/reverse-image-search" />
         {/* Open Graph Meta Tags */}
-        <meta property="og:title" content="Free Reverse Image Search Tool - Upload & Find Duplicate Images" />
-        <meta property="og:description" content="Upload any image to find duplicates, similar photos & original sources across Google Lens, Bing, Yandex & TinEye. Free reverse image search tool - no registration required." />
+        <meta property="og:title" content="Upload Image to Find Duplicates - Free Reverse Image Search Tool" />
+        <meta property="og:description" content="Drag & drop or upload any image to instantly find duplicates & similar photos online. Free reverse photo lookup tool with Google Lens & TinEye search." />
         <meta property="og:url" content="https://checkduplicateimage.online/reverse-image-search" />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="checkduplicateimage" />
         {/* Twitter Card Meta Tags */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Free Reverse Image Search Tool - Upload & Find Duplicate Images" />
-        <meta name="twitter:description" content="Upload any image to find duplicates, similar photos & original sources across Google Lens, Bing, Yandex & TinEye. Free reverse image search tool - no registration required." />
+        <meta name="twitter:title" content="Upload Image to Find Duplicates - Free Reverse Image Search Tool" />
+        <meta name="twitter:description" content="Drag & drop or upload any image to instantly find duplicates & similar photos online. Free reverse photo lookup tool with Google Lens & TinEye search." />
         {/* SoftwareApplication Schema Markup */}
         <script type="application/ld+json">{`
         {
@@ -367,7 +367,10 @@ const UploadPage = () => {
 
                 <Sparkles className="w-8 h-8 text-blue-400" />
               </motion.div>
-              <h1 className="text-3xl md:text-4xl font-bold gradient-text-cosmic">Free Reverse Image Search - Find Duplicate Images Online</h1>
+              <h1 className="text-4xl md:text-6xl font-bold heading-premium gradient-text-cosmic">
+                Upload & Find <br className="hidden md:block" />
+                <span className="text-5xl md:text-7xl">Image Sources</span>
+              </h1>
             </div>
             <p className="text-base text-gray-600 max-w-2xl mx-auto leading-relaxed mb-6">
               Upload any image to instantly find duplicates, similar photos, and original sources across the web. Free reverse image search tool powered by Google Lens, Bing, Yandex & TinEye.
@@ -497,7 +500,7 @@ const UploadPage = () => {
                       <div className="relative">
                         <img
                         src={uploadedImage.dataUrl}
-                        alt="Uploaded"
+                        alt="Uploaded image for reverse image search - find duplicates and similar photos online"
                         className="w-full h-64 object-cover rounded-xl" />
 
                         {isUploading &&

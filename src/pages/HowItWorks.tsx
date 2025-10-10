@@ -54,9 +54,9 @@ const HowItWorks = () => {
   return (
     <>
       <Helmet>
-        <title>How Reverse Image Search Works - Find Duplicate Images Step by Step Guide</title>
-        <meta name="description" content="Learn how our free reverse image search works to find duplicate images. Step-by-step guide using Google Lens, Bing, Yandex & TinEye. No registration required." />
-        <meta name="keywords" content="how reverse image search works, step by step guide, find duplicate images, google lens tutorial, bing visual search guide, yandex images, tineye guide" />
+        <title>How to Use Reverse Image Search - Step by Step Tutorial 2025</title>
+        <meta name="description" content="Learn how to find duplicate images with our free reverse image search tool. Easy 3-step tutorial using Google Lens, TinEye & more engines." />
+        <meta name="keywords" content="how to use reverse image search, reverse image search tutorial 2025, find duplicate images step by step, reverse photo lookup guide, image search tutorial" />
         <meta name="author" content="checkduplicateimage" />
         <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
         <link rel="canonical" href="https://checkduplicateimage.online/how-it-works" />
