@@ -3,6 +3,28 @@
   "builds": [],
   "buildCommand": "npm run build",
   "outputDirectory": "dist",
+  "redirects": [
+    {
+      "source": "/home.php",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/age_calculator",
+      "destination": "/reverse-image-search",
+      "permanent": true
+    },
+    {
+      "source": "/love_calculator",
+      "destination": "/reverse-image-search",
+      "permanent": true
+    },
+    {
+      "source": "/:path*.php",
+      "destination": "/",
+      "permanent": true
+    }
+  ],
   "rewrites": [
     { "source": "/(.*)", "destination": "/" }
   ]
