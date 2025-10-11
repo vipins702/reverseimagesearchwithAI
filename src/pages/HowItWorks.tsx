@@ -54,10 +54,10 @@ const HowItWorks = () => {
   return (
     <>
       <Helmet>
-        <title>How to Use Reverse Image Search - Step by Step Tutorial 2025</title>
-        <meta name="description" content="Learn how to find duplicate images with our free reverse image search tool. Easy 3-step tutorial using Google Lens, TinEye & more engines." />
-        <meta name="keywords" content="how to use reverse image search, reverse image search tutorial 2025, find duplicate images step by step, reverse photo lookup guide, image search tutorial" />
-        <meta name="author" content="checkduplicateimage" />
+        <title>How DuplicateDetective Works - Duplicate Image Detection Guide</title>
+        <meta name="description" content="Step-by-step guide on how DuplicateDetective detects duplicate images. Learn professional duplicate detection and reverse image search techniques." />
+        <meta name="keywords" content="how duplicate detective works, duplicate image detection guide, reverse image search tutorial, find duplicates step by step, image plagiarism detection" />
+        <meta name="author" content="DuplicateDetective" />
         <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
         <link rel="canonical" href="https://checkduplicateimage.online/how-it-works" />
         {/* HowTo Schema Markup */}
@@ -177,15 +177,15 @@ const HowItWorks = () => {
         }
         `}</script>
         {/* Open Graph Meta Tags */}
-        <meta property="og:title" content="How Reverse Image Search Works - Find Duplicate Images Step by Step Guide" />
-        <meta property="og:description" content="Learn how our free reverse image search works to find duplicate images. Step-by-step guide using Google Lens, Bing, Yandex & TinEye. No registration required." />
+        <meta property="og:title" content="How DuplicateDetective Works - Duplicate Image Detection Guide" />
+        <meta property="og:description" content="Step-by-step guide on how DuplicateDetective detects duplicate images. Learn professional duplicate detection and reverse image search techniques." />
         <meta property="og:url" content="https://checkduplicateimage.online/how-it-works" />
         <meta property="og:type" content="website" />
-        <meta property="og:site_name" content="checkduplicateimage" />
+        <meta property="og:site_name" content="DuplicateDetective" />
         {/* Twitter Card Meta Tags */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="How Reverse Image Search Works - Find Duplicate Images Step by Step Guide" />
-        <meta name="twitter:description" content="Learn how our free reverse image search works to find duplicate images. Step-by-step guide using Google Lens, Bing, Yandex & TinEye. No registration required." />
+        <meta name="twitter:title" content="How DuplicateDetective Works - Duplicate Image Detection Guide" />
+        <meta name="twitter:description" content="Step-by-step guide on how DuplicateDetective detects duplicate images. Learn professional duplicate detection and reverse image search techniques." />
       </Helmet>
 
       {/* Hero Section */}
@@ -198,10 +198,10 @@ const HowItWorks = () => {
             className="text-center max-w-4xl mx-auto space-y-8"
           >
             <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold gradient-text-cosmic mt-4">
-              How Reverse Image Search Works - Find Duplicate Images
+              How DuplicateDetective Works - Professional Duplicate Detection
             </h1>
             <p className="text-lg text-gray-600 leading-relaxed">
-              Learn how our free reverse image search tool finds duplicate images, similar photos, and original sources across Google Lens, Bing Visual Search, Yandex Images, and TinEye in just 3 simple steps.
+              Learn how DuplicateDetective's advanced technology detects duplicate images and finds original photo sources across Google Lens, Bing Visual Search, Yandex Images, and TinEye with professional-grade accuracy in just 3 simple steps.
             </p>
             
             <div className="flex justify-center">
@@ -228,7 +228,7 @@ const HowItWorks = () => {
             className="text-center mb-16"
           >
             <h2 className="text-2xl md:text-3xl font-bold mb-4">
-              <span className="gradient-text-cosmic">3 Simple Steps</span> to Find Duplicate Images
+              <span className="gradient-text-cosmic">3 Simple Steps</span> with DuplicateDetective
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
               Our streamlined process makes it easy to find duplicate images and similar photos across multiple search engines in seconds.
@@ -326,7 +326,7 @@ const HowItWorks = () => {
             className="text-center mb-12"
           >
             <h2 className="text-2xl md:text-3xl font-bold mb-4">
-              <span className="gradient-text-cosmic">Frequently Asked Questions</span> About Reverse Image Search
+              <span className="gradient-text-cosmic">Frequently Asked Questions</span> About DuplicateDetective
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
               Get answers to common questions about our free reverse image search tool and duplicate image detection process.
@@ -382,10 +382,10 @@ const HowItWorks = () => {
           >
             <div className="glass-strong rounded-3xl p-8 md:p-12">
               <h2 className="text-2xl md:text-3xl font-bold mb-4 gradient-text-cosmic">
-                Ready to Find Your Duplicate Images?
+                Ready to Use DuplicateDetective?
               </h2>
               <p className="text-lg text-gray-600 mb-8">
-                Upload your image now and discover duplicates, similar photos, and original sources across multiple search engines - completely free!
+                Upload your image now and let DuplicateDetective's professional-grade technology detect duplicates, find original sources, and verify photo authenticity across multiple search engines - completely free!
               </p>
               
               <div className="flex flex-col sm:flex-row gap-4 justify-center">

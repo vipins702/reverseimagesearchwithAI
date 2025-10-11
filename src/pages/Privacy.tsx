@@ -7,22 +7,22 @@ const Privacy = () => {
   return (
     <>
       <Helmet>
-        <title>Privacy Policy - Free Reverse Image Search Tool</title>
-        <meta name="description" content="Our privacy policy for the free reverse image search tool. Learn how we protect your data and handle uploaded images. No personal information stored." />
-        <meta name="keywords" content="privacy policy, reverse image search privacy, image search data policy, secure image search, GDPR compliant" />
-        <meta name="author" content="checkduplicateimage" />
+        <title>Privacy Policy - DuplicateDetective Data Protection & Security</title>
+        <meta name="description" content="Privacy policy for DuplicateDetective duplicate image detection tool. We protect your data with auto-deletion, no tracking and secure processing." />
+        <meta name="keywords" content="duplicate detective privacy policy, image detection privacy, duplicate finder data policy, secure image processing, GDPR compliant" />
+        <meta name="author" content="DuplicateDetective" />
         <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
         <link rel="canonical" href="https://checkduplicateimage.online/privacy" />
         {/* Open Graph Meta Tags */}
-        <meta property="og:title" content="Privacy Policy - Free Reverse Image Search Tool" />
-        <meta property="og:description" content="Our privacy policy for the free reverse image search tool. Learn how we protect your data and handle uploaded images. No personal information stored." />
+        <meta property="og:title" content="Privacy Policy - DuplicateDetective Data Protection & Security" />
+        <meta property="og:description" content="Privacy policy for DuplicateDetective duplicate image detection tool. We protect your data with auto-deletion, no tracking and secure processing." />
         <meta property="og:url" content="https://checkduplicateimage.online/privacy" />
         <meta property="og:type" content="website" />
-        <meta property="og:site_name" content="checkduplicateimage" />
+        <meta property="og:site_name" content="DuplicateDetective" />
         {/* Twitter Card Meta Tags */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Privacy Policy - Free Reverse Image Search Tool" />
-        <meta name="twitter:description" content="Our privacy policy for the free reverse image search tool. Learn how we protect your data and handle uploaded images. No personal information stored." />
+        <meta name="twitter:title" content="Privacy Policy - DuplicateDetective Data Protection & Security" />
+        <meta name="twitter:description" content="Privacy policy for DuplicateDetective duplicate image detection tool. We protect your data with auto-deletion, no tracking and secure processing." />
         {/* Canonical BreadcrumbList Schema */}
         <script type="application/ld+json">{`
         {
@@ -62,9 +62,9 @@ const Privacy = () => {
             animate={{ opacity: 1, y: 0 }}
             className="text-center mb-12"
           >
-            <h1 className="text-3xl md:text-4xl font-bold mb-4 gradient-text-cosmic mt-4">Privacy Policy</h1>
+            <h1 className="text-3xl md:text-4xl font-bold mb-4 gradient-text-cosmic mt-4">DuplicateDetective Privacy Policy</h1>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              How we handle your data and protect your privacy when using our reverse image search tool
+              How DuplicateDetective handles your data and protects your privacy when using our duplicate image detection and reverse search tool
             </p>
           </motion.div>
 
@@ -84,7 +84,7 @@ const Privacy = () => {
               </div>
               
               <p>
-                At checkduplicateimage.online, we prioritize your privacy and data security. When you use our reverse image search tool:
+                At DuplicateDetective (checkduplicateimage.online), we prioritize your privacy and data security. When you use our duplicate image detection and reverse search tool:
               </p>
               
               <ul>
@@ -119,7 +119,7 @@ const Privacy = () => {
               </div>
               
               <p>
-                Our reverse image search tool integrates with the following third-party services:
+                DuplicateDetective's duplicate image detection and reverse search tool integrates with the following third-party services:
               </p>
               
               <ul>

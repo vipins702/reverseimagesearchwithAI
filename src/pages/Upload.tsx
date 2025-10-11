@@ -276,18 +276,18 @@ const UploadPage = () => {
   return (
     <>
       <Helmet>
-        <title>Upload Image to Find Duplicates - Free Reverse Image Search Tool</title>
-        <meta name="description" content="Drag & drop or upload any image to instantly find duplicates & similar photos online. Free reverse photo lookup tool with Google Lens & TinEye search." />
-        <meta name="keywords" content="upload image to search, drag drop image search, reverse photo lookup tool, duplicate image checker online, find similar images online free, image upload search" />
-        <meta name="author" content="checkduplicateimage" />
+        <title>Upload Image - DuplicateDetective Duplicate Detection Tool</title>
+        <meta name="description" content="Drag & drop or upload any image to DuplicateDetective for instant duplicate detection & reverse image search. Professional-grade duplicate photo finder." />
+        <meta name="keywords" content="duplicate detective upload, drag drop duplicate detection, duplicate image finder, image plagiarism checker, reverse photo lookup tool, duplicate photo detector" />
+        <meta name="author" content="DuplicateDetective" />
         <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
         <link rel="canonical" href="https://checkduplicateimage.online/reverse-image-search" />
         {/* Open Graph Meta Tags */}
-        <meta property="og:title" content="Upload Image to Find Duplicates - Free Reverse Image Search Tool" />
-        <meta property="og:description" content="Drag & drop or upload any image to instantly find duplicates & similar photos online. Free reverse photo lookup tool with Google Lens & TinEye search." />
+        <meta property="og:title" content="Upload Image - DuplicateDetective Duplicate Detection Tool" />
+        <meta property="og:description" content="Drag & drop or upload any image to DuplicateDetective for instant duplicate detection & reverse image search. Professional-grade duplicate photo finder." />
         <meta property="og:url" content="https://checkduplicateimage.online/reverse-image-search" />
         <meta property="og:type" content="website" />
-        <meta property="og:site_name" content="checkduplicateimage" />
+        <meta property="og:site_name" content="DuplicateDetective" />
         {/* Twitter Card Meta Tags */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Upload Image to Find Duplicates - Free Reverse Image Search Tool" />

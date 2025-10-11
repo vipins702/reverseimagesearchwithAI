@@ -54,7 +54,7 @@ const Blog = () => {
         <title>Reverse Image Search Blog - Tips, Tutorials & Best Practices</title>
         <meta name="description" content="Learn reverse image search techniques, find duplicate images, and discover the best practices for using Google Lens, TinEye & other tools effectively." />
         <meta name="keywords" content="reverse image search blog, image search tutorials, duplicate image finder tips, photography protection, image source finder" />
-        <meta name="author" content="checkduplicateimage" />
+        <meta name="author" content="DuplicateDetective" />
         <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
         <link rel="canonical" href="https://checkduplicateimage.online/blog" />
         
@@ -63,7 +63,7 @@ const Blog = () => {
         <meta property="og:description" content="Learn reverse image search techniques, find duplicate images, and discover the best practices for using Google Lens, TinEye & other tools effectively." />
         <meta property="og:url" content="https://checkduplicateimage.online/blog" />
         <meta property="og:type" content="website" />
-        <meta property="og:site_name" content="checkduplicateimage" />
+        <meta property="og:site_name" content="DuplicateDetective" />
         
         {/* Twitter Card Meta Tags */}
         <meta name="twitter:card" content="summary_large_image" />
@@ -80,7 +80,7 @@ const Blog = () => {
           "url": "https://checkduplicateimage.online/blog",
           "publisher": {
             "@type": "Organization",
-            "name": "CheckDuplicateImage",
+            "name": "DuplicateDetective",
             "url": "https://checkduplicateimage.online"
           },
           "blogPost": [
@@ -91,7 +91,7 @@ const Blog = () => {
               "datePublished": "2025-10-10",
               "author": {
                 "@type": "Organization",
-                "name": "CheckDuplicateImage"
+                "name": "DuplicateDetective"
               }
             }
           ]
@@ -142,7 +142,7 @@ const Blog = () => {
                 <div className="flex items-center justify-between">
                   <div className="flex items-center gap-2 text-sm text-gray-500">
                     <User className="w-4 h-4" />
-                    <span>CheckDuplicateImage Team</span>
+                    <span>DuplicateDetective Team</span>
                   </div>
                   <Link
                     to={`/blog/${blogPosts[0].slug}`}

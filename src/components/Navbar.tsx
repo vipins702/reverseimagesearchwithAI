@@ -32,7 +32,7 @@ const Navbar = () => {
                 <Sparkles className="w-6 h-6 text-blue-600" />
               </motion.div>
               <span className="text-xl font-bold gradient-text-cosmic">
-                checkduplicateimage
+                DuplicateDetective
               </span>
             </Link>
 

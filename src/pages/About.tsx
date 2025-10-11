@@ -28,28 +28,28 @@ const About = () => {
   return (
     <>
       <Helmet>
-        <title>About Our Free Reverse Image Search Tool - Find Similar Images Online</title>
-        <meta name="description" content="Discover the best free reverse image search tool for finding duplicates & similar photos. Multi-engine search with Google Lens, TinEye & more." />
-        <meta name="keywords" content="about reverse image search tool, best free image search, find similar images online free, reverse photo lookup, duplicate image detector, image source finder" />
-        <meta name="author" content="checkduplicateimage" />
+        <title>About DuplicateDetective - Professional Duplicate Image Detection Tool</title>
+        <meta name="description" content="Learn about DuplicateDetective, the most comprehensive free duplicate image detection and reverse search tool. Find duplicates, verify authenticity and protect copyrights." />
+        <meta name="keywords" content="about duplicate detective, duplicate image detector, reverse image search tool, image plagiarism checker, duplicate photo finder, image verification tool" />
+        <meta name="author" content="DuplicateDetective" />
         <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
         <link rel="canonical" href="https://checkduplicateimage.online/about" />
         {/* Open Graph Meta Tags */}
-        <meta property="og:title" content="About Our Free Reverse Image Search Tool - Find Similar Images Online" />
-        <meta property="og:description" content="Discover the best free reverse image search tool for finding duplicates & similar photos. Multi-engine search with Google Lens, TinEye & more." />
+        <meta property="og:title" content="About DuplicateDetective - Professional Duplicate Image Detection Tool" />
+        <meta property="og:description" content="Learn about DuplicateDetective, the most comprehensive free duplicate image detection and reverse search tool. Find duplicates, verify authenticity and protect copyrights." />
         <meta property="og:url" content="https://checkduplicateimage.online/about" />
         <meta property="og:type" content="website" />
-        <meta property="og:site_name" content="checkduplicateimage" />
+        <meta property="og:site_name" content="DuplicateDetective" />
         {/* Twitter Card Meta Tags */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="About Free Reverse Image Search Tool - Duplicate Image Finder Online" />
-        <meta name="twitter:description" content="Learn about our free reverse image search tool and duplicate image finder. Multi-engine search across Google Lens, Bing, Yandex & TinEye. No registration required." />
+        <meta name="twitter:title" content="About DuplicateDetective - Professional Duplicate Image Detection Tool" />
+        <meta name="twitter:description" content="Learn about DuplicateDetective, the most comprehensive free duplicate image detection and reverse search tool. Find duplicates, verify authenticity and protect copyrights." />
         {/* Enhanced Organization Schema */}
         <script type="application/ld+json">{`
         {
           "@context": "https://schema.org",
           "@type": "Organization",
-          "name": "checkduplicateimage",
+          "name": "DuplicateDetective",
           "alternateName": "Free Reverse Image Search Tool",
           "url": "https://checkduplicateimage.online/",
           "description": "Free reverse image search tool powered by multiple search engines to find duplicate images, similar photos, and original sources. No registration required.",
@@ -125,10 +125,10 @@ const About = () => {
             className="text-center max-w-4xl mx-auto space-y-8"
           >
             <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold gradient-text-cosmic mt-4">
-              About Our Free Reverse Image Search Tool
+              About DuplicateDetective - Professional Duplicate Image Detection
             </h1>
             <p className="text-lg text-gray-600 leading-relaxed">
-              The world's most comprehensive free reverse image search platform. Find duplicate images, similar photos, and original sources across Google Lens, Bing Visual Search, Yandex Images, and TinEye.
+              DuplicateDetective is the world's most comprehensive free duplicate image detection and reverse search platform. Find duplicate images, verify photo authenticity, and protect your copyrights across Google Lens, Bing Visual Search, Yandex Images, and TinEye.
             </p>
             
             <div className="grid md:grid-cols-3 gap-8 mt-12">
@@ -161,10 +161,10 @@ const About = () => {
               className="space-y-6"
             >
               <h2 className="text-2xl md:text-3xl font-bold">
-                Our Mission: <span className="gradient-text-cosmic">Free Reverse Image Search for Everyone</span>
+                Our Mission: <span className="gradient-text-cosmic">Professional Duplicate Detection for Everyone</span>
               </h2>
               <p className="text-lg text-gray-600 leading-relaxed">
-                We believe reverse image search should be accessible to everyone. Our free tool combines the power of multiple search engines to help you find duplicate images, protect your copyrights, and verify image authenticity.
+                DuplicateDetective believes professional-grade duplicate image detection should be accessible to everyone. Our free tool combines advanced AI technology with multiple search engines to help you find duplicate images, protect your copyrights, and verify image authenticity with unmatched precision.
               </p>
               
               <div className="space-y-3">
@@ -198,7 +198,7 @@ const About = () => {
               className="glass-strong rounded-3xl p-8"
             >
               <h3 className="text-xl font-bold mb-6 text-center gradient-text-cosmic">
-                🔍 Why Choose Our Free Tool?
+                🔍 Why Choose DuplicateDetective?
               </h3>
               
               <div className="space-y-4">
@@ -242,10 +242,10 @@ const About = () => {
             className="text-center mb-12"
           >
             <h2 className="text-2xl md:text-3xl font-bold mb-4">
-              What Makes Our <span className="gradient-text-cosmic">Reverse Image Search</span> Special?
+              What Makes <span className="gradient-text-cosmic">DuplicateDetective</span> Special?
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              Advanced technology meets user-friendly design to provide the most comprehensive free reverse image search experience.
+              Advanced duplicate detection technology meets user-friendly design to provide the most comprehensive free duplicate image detection and reverse search experience.
             </p>
           </motion.div>
 
@@ -284,10 +284,10 @@ const About = () => {
             className="glass-strong rounded-3xl p-12 text-center space-y-6 max-w-3xl mx-auto"
           >
             <h2 className="text-2xl md:text-3xl font-bold">
-              Ready to Start Your <span className="gradient-text-cosmic">Free Reverse Image Search</span>?
+              Ready to Start Using <span className="gradient-text-cosmic">DuplicateDetective</span>?
             </h2>
             <p className="text-lg text-gray-600">
-              Join millions who trust our free reverse image search tool to find duplicates, verify authenticity, and protect their images.
+              Join millions who trust DuplicateDetective to find duplicate images, verify photo authenticity, and protect their visual content with professional-grade detection technology.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
