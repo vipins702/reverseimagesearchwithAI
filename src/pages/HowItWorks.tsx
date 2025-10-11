@@ -182,10 +182,16 @@ const HowItWorks = () => {
         <meta property="og:url" content="https://checkduplicateimage.online/how-it-works" />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="DuplicateDetective" />
+        <meta property="og:image" content="https://checkduplicateimage.online/og-image.jpg" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:image:alt" content="How DuplicateDetective Works - Duplicate Image Detection Guide" />
         {/* Twitter Card Meta Tags */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="How DuplicateDetective Works - Duplicate Image Detection Guide" />
         <meta name="twitter:description" content="Step-by-step guide on how DuplicateDetective detects duplicate images. Learn professional duplicate detection and reverse image search techniques." />
+        <meta name="twitter:image" content="https://checkduplicateimage.online/og-image.jpg" />
+        <meta name="twitter:image:alt" content="How DuplicateDetective Works - Duplicate Image Detection Guide" />
       </Helmet>
 
       {/* Hero Section */}

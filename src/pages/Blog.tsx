@@ -51,9 +51,9 @@ const Blog = () => {
   return (
     <>
       <Helmet>
-        <title>Reverse Image Search Blog - Tips, Tutorials & Best Practices</title>
-        <meta name="description" content="Learn reverse image search techniques, find duplicate images, and discover the best practices for using Google Lens, TinEye & other tools effectively." />
-        <meta name="keywords" content="reverse image search blog, image search tutorials, duplicate image finder tips, photography protection, image source finder" />
+        <title>DuplicateDetective Blog - Expert Tips & Duplicate Detection Guides</title>
+        <meta name="description" content="Expert duplicate image detection tips and tutorials. Learn advanced techniques with DuplicateDetective for copyright protection and professional reverse search." />
+        <meta name="keywords" content="duplicate detective blog, duplicate image detection tips, reverse image search tutorials, copyright protection, image plagiarism detection" />
         <meta name="author" content="DuplicateDetective" />
         <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
         <link rel="canonical" href="https://checkduplicateimage.online/blog" />
@@ -64,11 +64,17 @@ const Blog = () => {
         <meta property="og:url" content="https://checkduplicateimage.online/blog" />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="DuplicateDetective" />
+        <meta property="og:image" content="https://checkduplicateimage.online/og-image.jpg" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:image:alt" content="DuplicateDetective Blog - Expert Tips & Duplicate Detection Guides" />
         
         {/* Twitter Card Meta Tags */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Reverse Image Search Blog - Tips, Tutorials & Best Practices" />
         <meta name="twitter:description" content="Learn reverse image search techniques, find duplicate images, and discover the best practices for using Google Lens, TinEye & other tools effectively." />
+        <meta name="twitter:image" content="https://checkduplicateimage.online/og-image.jpg" />
+        <meta name="twitter:image:alt" content="DuplicateDetective Blog - Expert Tips & Duplicate Detection Guides" />
         
         {/* Blog Schema Markup */}
         <script type="application/ld+json">{`

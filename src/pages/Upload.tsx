@@ -288,10 +288,16 @@ const UploadPage = () => {
         <meta property="og:url" content="https://checkduplicateimage.online/reverse-image-search" />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="DuplicateDetective" />
+        <meta property="og:image" content="https://checkduplicateimage.online/og-image.jpg" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:image:alt" content="Upload Image - DuplicateDetective Duplicate Detection Tool" />
         {/* Twitter Card Meta Tags */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Upload Image to Find Duplicates - Free Reverse Image Search Tool" />
         <meta name="twitter:description" content="Drag & drop or upload any image to instantly find duplicates & similar photos online. Free reverse photo lookup tool with Google Lens & TinEye search." />
+        <meta name="twitter:image" content="https://checkduplicateimage.online/og-image.jpg" />
+        <meta name="twitter:image:alt" content="Upload Image - DuplicateDetective Duplicate Detection Tool" />
         {/* SoftwareApplication Schema Markup */}
         <script type="application/ld+json">{`
         {

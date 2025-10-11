@@ -40,10 +40,16 @@ const About = () => {
         <meta property="og:url" content="https://checkduplicateimage.online/about" />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="DuplicateDetective" />
+        <meta property="og:image" content="https://checkduplicateimage.online/og-image.jpg" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:image:alt" content="About DuplicateDetective - Professional Duplicate Image Detection Tool" />
         {/* Twitter Card Meta Tags */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="About DuplicateDetective - Professional Duplicate Image Detection Tool" />
         <meta name="twitter:description" content="Learn about DuplicateDetective, the most comprehensive free duplicate image detection and reverse search tool. Find duplicates, verify authenticity and protect copyrights." />
+        <meta name="twitter:image" content="https://checkduplicateimage.online/og-image.jpg" />
+        <meta name="twitter:image:alt" content="About DuplicateDetective - Professional Duplicate Image Detection Tool" />
         {/* Enhanced Organization Schema */}
         <script type="application/ld+json">{`
         {

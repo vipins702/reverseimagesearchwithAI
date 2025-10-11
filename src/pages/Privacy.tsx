@@ -19,10 +19,16 @@ const Privacy = () => {
         <meta property="og:url" content="https://checkduplicateimage.online/privacy" />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="DuplicateDetective" />
+        <meta property="og:image" content="https://checkduplicateimage.online/og-image.jpg" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:image:alt" content="Privacy Policy - DuplicateDetective Data Protection & Security" />
         {/* Twitter Card Meta Tags */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Privacy Policy - DuplicateDetective Data Protection & Security" />
         <meta name="twitter:description" content="Privacy policy for DuplicateDetective duplicate image detection tool. We protect your data with auto-deletion, no tracking and secure processing." />
+        <meta name="twitter:image" content="https://checkduplicateimage.online/og-image.jpg" />
+        <meta name="twitter:image:alt" content="Privacy Policy - DuplicateDetective Data Protection & Security" />
         {/* Canonical BreadcrumbList Schema */}
         <script type="application/ld+json">{`
         {
