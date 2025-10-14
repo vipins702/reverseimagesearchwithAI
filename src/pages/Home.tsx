@@ -324,11 +324,42 @@ const Home = () => {
               </motion.p>
             </motion.div>
 
+            {/* Hero Image Showcase - Critical for SEO */}
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 1.3 }}
+              className="mt-16 max-w-5xl mx-auto"
+            >
+              <div className="relative rounded-3xl overflow-hidden shadow-2xl element-3d">
+                <img
+                  src="/images/hero-reverse-image-search.jpg"
+                  alt="DuplicateDetective reverse image search tool interface showing upload feature, AI analysis, and multi-engine search results across Google Lens, Bing Visual Search, Yandex Images, and TinEye for finding duplicate images and similar photos"
+                  className="w-full h-auto object-cover"
+                  width="1200"
+                  height="630"
+                  loading="eager"
+                  fetchPriority="high"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent"></div>
+                <div className="absolute bottom-6 left-6 right-6">
+                  <div className="glass-strong backdrop-blur-xl px-6 py-4 rounded-2xl">
+                    <p className="text-white font-semibold text-lg md:text-xl">
+                      Upload Once → Search Everywhere: Google, Bing, Yandex & TinEye
+                    </p>
+                    <p className="text-white/90 text-sm mt-2">
+                      Find duplicate images, track copyright infringement, and discover image sources in seconds
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </motion.div>
+
             {/* Stats Section - Separated from main content */}
             <motion.div 
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 1.4 }}
+              transition={{ duration: 0.8, delay: 1.5 }}
               className="mt-16 max-w-4xl mx-auto"
             >
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -440,6 +471,162 @@ const Home = () => {
                 </p>
               </div>
             </div>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Visual Step-by-Step Guide - Critical for SEO */}
+      <section className="py-20 bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50">
+        <div className="container mx-auto px-4">
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            className="max-w-6xl mx-auto"
+          >
+            <div className="text-center mb-16">
+              <h2 className="text-3xl md:text-4xl font-bold mb-6">
+                How to Use <span className="gradient-text-cosmic">DuplicateDetective</span> - Simple 3-Step Process
+              </h2>
+              <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+                Find duplicate images, track copyright infringement, and discover image sources in under 10 seconds
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-3 gap-8 mb-16">
+              {/* Step 1: Upload */}
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.1 }}
+                viewport={{ once: true }}
+                className="text-center"
+              >
+                <div className="relative mb-6 group">
+                  <div className="glass-strong rounded-2xl p-6 hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+                    <div className="w-full h-48 bg-gradient-to-br from-blue-100 to-blue-200 rounded-xl flex items-center justify-center mb-4">
+                      <Upload className="w-20 h-20 text-blue-600" />
+                    </div>
+                    <div className="absolute -top-4 -left-4 w-14 h-14 bg-gradient-to-br from-blue-500 to-blue-600 text-white rounded-2xl flex items-center justify-center font-bold text-2xl shadow-lg">
+                      1
+                    </div>
+                  </div>
+                </div>
+                <h3 className="text-xl font-bold mb-3 text-gray-900">Upload Your Image</h3>
+                <p className="text-gray-600 leading-relaxed">
+                  Drag & drop or click to upload any JPG, PNG, GIF, WebP image up to 10MB. Also supports image URL pasting.
+                </p>
+              </motion.div>
+
+              {/* Step 2: AI Analysis */}
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.2 }}
+                viewport={{ once: true }}
+                className="text-center"
+              >
+                <div className="relative mb-6 group">
+                  <div className="glass-strong rounded-2xl p-6 hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+                    <div className="w-full h-48 bg-gradient-to-br from-purple-100 to-purple-200 rounded-xl flex items-center justify-center mb-4">
+                      <Zap className="w-20 h-20 text-purple-600" />
+                    </div>
+                    <div className="absolute -top-4 -left-4 w-14 h-14 bg-gradient-to-br from-purple-500 to-purple-600 text-white rounded-2xl flex items-center justify-center font-bold text-2xl shadow-lg">
+                      2
+                    </div>
+                  </div>
+                </div>
+                <h3 className="text-xl font-bold mb-3 text-gray-900">AI-Powered Analysis</h3>
+                <p className="text-gray-600 leading-relaxed">
+                  Our advanced AI extracts visual features, colors, shapes, and patterns to create a unique image fingerprint.
+                </p>
+              </motion.div>
+
+              {/* Step 3: Results */}
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.3 }}
+                viewport={{ once: true }}
+                className="text-center"
+              >
+                <div className="relative mb-6 group">
+                  <div className="glass-strong rounded-2xl p-6 hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+                    <div className="w-full h-48 bg-gradient-to-br from-green-100 to-green-200 rounded-xl flex items-center justify-center mb-4">
+                      <Search className="w-20 h-20 text-green-600" />
+                    </div>
+                    <div className="absolute -top-4 -left-4 w-14 h-14 bg-gradient-to-br from-green-500 to-green-600 text-white rounded-2xl flex items-center justify-center font-bold text-2xl shadow-lg">
+                      3
+                    </div>
+                  </div>
+                </div>
+                <h3 className="text-xl font-bold mb-3 text-gray-900">Get Instant Results</h3>
+                <p className="text-gray-600 leading-relaxed">
+                  View duplicate images, similar photos, and original sources across Google, Bing, Yandex & TinEye in seconds.
+                </p>
+              </motion.div>
+            </div>
+
+            {/* Copyright Protection Image Section */}
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.4 }}
+              viewport={{ once: true }}
+              className="glass-strong rounded-3xl p-8 md:p-12"
+            >
+              <div className="grid md:grid-cols-2 gap-8 items-center">
+                <div>
+                  <h3 className="text-2xl md:text-3xl font-bold mb-6 gradient-text-cosmic">
+                    Protect Your Creative Work with Duplicate Detection
+                  </h3>
+                  <div className="space-y-4">
+                    <div className="flex items-start gap-3">
+                      <CheckCircle className="w-6 h-6 text-green-500 mt-1 flex-shrink-0" />
+                      <div>
+                        <h4 className="font-semibold text-gray-900 mb-1">Track Copyright Infringement</h4>
+                        <p className="text-gray-600">Find unauthorized use of your photos, artwork, and designs across the web</p>
+                      </div>
+                    </div>
+                    <div className="flex items-start gap-3">
+                      <CheckCircle className="w-6 h-6 text-blue-500 mt-1 flex-shrink-0" />
+                      <div>
+                        <h4 className="font-semibold text-gray-900 mb-1">Monitor Image Usage</h4>
+                        <p className="text-gray-600">Regular reverse image searches help photographers and artists protect their intellectual property</p>
+                      </div>
+                    </div>
+                    <div className="flex items-start gap-3">
+                      <CheckCircle className="w-6 h-6 text-purple-500 mt-1 flex-shrink-0" />
+                      <div>
+                        <h4 className="font-semibold text-gray-900 mb-1">Find Original Sources</h4>
+                        <p className="text-gray-600">Identify where images first appeared and track their distribution online</p>
+                      </div>
+                    </div>
+                  </div>
+                  <Link
+                    to="/reverse-image-search"
+                    className="inline-flex items-center gap-2 mt-6 bg-gradient-to-r from-blue-500 to-purple-600 text-white px-6 py-3 rounded-xl font-semibold hover:shadow-xl transition-all duration-300"
+                  >
+                    Start Protecting Your Images
+                    <ArrowRight className="w-5 h-5" />
+                  </Link>
+                </div>
+                <div className="relative">
+                  <img
+                    src="/images/copyright-protection-duplicate-finder.jpg"
+                    alt="Copyright protection and duplicate image tracking using reverse image search to find unauthorized use of photos and artwork online"
+                    className="w-full h-auto rounded-2xl shadow-2xl"
+                    width="600"
+                    height="400"
+                    loading="lazy"
+                  />
+                  <div className="absolute -bottom-4 -right-4 bg-white rounded-xl shadow-xl px-4 py-2">
+                    <p className="text-sm font-semibold text-gray-900">✓ Track 1000+ Images Monthly</p>
+                  </div>
+                </div>
+              </div>
+            </motion.div>
           </motion.div>
         </div>
       </section>

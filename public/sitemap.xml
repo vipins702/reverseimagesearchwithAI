@@ -1,32 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://checkduplicateimage.online/</loc>
-    <lastmod>2025-10-10T10:00:00+00:00</lastmod>
+    <lastmod>2025-10-14</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.00</priority>
+    <image:image>
+      <image:loc>https://checkduplicateimage.online/images/hero-reverse-image-search.jpg</image:loc>
+      <image:title>DuplicateDetective Reverse Image Search Interface</image:title>
+      <image:caption>Upload once and search everywhere - Find duplicate images across Google, Bing, Yandex and TinEye</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://checkduplicateimage.online/images/copyright-protection-duplicate-finder.jpg</image:loc>
+      <image:title>Copyright Protection with Duplicate Image Detection</image:title>
+      <image:caption>Track and protect your creative work with reverse image search technology</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://checkduplicateimage.online/reverse-image-search</loc>
-    <lastmod>2025-10-10T10:00:00+00:00</lastmod>
+    <lastmod>2025-10-14</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.90</priority>
   </url>
   <url>
     <loc>https://checkduplicateimage.online/about</loc>
-    <lastmod>2025-10-10T10:00:00+00:00</lastmod>
+    <lastmod>2025-10-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>https://checkduplicateimage.online/how-it-works</loc>
-    <lastmod>2025-10-10T10:00:00+00:00</lastmod>
+    <lastmod>2025-10-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>https://checkduplicateimage.online/privacy</loc>
-    <lastmod>2025-10-10T10:00:00+00:00</lastmod>
+    <lastmod>2025-10-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.60</priority>
   </url>
