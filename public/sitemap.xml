@@ -22,6 +22,41 @@
     <lastmod>2025-10-14</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.90</priority>
+    <image:image>
+      <image:loc>https://checkduplicateimage.online/images/step-1-homepage-interface.png</image:loc>
+      <image:title>Step 1: DuplicateDetective Homepage Interface</image:title>
+      <image:caption>Start your reverse image search from our user-friendly homepage</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://checkduplicateimage.online/images/step-2-upload-interface.png</image:loc>
+      <image:title>Step 2: Upload Image Interface for Reverse Search</image:title>
+      <image:caption>Drag and drop or browse to upload images for duplicate detection</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://checkduplicateimage.online/images/step-3-photo-finder-selection.png</image:loc>
+      <image:title>Step 3: Select Search Engines for Multi-Engine Search</image:title>
+      <image:caption>Choose from Google Lens, Bing, Yandex, and TinEye for comprehensive results</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://checkduplicateimage.online/images/step-4-image-source-finder.png</image:loc>
+      <image:title>Step 4: AI-Powered Image Analysis Process</image:title>
+      <image:caption>Advanced AI extracts visual features for accurate duplicate detection</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://checkduplicateimage.online/images/step-5-search-processing.png</image:loc>
+      <image:title>Step 5: Multi-Engine Reverse Image Search in Progress</image:title>
+      <image:caption>Simultaneous search across multiple engines for comprehensive results</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://checkduplicateimage.online/images/step-6-search-results.png</image:loc>
+      <image:title>Step 6: Reverse Image Search Results Display</image:title>
+      <image:caption>View duplicate images, similar photos, and original sources found online</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://checkduplicateimage.online/images/step-7-purge-image-privacy.png</image:loc>
+      <image:title>Step 7: Privacy-First Image Purge Feature</image:title>
+      <image:caption>Immediately delete uploaded images for complete privacy protection</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://checkduplicateimage.online/about</loc>

@@ -3,7 +3,7 @@ import React, { useState, useCallback } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useDropzone } from 'react-dropzone';
-import { Upload, Search, Image as ImageIcon, Sparkles, Zap, Globe, Eye, X, CheckCircle, AlertCircle, Loader2 } from 'lucide-react';
+import { Upload, Search, Image as ImageIcon, Sparkles, Zap, Globe, Eye, X, CheckCircle, AlertCircle, Loader2, ArrowRight } from 'lucide-react';
 import RelatedLinks from '../components/RelatedLinks';
 import toast from 'react-hot-toast';
 
@@ -925,6 +925,419 @@ const UploadPage = () => {
             </div>
           </motion.div>
         </div>
+
+        {/* Step-by-Step Example Section - Critical for SEO */}
+        <section className="py-20 bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50">
+          <div className="container mx-auto px-4">
+            <motion.div
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8 }}
+              viewport={{ once: true }}
+              className="max-w-7xl mx-auto"
+            >
+              <div className="text-center mb-16">
+                <h2 className="text-3xl md:text-4xl font-bold mb-6">
+                  How to Use <span className="gradient-text-cosmic">DuplicateDetective</span> - Complete Example
+                </h2>
+                <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+                  Follow this step-by-step visual guide to find duplicate images, track copyright infringement, and discover image sources
+                </p>
+              </div>
+
+              {/* Step 1: Homepage */}
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.1 }}
+                viewport={{ once: true }}
+                className="mb-12 glass-strong rounded-3xl overflow-hidden"
+              >
+                <div className="grid md:grid-cols-2 gap-8 p-8">
+                  <div className="order-2 md:order-1">
+                    <div className="flex items-center gap-3 mb-4">
+                      <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-600 text-white rounded-2xl flex items-center justify-center font-bold text-xl">
+                        1
+                      </div>
+                      <h3 className="text-2xl font-bold">Start on Homepage</h3>
+                    </div>
+                    <p className="text-gray-600 leading-relaxed mb-4">
+                      Visit <strong>DuplicateDetective</strong> homepage and click on the "Start Search" or "Upload" button to begin your reverse image search. 
+                      Our clean interface makes it easy to find duplicate images and similar photos.
+                    </p>
+                    <ul className="space-y-2 text-gray-600">
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" />
+                        <span>Access from any device - desktop, tablet, or mobile</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-5 h-5 text-blue-500 mt-0.5 flex-shrink-0" />
+                        <span>No registration or account required</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-5 h-5 text-purple-500 mt-0.5 flex-shrink-0" />
+                        <span>100% free reverse image search tool</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div className="order-1 md:order-2">
+                    <img
+                      src="/images/step-1-homepage-interface.png"
+                      alt="Step 1: DuplicateDetective homepage interface showing reverse image search tool with upload button and multi-engine search options"
+                      className="w-full h-auto rounded-xl shadow-2xl"
+                      loading="lazy"
+                      width="800"
+                      height="600"
+                    />
+                  </div>
+                </div>
+              </motion.div>
+
+              {/* Step 2: Upload Interface */}
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.2 }}
+                viewport={{ once: true }}
+                className="mb-12 glass-strong rounded-3xl overflow-hidden"
+              >
+                <div className="grid md:grid-cols-2 gap-8 p-8">
+                  <div>
+                    <img
+                      src="/images/step-2-upload-interface.png"
+                      alt="Step 2: Upload image interface with drag and drop zone for duplicate image detection and reverse photo search"
+                      className="w-full h-auto rounded-xl shadow-2xl"
+                      loading="lazy"
+                      width="800"
+                      height="600"
+                    />
+                  </div>
+                  <div>
+                    <div className="flex items-center gap-3 mb-4">
+                      <div className="w-12 h-12 bg-gradient-to-br from-purple-500 to-purple-600 text-white rounded-2xl flex items-center justify-center font-bold text-xl">
+                        2
+                      </div>
+                      <h3 className="text-2xl font-bold">Upload Your Image</h3>
+                    </div>
+                    <p className="text-gray-600 leading-relaxed mb-4">
+                      Drag & drop your image or click to browse. Our tool accepts <strong>JPG, PNG, GIF, WebP, and BMP</strong> formats up to 10MB. 
+                      Perfect for finding duplicate images, similar photos, or tracking where your images appear online.
+                    </p>
+                    <ul className="space-y-2 text-gray-600">
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" />
+                        <span>Multiple upload methods: drag-drop, click, or paste image URL</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-5 h-5 text-blue-500 mt-0.5 flex-shrink-0" />
+                        <span>Support for all major image formats</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-5 h-5 text-purple-500 mt-0.5 flex-shrink-0" />
+                        <span>Instant image preview before searching</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </motion.div>
+
+              {/* Step 3: Select Search Engines */}
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.3 }}
+                viewport={{ once: true }}
+                className="mb-12 glass-strong rounded-3xl overflow-hidden"
+              >
+                <div className="grid md:grid-cols-2 gap-8 p-8">
+                  <div className="order-2 md:order-1">
+                    <div className="flex items-center gap-3 mb-4">
+                      <div className="w-12 h-12 bg-gradient-to-br from-green-500 to-green-600 text-white rounded-2xl flex items-center justify-center font-bold text-xl">
+                        3
+                      </div>
+                      <h3 className="text-2xl font-bold">Choose Search Engines</h3>
+                    </div>
+                    <p className="text-gray-600 leading-relaxed mb-4">
+                      Select which search engines to use for your reverse image search. We support <strong>Google Lens</strong>, <strong>Bing Visual Search</strong>, 
+                      <strong>Yandex Images</strong>, and <strong>TinEye</strong> for comprehensive duplicate detection and image source finding.
+                    </p>
+                    <ul className="space-y-2 text-gray-600">
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" />
+                        <span><strong>Google Lens</strong>: Best for products, landmarks, and general images</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-5 h-5 text-blue-500 mt-0.5 flex-shrink-0" />
+                        <span><strong>Bing Visual</strong>: Excellent for diverse image matching</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-5 h-5 text-red-500 mt-0.5 flex-shrink-0" />
+                        <span><strong>Yandex</strong>: Superior for Eastern European content</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-5 h-5 text-purple-500 mt-0.5 flex-shrink-0" />
+                        <span><strong>TinEye</strong>: Specializes in exact match detection</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div className="order-1 md:order-2">
+                    <img
+                      src="/images/step-3-photo-finder-selection.png"
+                      alt="Step 3: Select search engines for reverse image search - Google Lens, Bing, Yandex, TinEye for duplicate photo finder"
+                      className="w-full h-auto rounded-xl shadow-2xl"
+                      loading="lazy"
+                      width="800"
+                      height="600"
+                    />
+                  </div>
+                </div>
+              </motion.div>
+
+              {/* Step 4: Image Analysis */}
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.4 }}
+                viewport={{ once: true }}
+                className="mb-12 glass-strong rounded-3xl overflow-hidden"
+              >
+                <div className="grid md:grid-cols-2 gap-8 p-8">
+                  <div>
+                    <img
+                      src="/images/step-4-image-source-finder.png"
+                      alt="Step 4: AI-powered image analysis and source finding process for duplicate detection and reverse photo search"
+                      className="w-full h-auto rounded-xl shadow-2xl"
+                      loading="lazy"
+                      width="800"
+                      height="600"
+                    />
+                  </div>
+                  <div>
+                    <div className="flex items-center gap-3 mb-4">
+                      <div className="w-12 h-12 bg-gradient-to-br from-orange-500 to-orange-600 text-white rounded-2xl flex items-center justify-center font-bold text-xl">
+                        4
+                      </div>
+                      <h3 className="text-2xl font-bold">AI Analysis & Processing</h3>
+                    </div>
+                    <p className="text-gray-600 leading-relaxed mb-4">
+                      Our <strong>AI-powered image analysis</strong> extracts visual features, colors, patterns, and creates a unique digital fingerprint of your image. 
+                      This enables accurate duplicate detection and similar image finding across billions of indexed photos.
+                    </p>
+                    <ul className="space-y-2 text-gray-600">
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" />
+                        <span>Advanced computer vision algorithms</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-5 h-5 text-blue-500 mt-0.5 flex-shrink-0" />
+                        <span>Image fingerprint creation for matching</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-5 h-5 text-purple-500 mt-0.5 flex-shrink-0" />
+                        <span>Processing typically completes in under 3 seconds</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </motion.div>
+
+              {/* Step 5: Search in Progress */}
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.5 }}
+                viewport={{ once: true }}
+                className="mb-12 glass-strong rounded-3xl overflow-hidden"
+              >
+                <div className="grid md:grid-cols-2 gap-8 p-8">
+                  <div className="order-2 md:order-1">
+                    <div className="flex items-center gap-3 mb-4">
+                      <div className="w-12 h-12 bg-gradient-to-br from-cyan-500 to-cyan-600 text-white rounded-2xl flex items-center justify-center font-bold text-xl">
+                        5
+                      </div>
+                      <h3 className="text-2xl font-bold">Multi-Engine Search</h3>
+                    </div>
+                    <p className="text-gray-600 leading-relaxed mb-4">
+                      Your image is simultaneously searched across <strong>Google, Bing, Yandex, and TinEye</strong> search engines. 
+                      This comprehensive approach ensures you find all duplicate images, similar photos, and original sources.
+                    </p>
+                    <ul className="space-y-2 text-gray-600">
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" />
+                        <span>Parallel search across 4 major engines</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-5 h-5 text-blue-500 mt-0.5 flex-shrink-0" />
+                        <span>Real-time progress tracking</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-5 h-5 text-purple-500 mt-0.5 flex-shrink-0" />
+                        <span>Average search time: 5-10 seconds</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div className="order-1 md:order-2">
+                    <img
+                      src="/images/step-5-search-processing.png"
+                      alt="Step 5: Multi-engine reverse image search in progress across Google, Bing, Yandex and TinEye for duplicate image detection"
+                      className="w-full h-auto rounded-xl shadow-2xl"
+                      loading="lazy"
+                      width="800"
+                      height="600"
+                    />
+                  </div>
+                </div>
+              </motion.div>
+
+              {/* Step 6: View Results */}
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.6 }}
+                viewport={{ once: true }}
+                className="mb-12 glass-strong rounded-3xl overflow-hidden"
+              >
+                <div className="grid md:grid-cols-2 gap-8 p-8">
+                  <div>
+                    <img
+                      src="/images/step-6-search-results.png"
+                      alt="Step 6: Reverse image search results showing duplicate images, similar photos and original sources found across multiple search engines"
+                      className="w-full h-auto rounded-xl shadow-2xl"
+                      loading="lazy"
+                      width="800"
+                      height="600"
+                    />
+                  </div>
+                  <div>
+                    <div className="flex items-center gap-3 mb-4">
+                      <div className="w-12 h-12 bg-gradient-to-br from-pink-500 to-pink-600 text-white rounded-2xl flex items-center justify-center font-bold text-xl">
+                        6
+                      </div>
+                      <h3 className="text-2xl font-bold">Get Comprehensive Results</h3>
+                    </div>
+                    <p className="text-gray-600 leading-relaxed mb-4">
+                      View all <strong>duplicate images</strong>, <strong>similar photos</strong>, and <strong>original sources</strong> found by each search engine. 
+                      Click on any result to visit the source website and learn more about where your image appears online.
+                    </p>
+                    <ul className="space-y-2 text-gray-600">
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" />
+                        <span>Results organized by search engine</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-5 h-5 text-blue-500 mt-0.5 flex-shrink-0" />
+                        <span>Direct links to source websites</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-5 h-5 text-purple-500 mt-0.5 flex-shrink-0" />
+                        <span>Thumbnail previews of matching images</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-5 h-5 text-orange-500 mt-0.5 flex-shrink-0" />
+                        <span>Easy comparison of duplicate images</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </motion.div>
+
+              {/* Step 7: Privacy - Purge Image */}
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.7 }}
+                viewport={{ once: true }}
+                className="glass-strong rounded-3xl overflow-hidden border-2 border-green-200"
+              >
+                <div className="grid md:grid-cols-2 gap-8 p-8">
+                  <div className="order-2 md:order-1">
+                    <div className="flex items-center gap-3 mb-4">
+                      <div className="w-12 h-12 bg-gradient-to-br from-green-500 to-green-600 text-white rounded-2xl flex items-center justify-center font-bold text-xl">
+                        7
+                      </div>
+                      <h3 className="text-2xl font-bold">Privacy-First: Purge Your Image</h3>
+                    </div>
+                    <p className="text-gray-600 leading-relaxed mb-4">
+                      After viewing your search results, you can <strong>immediately delete your uploaded image</strong> from our secure storage by clicking the 
+                      <strong className="text-red-600"> "Purge Image Now"</strong> button. Your privacy is our top priority.
+                    </p>
+                    <ul className="space-y-2 text-gray-600">
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" />
+                        <span><strong>Instant deletion</strong>: Remove images immediately after search</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-5 h-5 text-blue-500 mt-0.5 flex-shrink-0" />
+                        <span><strong>Auto-delete</strong>: Images automatically removed after 2-3 days</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-5 h-5 text-purple-500 mt-0.5 flex-shrink-0" />
+                        <span><strong>Secure storage</strong>: Images stored on Vercel CDN with encryption</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-5 h-5 text-orange-500 mt-0.5 flex-shrink-0" />
+                        <span><strong>No data collection</strong>: We don't store any personal information</span>
+                      </li>
+                    </ul>
+                    <div className="mt-6 bg-green-50 border-l-4 border-green-500 p-4 rounded">
+                      <p className="text-sm text-green-800 font-semibold">
+                        🔒 Your Privacy Matters: DuplicateDetective is built with privacy-first design. 
+                        We give you complete control over your uploaded images.
+                      </p>
+                    </div>
+                  </div>
+                  <div className="order-1 md:order-2">
+                    <img
+                      src="/images/step-7-purge-image-privacy.png"
+                      alt="Step 7: Privacy-focused purge image feature to delete uploaded photos from storage after reverse image search for data protection"
+                      className="w-full h-auto rounded-xl shadow-2xl border-4 border-green-200"
+                      loading="lazy"
+                      width="800"
+                      height="600"
+                    />
+                  </div>
+                </div>
+              </motion.div>
+
+              {/* CTA Section */}
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.8 }}
+                viewport={{ once: true }}
+                className="mt-16 text-center"
+              >
+                <div className="glass-strong rounded-3xl p-12">
+                  <h3 className="text-3xl font-bold mb-4">
+                    Ready to Find Your <span className="gradient-text-cosmic">Duplicate Images</span>?
+                  </h3>
+                  <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
+                    Start your free reverse image search now. No registration required. Find duplicate photos, 
+                    track copyright infringement, and discover image sources in seconds.
+                  </p>
+                  <a
+                    href="#upload"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      window.scrollTo({ top: 0, behavior: 'smooth' });
+                    }}
+                    className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-500 to-purple-600 text-white px-8 py-4 rounded-xl font-semibold text-lg hover:shadow-2xl transition-all duration-300"
+                  >
+                    <Upload className="w-6 h-6" />
+                    Upload Image & Start Search
+                    <ArrowRight className="w-6 h-6" />
+                  </a>
+                  <div className="flex flex-wrap justify-center gap-6 mt-6 text-sm text-gray-500">
+                    <span>✓ 100% Free Forever</span>
+                    <span>✓ No Registration</span>
+                    <span>✓ Privacy Protected</span>
+                    <span>✓ Multi-Engine Search</span>
+                  </div>
+                </div>
+              </motion.div>
+            </motion.div>
+          </div>
+        </section>
 
         {/* Related Links */}
         <div className="container mx-auto px-4 py-12">
