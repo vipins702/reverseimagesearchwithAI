@@ -5,6 +5,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { useDropzone } from 'react-dropzone';
 import { Upload, Search, Image as ImageIcon, Sparkles, Zap, Globe, Eye, X, CheckCircle, AlertCircle, Loader2, ArrowRight } from 'lucide-react';
 import RelatedLinks from '../components/RelatedLinks';
+import OptimizedImage from '../components/OptimizedImage';
 import toast from 'react-hot-toast';
 
 interface UploadedImage {
@@ -981,7 +982,7 @@ const UploadPage = () => {
                     </ul>
                   </div>
                   <div className="order-1 md:order-2">
-                    <img
+                    <OptimizedImage
                       src="/images/step-1-homepage-interface.png"
                       alt="Step 1: DuplicateDetective homepage interface showing reverse image search tool with upload button and multi-engine search options"
                       className="w-full h-auto rounded-xl shadow-2xl"
@@ -1003,7 +1004,7 @@ const UploadPage = () => {
               >
                 <div className="grid md:grid-cols-2 gap-8 p-8">
                   <div>
-                    <img
+                    <OptimizedImage
                       src="/images/step-2-upload-interface.png"
                       alt="Step 2: Upload image interface with drag and drop zone for duplicate image detection and reverse photo search"
                       className="w-full h-auto rounded-xl shadow-2xl"
@@ -1081,7 +1082,7 @@ const UploadPage = () => {
                     </ul>
                   </div>
                   <div className="order-1 md:order-2">
-                    <img
+                    <OptimizedImage
                       src="/images/step-3-photo-finder-selection.png"
                       alt="Step 3: Select search engines for reverse image search - Google Lens, Bing, Yandex, TinEye for duplicate photo finder"
                       className="w-full h-auto rounded-xl shadow-2xl"
@@ -1103,7 +1104,7 @@ const UploadPage = () => {
               >
                 <div className="grid md:grid-cols-2 gap-8 p-8">
                   <div>
-                    <img
+                    <OptimizedImage
                       src="/images/step-4-image-source-finder.png"
                       alt="Step 4: AI-powered image analysis and source finding process for duplicate detection and reverse photo search"
                       className="w-full h-auto rounded-xl shadow-2xl"
@@ -1177,7 +1178,7 @@ const UploadPage = () => {
                     </ul>
                   </div>
                   <div className="order-1 md:order-2">
-                    <img
+                    <OptimizedImage
                       src="/images/step-5-search-processing.png"
                       alt="Step 5: Multi-engine reverse image search in progress across Google, Bing, Yandex and TinEye for duplicate image detection"
                       className="w-full h-auto rounded-xl shadow-2xl"
@@ -1199,7 +1200,7 @@ const UploadPage = () => {
               >
                 <div className="grid md:grid-cols-2 gap-8 p-8">
                   <div>
-                    <img
+                    <OptimizedImage
                       src="/images/step-6-search-results.png"
                       alt="Step 6: Reverse image search results showing duplicate images, similar photos and original sources found across multiple search engines"
                       className="w-full h-auto rounded-xl shadow-2xl"
@@ -1287,7 +1288,7 @@ const UploadPage = () => {
                     </div>
                   </div>
                   <div className="order-1 md:order-2">
-                    <img
+                    <OptimizedImage
                       src="/images/step-7-purge-image-privacy.png"
                       alt="Step 7: Privacy-focused purge image feature to delete uploaded photos from storage after reverse image search for data protection"
                       className="w-full h-auto rounded-xl shadow-2xl border-4 border-green-200"

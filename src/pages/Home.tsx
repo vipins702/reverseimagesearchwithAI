@@ -3,6 +3,7 @@ import { Helmet } from 'react-helmet-async'
 import { motion } from 'framer-motion'
 import {Search, Upload, Zap, Shield, CheckCircle, ArrowRight, Eye} from 'lucide-react'
 import RelatedLinks from '../components/RelatedLinks'
+import OptimizedImage from '../components/OptimizedImage'
 
 const Home = () => {
   const features = [
@@ -332,7 +333,7 @@ const Home = () => {
               className="mt-16 max-w-5xl mx-auto"
             >
               <div className="relative rounded-3xl overflow-hidden shadow-2xl element-3d">
-                <img
+                <OptimizedImage
                   src="/images/hero-reverse-image-search.jpg"
                   alt="DuplicateDetective reverse image search tool interface showing upload feature, AI analysis, and multi-engine search results across Google Lens, Bing Visual Search, Yandex Images, and TinEye for finding duplicate images and similar photos"
                   className="w-full h-auto object-cover"
@@ -602,7 +603,7 @@ const Home = () => {
                   </Link>
                 </div>
                 <div className="relative">
-                  <img
+                  <OptimizedImage
                     src="/images/copyright-protection-duplicate-finder.jpg"
                     alt="Copyright protection and duplicate image tracking using reverse image search to find unauthorized use of photos and artwork online"
                     className="w-full h-auto rounded-2xl shadow-2xl"
