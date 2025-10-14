@@ -341,8 +341,9 @@ const Home = () => {
                   loading="eager"
                   fetchPriority="high"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent"></div>
-                <div className="absolute bottom-6 left-6 right-6">
+                <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent"></div>
+                {/* Text overlay - Hidden on mobile, visible on desktop */}
+                <div className="hidden md:block absolute bottom-6 left-6 right-6">
                   <div className="glass-strong backdrop-blur-xl px-6 py-4 rounded-2xl">
                     <p className="text-white font-semibold text-lg md:text-xl">
                       Upload Once → Search Everywhere: Google, Bing, Yandex & TinEye
