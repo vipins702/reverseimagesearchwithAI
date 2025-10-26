@@ -3,8 +3,12 @@
  * This script runs before each build to keep the sitemap fresh for search engines
  */
 
-const fs = require('fs');
-const path = require('path');
+import { readFileSync, writeFileSync } from 'fs';
+import { fileURLToPath } from 'url';
+import { dirname, join } from 'path';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
 
 // Get current date in YYYY-MM-DD format
 const getCurrentDate = () => {
@@ -17,12 +21,12 @@ const getCurrentDate = () => {
 
 // Update sitemap.xml
 const updateSitemap = () => {
-  const sitemapPath = path.join(__dirname, '..', 'public', 'sitemap.xml');
+  const sitemapPath = join(__dirname, '..', 'public', 'sitemap.xml');
   const currentDate = getCurrentDate();
   
   try {
     // Read the sitemap file
-    let sitemapContent = fs.readFileSync(sitemapPath, 'utf-8');
+    let sitemapContent = readFileSync(sitemapPath, 'utf-8');
     
     // Replace all lastmod dates with current date
     const updatedContent = sitemapContent.replace(
@@ -31,7 +35,7 @@ const updateSitemap = () => {
     );
     
     // Write back to file
-    fs.writeFileSync(sitemapPath, updatedContent, 'utf-8');
+    writeFileSync(sitemapPath, updatedContent, 'utf-8');
     
     console.log(`✅ Sitemap updated successfully! All dates set to: ${currentDate}`);
   } catch (error) {
