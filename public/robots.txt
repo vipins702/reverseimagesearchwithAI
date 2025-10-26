@@ -4,6 +4,8 @@
 # Allow all search engines to crawl everything
 User-agent: *
 Allow: /
+Allow: /blog/
+Allow: /blog/*
 Disallow: /api/
 Disallow: /_next/
 Disallow: /admin/

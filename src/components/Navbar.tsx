@@ -2,7 +2,7 @@
 import { useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { motion, AnimatePresence } from 'framer-motion'
-import {Sparkles, Menu, X, Search, Upload, Info, Zap} from 'lucide-react'
+import {Sparkles, Menu, X, Search, Upload, Info, Zap, BookOpen} from 'lucide-react'
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -12,6 +12,7 @@ const Navbar = () => {
     { name: 'Home', href: '/', icon: Sparkles },
     { name: 'Upload', href: '/reverse-image-search', icon: Upload },
     { name: 'How It Works', href: '/how-it-works', icon: Zap },
+    { name: 'Blog', href: '/blog', icon: BookOpen },
     { name: 'About', href: '/about', icon: Info },
   ]
 
