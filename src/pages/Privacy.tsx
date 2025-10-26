@@ -7,28 +7,36 @@ const Privacy = () => {
   return (
     <>
       <Helmet>
-        <title>Privacy Policy - DuplicateDetective Data Protection & Security</title>
-        <meta name="description" content="Privacy policy for DuplicateDetective duplicate image detection tool. We protect your data with auto-deletion, no tracking and secure processing." />
-        <meta name="keywords" content="duplicate detective privacy policy, image detection privacy, duplicate finder data policy, secure image processing, GDPR compliant" />
+        {/* PRIMARY META TAGS - Optimized for Privacy/Trust */}
+        <title>Privacy Policy - Your Data is Safe | DuplicateDetective</title>
+        <meta name="description" content="DuplicateDetective's privacy-first approach: images auto-deleted in 2-3 days, no tracking, no data selling. GDPR & CCPA compliant. Read our full privacy policy." />
+        <meta name="keywords" content="privacy policy, data protection, GDPR compliant, CCPA compliant, image auto-delete, no tracking, privacy-first tool, secure image search, data privacy, image security" />
+        
+        {/* SEO META TAGS */}
         <meta name="author" content="DuplicateDetective" />
         <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+        <meta name="googlebot" content="index, follow" />
         <link rel="canonical" href="https://checkduplicateimage.online/privacy" />
-        {/* Open Graph Meta Tags */}
-        <meta property="og:title" content="Privacy Policy - DuplicateDetective Data Protection & Security" />
-        <meta property="og:description" content="Privacy policy for DuplicateDetective duplicate image detection tool. We protect your data with auto-deletion, no tracking and secure processing." />
+        
+        {/* OPEN GRAPH / FACEBOOK */}
+        <meta property="og:title" content="Privacy Policy - Images Auto-Deleted, No Tracking" />
+        <meta property="og:description" content="Your privacy matters. Images deleted in 2-3 days, zero tracking, GDPR/CCPA compliant. See how we protect your data." />
         <meta property="og:url" content="https://checkduplicateimage.online/privacy" />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="DuplicateDetective" />
         <meta property="og:image" content="https://checkduplicateimage.online/og-image.jpg" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
-        <meta property="og:image:alt" content="Privacy Policy - DuplicateDetective Data Protection & Security" />
-        {/* Twitter Card Meta Tags */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Privacy Policy - DuplicateDetective Data Protection & Security" />
-        <meta name="twitter:description" content="Privacy policy for DuplicateDetective duplicate image detection tool. We protect your data with auto-deletion, no tracking and secure processing." />
+        <meta property="og:image:alt" content="DuplicateDetective Privacy Policy" />
+        <meta property="og:locale" content="en_US" />
+        
+        {/* TWITTER CARD */}
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:site" content="@DuplicateDetective" />
+        <meta name="twitter:title" content="Privacy Policy - DuplicateDetective" />
+        <meta name="twitter:description" content="Images auto-deleted in 2-3 days. No tracking. GDPR & CCPA compliant." />
         <meta name="twitter:image" content="https://checkduplicateimage.online/og-image.jpg" />
-        <meta name="twitter:image:alt" content="Privacy Policy - DuplicateDetective Data Protection & Security" />
+        <meta name="twitter:image:alt" content="Privacy Policy" />
         {/* Canonical BreadcrumbList Schema */}
         <script type="application/ld+json">{`
         {

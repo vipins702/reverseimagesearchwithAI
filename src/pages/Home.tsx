@@ -36,28 +36,36 @@ const Home = () => {
   return (
     <>
       <Helmet>
-        <title>DuplicateDetective - Find Duplicate Images & Reverse Image Search Tool</title>
-        <meta name="description" content="Detect duplicate images and find photo sources with DuplicateDetective. Professional reverse image search across multiple engines. 100% free tool." />
-        <meta name="keywords" content="duplicate detective, duplicate image detector, reverse image search tool, find duplicate images online, photo source finder, image plagiarism checker, duplicate photo finder" />
+        {/* PRIMARY META TAGS - Optimized for CTR */}
+        <title>Free Reverse Image Search - Find Duplicates Fast | DuplicateDetective</title>
+        <meta name="description" content="Upload any image to find duplicates, similar photos & original sources instantly. Free AI tool searches Google Lens, Bing, Yandex & TinEye. No signup." />
+        <meta name="keywords" content="reverse image search, free reverse image search, find duplicate images, duplicate image finder, Google Lens search, Bing visual search, image source finder, copyright image checker, similar image search, photo duplicate detector" />
+        
+        {/* SEO META TAGS */}
         <meta name="author" content="DuplicateDetective" />
         <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+        <meta name="googlebot" content="index, follow" />
         <link rel="canonical" href="https://checkduplicateimage.online/" />
-        {/* Open Graph Meta Tags */}
-        <meta property="og:title" content="DuplicateDetective - Find Duplicate Images & Reverse Image Search Tool" />
-        <meta property="og:description" content="Detect duplicate images and find photo sources with DuplicateDetective. Professional reverse image search across multiple engines. 100% free tool." />
+        
+        {/* OPEN GRAPH / FACEBOOK - Optimized for Social Sharing */}
+        <meta property="og:title" content="Free Reverse Image Search - Find Duplicate Images Instantly" />
+        <meta property="og:description" content="Upload any image to discover duplicates, track copyright theft, and find original sources. AI-powered search across Google, Bing, Yandex & TinEye - 100% free!" />
         <meta property="og:url" content="https://checkduplicateimage.online/" />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="DuplicateDetective" />
         <meta property="og:image" content="https://checkduplicateimage.online/og-image.jpg" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
-        <meta property="og:image:alt" content="DuplicateDetective - Professional Duplicate Image Detection Tool" />
-        {/* Twitter Card Meta Tags */}
+        <meta property="og:image:alt" content="DuplicateDetective - Free Reverse Image Search Tool Interface" />
+        <meta property="og:locale" content="en_US" />
+        
+        {/* TWITTER CARD - Optimized for Twitter Shares */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="DuplicateDetective - Find Duplicate Images & Reverse Image Search Tool" />
-        <meta name="twitter:description" content="Detect duplicate images and find photo sources with DuplicateDetective. Professional reverse image search across multiple engines. 100% free tool." />
+        <meta name="twitter:site" content="@DuplicateDetective" />
+        <meta name="twitter:title" content="Free Reverse Image Search - Find Duplicates Instantly" />
+        <meta name="twitter:description" content="Upload images to find duplicates & sources across Google Lens, Bing, Yandex & TinEye. Free AI-powered tool - no signup required!" />
         <meta name="twitter:image" content="https://checkduplicateimage.online/og-image.jpg" />
-        <meta name="twitter:image:alt" content="DuplicateDetective - Professional Duplicate Image Detection Tool" />
+        <meta name="twitter:image:alt" content="DuplicateDetective Reverse Image Search Tool" />
         {/* WebApplication Schema Markup for SEO */}
         <script type="application/ld+json">{`
         {
@@ -219,7 +227,7 @@ const Home = () => {
               transition={{ duration: 0.8 }}
               className="text-center space-y-12"
             >
-              {/* Main Headline */}
+              {/* Main Headline - SEO Optimized with Single H1 */}
               <div className="space-y-6">
                 <motion.h1 
                   initial={{ opacity: 0, y: 20 }}
@@ -227,8 +235,7 @@ const Home = () => {
                   transition={{ duration: 0.8, delay: 0.2 }}
                   className="text-3xl md:text-5xl lg:text-6xl font-bold heading-premium gradient-text-cosmic leading-tight mt-4"
                 >
-                  DuplicateDetective - Professional <br/>
-                  <span className="text-4xl md:text-6xl lg:text-7xl">Duplicate Image Detection</span>
+                  DuplicateDetective - Free Reverse Image Search & Duplicate Image Finder Tool
                 </motion.h1>
                 <motion.p 
                   initial={{ opacity: 0, y: 20 }}
@@ -236,7 +243,7 @@ const Home = () => {
                   transition={{ duration: 0.8, delay: 0.4 }}
                   className="text-xl md:text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed"
                 >
-                  Detect duplicate images and find original photo sources with DuplicateDetective's advanced reverse image search technology. Professional-grade duplicate detection across multiple search engines.
+                  Find duplicate images, track copyright infringement, and discover original sources across 4 major search engines instantly. Upload any image to search Google Lens, Bing Visual Search, Yandex Images, and TinEye - 100% free, no registration required.
                 </motion.p>
               </div>
               

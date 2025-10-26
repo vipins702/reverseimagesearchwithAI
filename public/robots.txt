@@ -1,17 +1,56 @@
+# DuplicateDetective - Reverse Image Search Tool
+# Last Updated: October 26, 2025
+
+# Allow all search engines to crawl everything
 User-agent: *
-Disallow:
 Allow: /
-Allow: /reverse-image-search
-Allow: /how-it-works
-Allow: /about
-Allow: /privacy
+Disallow: /api/
+Disallow: /_next/
+Disallow: /admin/
+Disallow: /test/
+Disallow: /*.json$
 
-# Crawl-delay for specific bots
+# Specific rules for major search engines
 User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+User-agent: Googlebot-Image
+Allow: /
+Allow: /images/
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 0
+
+User-agent: Slurp
+# Yahoo
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Baiduspider
+# Chinese search - allow but with delay
+Allow: /
+Crawl-delay: 2
+
+User-agent: YandexBot
+Allow: /
 Crawl-delay: 1
 
-User-agent: bingbot
-Crawl-delay: 1
+# Block bad bots and scrapers
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
 
 # Sitemap location
 Sitemap: https://checkduplicateimage.online/sitemap.xml

@@ -28,28 +28,36 @@ const About = () => {
   return (
     <>
       <Helmet>
-        <title>About DuplicateDetective - Professional Duplicate Image Detection Tool</title>
-        <meta name="description" content="Learn about DuplicateDetective, the most comprehensive free duplicate image detection and reverse search tool. Find duplicates, verify authenticity and protect copyrights." />
-        <meta name="keywords" content="about duplicate detective, duplicate image detector, reverse image search tool, image plagiarism checker, duplicate photo finder, image verification tool" />
+        {/* PRIMARY META TAGS - Optimized for Brand Authority */}
+        <title>About DuplicateDetective - Best Free Reverse Image Search Tool 2025</title>
+        <meta name="description" content="Learn why DuplicateDetective is the #1 free reverse image search tool. Multi-engine search (Google, Bing, Yandex, TinEye), 100% private, no signup required." />
+        <meta name="keywords" content="about duplicate detective, reverse image search tool, best image finder, free duplicate detector, multi-engine image search, privacy-first search tool, no registration image search, trusted image search" />
+        
+        {/* SEO META TAGS */}
         <meta name="author" content="DuplicateDetective" />
         <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+        <meta name="googlebot" content="index, follow" />
         <link rel="canonical" href="https://checkduplicateimage.online/about" />
-        {/* Open Graph Meta Tags */}
-        <meta property="og:title" content="About DuplicateDetective - Professional Duplicate Image Detection Tool" />
-        <meta property="og:description" content="Learn about DuplicateDetective, the most comprehensive free duplicate image detection and reverse search tool. Find duplicates, verify authenticity and protect copyrights." />
+        
+        {/* OPEN GRAPH / FACEBOOK */}
+        <meta property="og:title" content="About DuplicateDetective - #1 Free Reverse Image Search" />
+        <meta property="og:description" content="Discover why 100K+ users trust DuplicateDetective for reverse image searches. Multi-engine support, privacy-first design, and 100% free forever." />
         <meta property="og:url" content="https://checkduplicateimage.online/about" />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="DuplicateDetective" />
         <meta property="og:image" content="https://checkduplicateimage.online/og-image.jpg" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
-        <meta property="og:image:alt" content="About DuplicateDetective - Professional Duplicate Image Detection Tool" />
-        {/* Twitter Card Meta Tags */}
+        <meta property="og:image:alt" content="About DuplicateDetective - Trusted by 100K+ Users" />
+        <meta property="og:locale" content="en_US" />
+        
+        {/* TWITTER CARD */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="About DuplicateDetective - Professional Duplicate Image Detection Tool" />
-        <meta name="twitter:description" content="Learn about DuplicateDetective, the most comprehensive free duplicate image detection and reverse search tool. Find duplicates, verify authenticity and protect copyrights." />
+        <meta name="twitter:site" content="@DuplicateDetective" />
+        <meta name="twitter:title" content="About DuplicateDetective - Best Free Image Search Tool" />
+        <meta name="twitter:description" content="100K+ users trust DuplicateDetective for reverse image search. Multi-engine, privacy-first, 100% free." />
         <meta name="twitter:image" content="https://checkduplicateimage.online/og-image.jpg" />
-        <meta name="twitter:image:alt" content="About DuplicateDetective - Professional Duplicate Image Detection Tool" />
+        <meta name="twitter:image:alt" content="DuplicateDetective - Trusted Reverse Image Search Tool" />
         {/* Enhanced Organization Schema */}
         <script type="application/ld+json">{`
         {

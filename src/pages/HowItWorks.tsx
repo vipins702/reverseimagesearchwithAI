@@ -54,12 +54,36 @@ const HowItWorks = () => {
   return (
     <>
       <Helmet>
-        <title>How DuplicateDetective Works - Duplicate Image Detection Guide</title>
-        <meta name="description" content="Step-by-step guide on how DuplicateDetective detects duplicate images. Learn professional duplicate detection and reverse image search techniques." />
-        <meta name="keywords" content="how duplicate detective works, duplicate image detection guide, reverse image search tutorial, find duplicates step by step, image plagiarism detection" />
+        {/* PRIMARY META TAGS - Optimized for Tutorial/Guide Intent */}
+        <title>How Reverse Image Search Works - Step-by-Step Guide | DuplicateDetective</title>
+        <meta name="description" content="Learn how to use reverse image search in 3 easy steps. Upload, search 4 engines (Google Lens, Bing, Yandex, TinEye), and find duplicates instantly. Free guide!" />
+        <meta name="keywords" content="how reverse image search works, reverse search tutorial, image search guide, find duplicates step-by-step, Google Lens tutorial, Bing visual search guide, TinEye how to use, duplicate detection tutorial" />
+        
+        {/* SEO META TAGS */}
         <meta name="author" content="DuplicateDetective" />
         <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+        <meta name="googlebot" content="index, follow" />
         <link rel="canonical" href="https://checkduplicateimage.online/how-it-works" />
+        
+        {/* OPEN GRAPH / FACEBOOK */}
+        <meta property="og:title" content="How to Use Reverse Image Search - Complete Tutorial" />
+        <meta property="og:description" content="Master reverse image search in 3 simple steps. Upload images, search across Google Lens, Bing, Yandex & TinEye, and discover duplicates instantly. Free & easy!" />
+        <meta property="og:url" content="https://checkduplicateimage.online/how-it-works" />
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="DuplicateDetective" />
+        <meta property="og:image" content="https://checkduplicateimage.online/og-image.jpg" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:image:alt" content="How to Use Reverse Image Search - Step-by-Step Tutorial" />
+        <meta property="og:locale" content="en_US" />
+        
+        {/* TWITTER CARD */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@DuplicateDetective" />
+        <meta name="twitter:title" content="How to Find Duplicates with Reverse Image Search" />
+        <meta name="twitter:description" content="3-step guide to find duplicate images: Upload → Search 4 engines → Get results. Free tutorial with screenshots!" />
+        <meta name="twitter:image" content="https://checkduplicateimage.online/og-image.jpg" />
+        <meta name="twitter:image:alt" content="Reverse Image Search Tutorial" />
         {/* HowTo Schema Markup */}
         <script type="application/ld+json">{`
         {

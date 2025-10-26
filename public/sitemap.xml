@@ -3,7 +3,7 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://checkduplicateimage.online/</loc>
-    <lastmod>2025-10-14</lastmod>
+    <lastmod>2025-10-26</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.00</priority>
     <image:image>
@@ -19,7 +19,7 @@
   </url>
   <url>
     <loc>https://checkduplicateimage.online/reverse-image-search</loc>
-    <lastmod>2025-10-14</lastmod>
+    <lastmod>2025-10-26</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.90</priority>
     <image:image>
@@ -60,19 +60,19 @@
   </url>
   <url>
     <loc>https://checkduplicateimage.online/about</loc>
-    <lastmod>2025-10-14</lastmod>
+    <lastmod>2025-10-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>https://checkduplicateimage.online/how-it-works</loc>
-    <lastmod>2025-10-14</lastmod>
+    <lastmod>2025-10-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>https://checkduplicateimage.online/privacy</loc>
-    <lastmod>2025-10-14</lastmod>
+    <lastmod>2025-10-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.60</priority>
   </url>

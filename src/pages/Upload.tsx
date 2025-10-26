@@ -277,28 +277,36 @@ const UploadPage = () => {
   return (
     <>
       <Helmet>
-        <title>Upload Image - DuplicateDetective Duplicate Detection Tool</title>
-        <meta name="description" content="Drag & drop or upload any image to DuplicateDetective for instant duplicate detection & reverse image search. Professional-grade duplicate photo finder." />
-        <meta name="keywords" content="duplicate detective upload, drag drop duplicate detection, duplicate image finder, image plagiarism checker, reverse photo lookup tool, duplicate photo detector" />
+        {/* PRIMARY META TAGS - Optimized for Upload/Search Intent */}
+        <title>Reverse Image Search - Upload & Find Image Sources | DuplicateDetective</title>
+        <meta name="description" content="Upload any photo to instantly search Google Lens, Bing, Yandex & TinEye. Find duplicates, track copyright theft & discover image sources. Free & fast!" />
+        <meta name="keywords" content="reverse image search tool, upload image search, find image source, Google Lens upload, Bing visual search, TinEye search, duplicate image detector, copyright image finder, image plagiarism checker, photo source finder" />
+        
+        {/* SEO META TAGS */}
         <meta name="author" content="DuplicateDetective" />
         <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+        <meta name="googlebot" content="index, follow" />
         <link rel="canonical" href="https://checkduplicateimage.online/reverse-image-search" />
-        {/* Open Graph Meta Tags */}
-        <meta property="og:title" content="Upload Image - DuplicateDetective Duplicate Detection Tool" />
-        <meta property="og:description" content="Drag & drop or upload any image to DuplicateDetective for instant duplicate detection & reverse image search. Professional-grade duplicate photo finder." />
+        
+        {/* OPEN GRAPH / FACEBOOK */}
+        <meta property="og:title" content="Upload Image for Reverse Search - Find Duplicates & Sources" />
+        <meta property="og:description" content="Drag & drop any image to instantly find duplicates, similar photos, and original sources. AI-powered search across 4 major engines. 100% free, no signup!" />
         <meta property="og:url" content="https://checkduplicateimage.online/reverse-image-search" />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="DuplicateDetective" />
         <meta property="og:image" content="https://checkduplicateimage.online/og-image.jpg" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
-        <meta property="og:image:alt" content="Upload Image - DuplicateDetective Duplicate Detection Tool" />
-        {/* Twitter Card Meta Tags */}
+        <meta property="og:image:alt" content="Upload Image for Reverse Image Search - DuplicateDetective Interface" />
+        <meta property="og:locale" content="en_US" />
+        
+        {/* TWITTER CARD */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Upload Image to Find Duplicates - Free Reverse Image Search Tool" />
-        <meta name="twitter:description" content="Drag & drop or upload any image to instantly find duplicates & similar photos online. Free reverse photo lookup tool with Google Lens & TinEye search." />
+        <meta name="twitter:site" content="@DuplicateDetective" />
+        <meta name="twitter:title" content="Upload Image to Find Duplicates & Original Sources" />
+        <meta name="twitter:description" content="Drag & drop images to search Google Lens, Bing, Yandex & TinEye simultaneously. Free reverse image search - find duplicates in seconds!" />
         <meta name="twitter:image" content="https://checkduplicateimage.online/og-image.jpg" />
-        <meta name="twitter:image:alt" content="Upload Image - DuplicateDetective Duplicate Detection Tool" />
+        <meta name="twitter:image:alt" content="DuplicateDetective Upload Interface" />
         {/* SoftwareApplication Schema Markup */}
         <script type="application/ld+json">{`
         {
