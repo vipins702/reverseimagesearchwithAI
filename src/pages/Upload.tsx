@@ -278,9 +278,9 @@ const UploadPage = () => {
     <>
       <Helmet>
         {/* PRIMARY META TAGS - Optimized for Upload/Search Intent */}
-        <title>Reverse Image Search - Upload & Find Image Sources | DuplicateDetective</title>
+        <title>Upload Image to Find Duplicates - Multi-Engine Search | DuplicateDetective</title>
         <meta name="description" content="Upload any photo to instantly search Google Lens, Bing, Yandex & TinEye. Find duplicates, track copyright theft & discover image sources. Free & fast!" />
-        <meta name="keywords" content="reverse image search tool, upload image search, find image source, Google Lens upload, Bing visual search, TinEye search, duplicate image detector, copyright image finder, image plagiarism checker, photo source finder" />
+        <meta name="keywords" content="upload image search, find image source, duplicate image detector, copyright image finder, image plagiarism checker, photo source finder, Google Lens upload, Bing visual search, TinEye search, multi-engine image search" />
         
         {/* SEO META TAGS */}
         <meta name="author" content="DuplicateDetective" />
@@ -289,7 +289,7 @@ const UploadPage = () => {
         <link rel="canonical" href="https://checkduplicateimage.online/reverse-image-search" />
         
         {/* OPEN GRAPH / FACEBOOK */}
-        <meta property="og:title" content="Upload Image for Reverse Search - Find Duplicates & Sources" />
+        <meta property="og:title" content="Upload Image to Find Duplicates - Multi-Engine Search" />
         <meta property="og:description" content="Drag & drop any image to instantly find duplicates, similar photos, and original sources. AI-powered search across 4 major engines. 100% free, no signup!" />
         <meta property="og:url" content="https://checkduplicateimage.online/reverse-image-search" />
         <meta property="og:type" content="website" />
@@ -304,7 +304,7 @@ const UploadPage = () => {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@DuplicateDetective" />
         <meta name="twitter:title" content="Upload Image to Find Duplicates & Original Sources" />
-        <meta name="twitter:description" content="Drag & drop images to search Google Lens, Bing, Yandex & TinEye simultaneously. Free reverse image search - find duplicates in seconds!" />
+        <meta name="twitter:description" content="Drag & drop images to search Google Lens, Bing, Yandex & TinEye simultaneously. Find duplicate images in seconds - 100% free!" />
         <meta name="twitter:image" content="https://checkduplicateimage.online/og-image.jpg" />
         <meta name="twitter:image:alt" content="DuplicateDetective Upload Interface" />
         {/* SoftwareApplication Schema Markup */}
@@ -312,8 +312,8 @@ const UploadPage = () => {
         {
           "@context": "https://schema.org",
           "@type": "SoftwareApplication",
-          "name": "Free Reverse Image Search Tool",
-          "description": "Find duplicate images, similar photos, and original sources instantly with our free reverse image search tool. No registration required.",
+          "name": "DuplicateDetective - Multi-Engine Image Search",
+          "description": "Find duplicate images, similar photos, and original sources instantly using Google Lens, Bing, Yandex & TinEye. No registration required.",
           "url": "https://checkduplicateimage.online/reverse-image-search",
           "applicationCategory": "MultimediaApplication",
           "operatingSystem": "Web Browser",

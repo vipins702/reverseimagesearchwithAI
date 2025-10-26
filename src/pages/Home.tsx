@@ -37,9 +37,9 @@ const Home = () => {
     <>
       <Helmet>
         {/* PRIMARY META TAGS - Optimized for CTR */}
-        <title>Free Reverse Image Search - Find Duplicates Fast | DuplicateDetective</title>
+        <title>Find Duplicate Images Free - Multi-Engine Search Tool | DuplicateDetective</title>
         <meta name="description" content="Upload any image to find duplicates, similar photos & original sources instantly. Free AI tool searches Google Lens, Bing, Yandex & TinEye. No signup." />
-        <meta name="keywords" content="reverse image search, free reverse image search, find duplicate images, duplicate image finder, Google Lens search, Bing visual search, image source finder, copyright image checker, similar image search, photo duplicate detector" />
+        <meta name="keywords" content="find duplicate images, duplicate image finder, free duplicate photo finder, photo duplicate detector, image similarity search, copyright image checker, image source finder, multi-engine image search, Google Lens search, Bing visual search, TinEye search, Yandex image search" />
         
         {/* SEO META TAGS */}
         <meta name="author" content="DuplicateDetective" />
@@ -48,8 +48,8 @@ const Home = () => {
         <link rel="canonical" href="https://checkduplicateimage.online/" />
         
         {/* OPEN GRAPH / FACEBOOK - Optimized for Social Sharing */}
-        <meta property="og:title" content="Free Reverse Image Search - Find Duplicate Images Instantly" />
-        <meta property="og:description" content="Upload any image to discover duplicates, track copyright theft, and find original sources. AI-powered search across Google, Bing, Yandex & TinEye - 100% free!" />
+        <meta property="og:title" content="Find Duplicate Images Free - Multi-Engine Search Tool" />
+        <meta property="og:description" content="Upload any image to discover duplicates, track copyright theft, and find original sources. AI-powered search across Google Lens, Bing, Yandex & TinEye - 100% free!" />
         <meta property="og:url" content="https://checkduplicateimage.online/" />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="DuplicateDetective" />
@@ -62,7 +62,7 @@ const Home = () => {
         {/* TWITTER CARD - Optimized for Twitter Shares */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@DuplicateDetective" />
-        <meta name="twitter:title" content="Free Reverse Image Search - Find Duplicates Instantly" />
+        <meta name="twitter:title" content="Find Duplicate Images Free - Multi-Engine Search" />
         <meta name="twitter:description" content="Upload images to find duplicates & sources across Google Lens, Bing, Yandex & TinEye. Free AI-powered tool - no signup required!" />
         <meta name="twitter:image" content="https://checkduplicateimage.online/og-image.jpg" />
         <meta name="twitter:image:alt" content="DuplicateDetective Reverse Image Search Tool" />
@@ -71,9 +71,9 @@ const Home = () => {
         {
           "@context": "https://schema.org",
           "@type": "WebApplication",
-          "name": "Free Reverse Image Search Tool",
+          "name": "DuplicateDetective - Find Duplicate Images Free",
           "url": "https://checkduplicateimage.online/",
-          "description": "Upload any image to find duplicates, similar photos & original sources instantly. Free reverse image search powered by Google Lens, Bing & TinEye.",
+          "description": "Upload any image to find duplicates, similar photos & original sources instantly. Multi-engine search tool powered by Google Lens, Bing, Yandex & TinEye.",
           "applicationCategory": "UtilityApplication",
           "operatingSystem": "Any",
           "browserRequirements": "Modern web browser",
@@ -924,6 +924,74 @@ const Home = () => {
               </motion.div>
             </div>
           </motion.div>
+        </div>
+      </section>
+
+      {/* Latest Blog Posts Section */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-4">
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            className="text-center mb-12"
+          >
+            <h2 className="text-2xl md:text-3xl font-bold mb-4">
+              Latest <span className="gradient-text-cosmic">Guides & Tips</span>
+            </h2>
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+              Learn expert techniques to find duplicate photos, protect your images, and master reverse image search
+            </p>
+          </motion.div>
+
+          <div className="max-w-6xl mx-auto">
+            <Link
+              to="/blog/find-duplicate-photos-computer-free"
+              className="group glass-strong rounded-2xl overflow-hidden hover:shadow-2xl transition-all duration-300 flex flex-col md:flex-row"
+            >
+              <div className="md:w-2/5 bg-gradient-to-br from-blue-100 to-purple-100 p-12 flex items-center justify-center">
+                <div className="text-center">
+                  <div className="w-24 h-24 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full flex items-center justify-center mb-4 mx-auto">
+                    <span className="text-5xl">🔍</span>
+                  </div>
+                  <span className="px-4 py-2 bg-blue-100 text-blue-600 rounded-full text-sm font-medium">
+                    Tutorial
+                  </span>
+                </div>
+              </div>
+              <div className="md:w-3/5 p-8 md:p-12">
+                <h3 className="text-2xl md:text-3xl font-bold mb-4 group-hover:text-blue-600 transition-colors">
+                  How to Find Duplicate Photos on Your Computer Free (5 Easy Methods)
+                </h3>
+                <p className="text-gray-600 mb-6 leading-relaxed text-lg">
+                  Discover 5 proven methods to find and remove duplicate photos on Windows and Mac without spending a dime. 
+                  Learn which tools work best for your needs and save hours of manual sorting.
+                </p>
+                <div className="flex items-center gap-6 text-sm text-gray-500 mb-6">
+                  <span className="flex items-center gap-1">
+                    <Clock className="w-4 h-4" />
+                    8 min read
+                  </span>
+                  <span>Published: Jan 26, 2025</span>
+                </div>
+                <div className="flex items-center gap-2 text-blue-600 font-medium">
+                  Read Full Guide
+                  <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                </div>
+              </div>
+            </Link>
+
+            <div className="text-center mt-12">
+              <Link
+                to="/blog"
+                className="inline-flex items-center gap-2 text-blue-600 hover:text-purple-600 transition-colors font-medium"
+              >
+                View All Articles
+                <ArrowRight className="w-4 h-4" />
+              </Link>
+            </div>
+          </div>
         </div>
       </section>
 
