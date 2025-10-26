@@ -165,6 +165,82 @@ const BlogPost = () => {
             ]
           }
         `}</script>
+
+        {/* FAQPage Schema - for posts with FAQ sections */}
+        {post.slug === 'find-duplicate-photos-computer-free' && (
+          <script type="application/ld+json">{`
+            {
+              "@context": "https://schema.org",
+              "@type": "FAQPage",
+              "mainEntity": [
+                {
+                  "@type": "Question",
+                  "name": "How do I know if a photo is a duplicate?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Duplicate photos can be exact copies (identical file size, dimensions, content), similar versions (same photo, different edits/crops), or near-duplicates (same scene, slightly different angle). Use AI tools like DuplicateDetective to detect all three types automatically."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Will deleting duplicates affect my original photos?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "No, if done correctly. Always keep the highest quality version (largest file size), preview before deleting, back up your library before bulk deletion, and use trash/recycle bin to avoid permanent deletion until verified."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "How much storage space can I save by removing duplicates?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Average savings: Small libraries (under 1,000 photos): 2-5GB, Medium libraries (1,000-10,000 photos): 5-20GB, Large libraries (10,000+ photos): 20-100GB. Some users report saving 30-40% of total storage by removing duplicates."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Can I find duplicates across multiple folders?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes! Desktop software scans multiple folders simultaneously. For web tools, search one folder at a time and manually compare results. Cloud backup services like Google Photos can auto-organize across all folders."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "What's the fastest way to find duplicate photos?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "For quick searches: DuplicateDetective (1-3 seconds per photo). For bulk scanning: Desktop software like dupeGuru (scans 1,000 photos in 2-5 minutes)."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "How do I prevent duplicate photos in the future?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Best practices: Import photos only once, use organized folder structure by date/event, enable iCloud Photo Library or Google Photos auto-sync, delete camera roll photos after importing to computer, and use photo management software like Lightroom or Apple Photos."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Are free duplicate finders safe to use?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes, if you choose reputable tools: DuplicateDetective (web-based, no installation), dupeGuru (open source, community-verified), and built-in OS tools (Windows Explorer, Mac Finder). Avoid unknown software from untrusted websites, apps asking for excessive permissions, and tools bundled with adware/malware."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Can I recover deleted photos if I make a mistake?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes, if you use the Recycle Bin (Windows) or Trash (Mac). For permanently deleted photos, use recovery software (Recuva, Disk Drill), check cloud backups (Google Photos, iCloud), or restore from Time Machine (Mac) or File History (Windows)."
+                  }
+                }
+              ]
+            }
+          `}</script>
+        )}
       </Helmet>
 
       <div className="pt-20 md:pt-28 pb-8 min-h-screen">
