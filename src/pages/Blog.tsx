@@ -4,48 +4,7 @@ import { Clock, User, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import RelatedLinks from '../components/RelatedLinks';
 
-const blogPosts = [
-  {
-    id: 1,
-    title: "How to Find the Original Source of Any Image Online",
-    excerpt: "Complete guide to using reverse image search to find where an image originally came from, including tips for photographers and content creators.",
-    slug: "find-original-source-image-online",
-    category: "Tutorial",
-    readTime: "5 min read",
-    publishDate: "2025-10-10",
-    keywords: ["reverse image search tutorial", "find original image source", "image source finder"]
-  },
-  {
-    id: 2,
-    title: "Best Free Reverse Image Search Tools Compared",
-    excerpt: "Comprehensive comparison of Google Lens, TinEye, Bing Visual Search, and Yandex Images for finding duplicate and similar images.",
-    slug: "best-free-reverse-image-search-tools",
-    category: "Comparison",
-    readTime: "8 min read",
-    publishDate: "2025-10-09",
-    keywords: ["best reverse image search tools", "google lens vs tineye", "free image search comparison"]
-  },
-  {
-    id: 3,
-    title: "How to Detect Stolen Images and Protect Your Photography",
-    excerpt: "Learn how photographers can use reverse image search to find unauthorized use of their photos and protect their intellectual property.",
-    slug: "detect-stolen-images-protect-photography",
-    category: "Photography",
-    readTime: "6 min read",
-    publishDate: "2025-10-08",
-    keywords: ["detect stolen images", "protect photography copyright", "find unauthorized image use"]
-  },
-  {
-    id: 4,
-    title: "Reverse Image Search for E-commerce: Finding Product Sources",
-    excerpt: "Discover how to use reverse image search to find suppliers, verify product authenticity, and research competitors in e-commerce.",
-    slug: "reverse-image-search-ecommerce-product-sources",
-    category: "E-commerce",
-    readTime: "7 min read",
-    publishDate: "2025-10-07",
-    keywords: ["reverse image search ecommerce", "find product suppliers", "verify product authenticity"]
-  }
-];
+import blogPosts from '../data/blogPosts';
 
 const Blog = () => {
   return (
@@ -57,7 +16,7 @@ const Blog = () => {
         <meta name="author" content="DuplicateDetective" />
         <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
         <link rel="canonical" href="https://checkduplicateimage.online/blog" />
-        
+
         {/* Open Graph Meta Tags */}
         <meta property="og:title" content="Reverse Image Search Blog - Tips, Tutorials & Best Practices" />
         <meta property="og:description" content="Learn reverse image search techniques, find duplicate images, and discover the best practices for using Google Lens, TinEye & other tools effectively." />
@@ -68,14 +27,14 @@ const Blog = () => {
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta property="og:image:alt" content="DuplicateDetective Blog - Expert Tips & Duplicate Detection Guides" />
-        
+
         {/* Twitter Card Meta Tags */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Reverse Image Search Blog - Tips, Tutorials & Best Practices" />
         <meta name="twitter:description" content="Learn reverse image search techniques, find duplicate images, and discover the best practices for using Google Lens, TinEye & other tools effectively." />
         <meta name="twitter:image" content="https://checkduplicateimage.online/og-image.jpg" />
         <meta name="twitter:image:alt" content="DuplicateDetective Blog - Expert Tips & Duplicate Detection Guides" />
-        
+
         {/* Blog Schema Markup */}
         <script type="application/ld+json">{`
         {
@@ -113,10 +72,10 @@ const Blog = () => {
             animate={{ opacity: 1, y: 0 }}
             className="text-center mb-16"
           >
-            <h1 className="text-3xl md:text-4xl font-bold mb-6 gradient-text-cosmic mt-4">
+            <h1 className="text-3xl md:text-5xl font-bold mb-6 heading-premium gradient-text-cosmic mt-4">
               Reverse Image Search Blog
             </h1>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
               Master the art of finding duplicate images, protecting your photos, and discovering original sources with our comprehensive guides and tutorials
             </p>
           </motion.div>
@@ -142,7 +101,7 @@ const Blog = () => {
                 <h2 className="text-2xl md:text-3xl font-bold mb-4">
                   {blogPosts[0].title}
                 </h2>
-                <p className="text-gray-600 mb-6 leading-relaxed">
+                <p className="text-gray-300 mb-6 leading-relaxed">
                   {blogPosts[0].excerpt}
                 </p>
                 <div className="flex items-center justify-between">
@@ -165,7 +124,7 @@ const Blog = () => {
                     <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full flex items-center justify-center mb-4 mx-auto">
                       <span className="text-2xl">🔍</span>
                     </div>
-                    <p className="text-gray-600 font-medium">Tutorial</p>
+                    <p className="text-gray-300 font-medium">Tutorial</p>
                   </div>
                 </div>
               </div>
@@ -187,10 +146,10 @@ const Blog = () => {
                     <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full flex items-center justify-center mb-3 mx-auto">
                       <span className="text-xl">📷</span>
                     </div>
-                    <span className="text-sm font-medium text-gray-600">{post.category}</span>
+                    <span className="text-sm font-medium text-gray-300">{post.category}</span>
                   </div>
                 </div>
-                
+
                 <div className="p-6">
                   <div className="flex items-center gap-4 mb-3">
                     <span className="px-2 py-1 bg-purple-100 text-purple-600 rounded text-xs font-medium">
@@ -201,15 +160,15 @@ const Blog = () => {
                       {post.readTime}
                     </span>
                   </div>
-                  
+
                   <h3 className="text-lg font-bold mb-3 leading-tight">
                     {post.title}
                   </h3>
-                  
-                  <p className="text-gray-600 text-sm mb-4 leading-relaxed">
+
+                  <p className="text-gray-300 text-sm mb-4 leading-relaxed">
                     {post.excerpt}
                   </p>
-                  
+
                   <div className="flex items-center justify-between">
                     <span className="text-xs text-gray-500">{post.publishDate}</span>
                     <Link
@@ -234,13 +193,13 @@ const Blog = () => {
           >
             <div className="glass rounded-2xl p-8 max-w-2xl mx-auto">
               <h3 className="text-2xl font-bold mb-4">More Content Coming Soon!</h3>
-              <p className="text-gray-600 mb-6">
-                We're working on more comprehensive guides, tutorials, and tips to help you master reverse image search. 
+              <p className="text-gray-300 mb-6">
+                We're working on more comprehensive guides, tutorials, and tips to help you master reverse image search.
                 Check back regularly for new content!
               </p>
               <div className="flex flex-wrap justify-center gap-4">
                 {["Advanced Search Tips", "API Integration Guide", "Business Use Cases", "Privacy Best Practices"].map((topic, index) => (
-                  <span key={index} className="px-3 py-1 bg-gray-100 text-gray-600 rounded-full text-sm">
+                  <span key={index} className="px-3 py-1 bg-gray-100 text-gray-300 rounded-full text-sm">
                     {topic}
                   </span>
                 ))}
@@ -248,7 +207,7 @@ const Blog = () => {
             </div>
           </motion.div>
         </div>
-        
+
         {/* Related Links */}
         <div className="container mx-auto px-4 py-12">
           <RelatedLinks currentPath="/blog" />

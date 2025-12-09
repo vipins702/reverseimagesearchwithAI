@@ -32,13 +32,13 @@ const About = () => {
         <title>About DuplicateDetective - Best Free Reverse Image Search Tool 2025</title>
         <meta name="description" content="Learn why DuplicateDetective is the #1 free reverse image search tool. Multi-engine search (Google, Bing, Yandex, TinEye), 100% private, no signup required." />
         <meta name="keywords" content="about duplicate detective, reverse image search tool, best image finder, free duplicate detector, multi-engine image search, privacy-first search tool, no registration image search, trusted image search" />
-        
+
         {/* SEO META TAGS */}
         <meta name="author" content="DuplicateDetective" />
         <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
         <meta name="googlebot" content="index, follow" />
         <link rel="canonical" href="https://checkduplicateimage.online/about" />
-        
+
         {/* OPEN GRAPH / FACEBOOK */}
         <meta property="og:title" content="About DuplicateDetective - #1 Free Reverse Image Search" />
         <meta property="og:description" content="Discover why 100K+ users trust DuplicateDetective for reverse image searches. Multi-engine support, privacy-first design, and 100% free forever." />
@@ -50,7 +50,7 @@ const About = () => {
         <meta property="og:image:height" content="630" />
         <meta property="og:image:alt" content="About DuplicateDetective - Trusted by 100K+ Users" />
         <meta property="og:locale" content="en_US" />
-        
+
         {/* TWITTER CARD */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@DuplicateDetective" />
@@ -138,25 +138,25 @@ const About = () => {
             transition={{ duration: 0.8 }}
             className="text-center max-w-4xl mx-auto space-y-8"
           >
-            <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold gradient-text-cosmic mt-4">
+            <h1 className="text-3xl md:text-5xl font-bold heading-premium gradient-text-cosmic mt-4">
               About DuplicateDetective - Professional Duplicate Image Detection
             </h1>
-            <p className="text-lg text-gray-600 leading-relaxed">
+            <p className="text-lg text-gray-300 leading-relaxed">
               DuplicateDetective is the world's most comprehensive free duplicate image detection and reverse search platform. Find duplicate images, verify photo authenticity, and protect your copyrights across Google Lens, Bing Visual Search, Yandex Images, and TinEye.
             </p>
-            
+
             <div className="grid md:grid-cols-3 gap-8 mt-12">
               <div className="glass-strong p-6 rounded-xl text-center">
                 <div className="text-3xl font-bold text-blue-400 mb-2">10M+</div>
-                <div className="text-sm text-gray-600">Images Searched</div>
+                <div className="text-sm text-gray-300">Images Searched</div>
               </div>
               <div className="glass-strong p-6 rounded-xl text-center">
                 <div className="text-3xl font-bold text-purple-400 mb-2">99.9%</div>
-                <div className="text-sm text-gray-600">Success Rate</div>
+                <div className="text-sm text-gray-300">Success Rate</div>
               </div>
               <div className="glass-strong p-6 rounded-xl text-center">
                 <div className="text-3xl font-bold text-green-400 mb-2">&lt;3s</div>
-                <div className="text-sm text-gray-600">Average Speed</div>
+                <div className="text-sm text-gray-300">Average Speed</div>
               </div>
             </div>
           </motion.div>
@@ -177,10 +177,10 @@ const About = () => {
               <h2 className="text-2xl md:text-3xl font-bold">
                 Our Mission: <span className="gradient-text-cosmic">Professional Duplicate Detection for Everyone</span>
               </h2>
-              <p className="text-lg text-gray-600 leading-relaxed">
+              <p className="text-lg text-gray-300 leading-relaxed">
                 DuplicateDetective believes professional-grade duplicate image detection should be accessible to everyone. Our free tool combines advanced AI technology with multiple search engines to help you find duplicate images, protect your copyrights, and verify image authenticity with unmatched precision.
               </p>
-              
+
               <div className="space-y-3">
                 {[
                   'Find duplicate images across the web',
@@ -198,7 +198,7 @@ const About = () => {
                     className="flex items-center gap-3"
                   >
                     <CheckCircle className="w-5 h-5 text-green-400" />
-                    <span className="text-gray-600">{item}</span>
+                    <span className="text-gray-300">{item}</span>
                   </motion.div>
                 ))}
               </div>
@@ -214,29 +214,29 @@ const About = () => {
               <h3 className="text-xl font-bold mb-6 text-center gradient-text-cosmic">
                 🔍 Why Choose DuplicateDetective?
               </h3>
-              
+
               <div className="space-y-4">
                 <div className="flex items-start gap-3">
                   <Target className="w-6 h-6 text-blue-400 mt-1" />
                   <div>
-                    <h4 className="font-semibold text-gray-900 mb-1">Multi-Engine Power</h4>
-                    <p className="text-sm text-gray-600">Search Google Lens, Bing, Yandex & TinEye simultaneously</p>
+                    <h4 className="font-semibold text-white mb-1">Multi-Engine Power</h4>
+                    <p className="text-sm text-gray-300">Search Google Lens, Bing, Yandex & TinEye simultaneously</p>
                   </div>
                 </div>
-                
+
                 <div className="flex items-start gap-3">
                   <Shield className="w-6 h-6 text-green-400 mt-1" />
                   <div>
-                    <h4 className="font-semibold text-gray-900 mb-1">100% Private & Secure</h4>
-                    <p className="text-sm text-gray-600">No registration, no data collection, images auto-deleted</p>
+                    <h4 className="font-semibold text-white mb-1">100% Private & Secure</h4>
+                    <p className="text-sm text-gray-300">No registration, no data collection, images auto-deleted</p>
                   </div>
                 </div>
-                
+
                 <div className="flex items-start gap-3">
                   <Zap className="w-6 h-6 text-purple-400 mt-1" />
                   <div>
-                    <h4 className="font-semibold text-gray-900 mb-1">Instant Results</h4>
-                    <p className="text-sm text-gray-600">Advanced algorithms deliver results in under 3 seconds</p>
+                    <h4 className="font-semibold text-white mb-1">Instant Results</h4>
+                    <p className="text-sm text-gray-300">Advanced algorithms deliver results in under 3 seconds</p>
                   </div>
                 </div>
               </div>
@@ -258,7 +258,7 @@ const About = () => {
             <h2 className="text-2xl md:text-3xl font-bold mb-4">
               What Makes <span className="gradient-text-cosmic">DuplicateDetective</span> Special?
             </h2>
-            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+            <p className="text-lg text-gray-300 max-w-3xl mx-auto">
               Advanced duplicate detection technology meets user-friendly design to provide the most comprehensive free duplicate image detection and reverse search experience.
             </p>
           </motion.div>
@@ -276,10 +276,10 @@ const About = () => {
                   className="glass-strong rounded-3xl p-8 text-center hover:scale-105 transition-all duration-300"
                 >
                   <div className={`w-16 h-16 bg-gradient-to-br ${feature.color} rounded-2xl flex items-center justify-center mb-4 mx-auto`}>
-                    <Icon className="w-8 h-8 text-gray-900" />
+                    <Icon className="w-8 h-8 text-white" />
                   </div>
-                  <h3 className="text-xl font-semibold mb-3 text-gray-900">{feature.title}</h3>
-                  <p className="text-gray-600">{feature.description}</p>
+                  <h3 className="text-xl font-semibold mb-3 text-white">{feature.title}</h3>
+                  <p className="text-gray-300">{feature.description}</p>
                 </motion.div>
               );
             })}
@@ -300,7 +300,7 @@ const About = () => {
             <h2 className="text-2xl md:text-3xl font-bold">
               Ready to Start Using <span className="gradient-text-cosmic">DuplicateDetective</span>?
             </h2>
-            <p className="text-lg text-gray-600">
+            <p className="text-lg text-gray-300">
               Join millions who trust DuplicateDetective to find duplicate images, verify photo authenticity, and protect their visual content with professional-grade detection technology.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

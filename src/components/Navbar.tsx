@@ -2,7 +2,7 @@
 import { useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { motion, AnimatePresence } from 'framer-motion'
-import {Sparkles, Menu, X, Search, Upload, Info, Zap, BookOpen} from 'lucide-react'
+import { Sparkles, Menu, X, Search, Upload, Info, Zap, BookOpen } from 'lucide-react'
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -20,7 +20,7 @@ const Navbar = () => {
 
   return (
     <nav className="relative z-50">
-      <div className="glass-strong border-b border-slate-200/50">
+      <div className="glass-strong border-b border-white/10">
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between h-16">
             {/* Logo */}
@@ -30,7 +30,7 @@ const Navbar = () => {
                 transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
                 className="p-2 glass rounded-xl group-hover:glow-blue transition-all duration-300"
               >
-                <Sparkles className="w-6 h-6 text-blue-600" />
+                <Sparkles className="w-6 h-6 text-blue-400" />
               </motion.div>
               <span className="text-xl font-bold gradient-text-cosmic">
                 DuplicateDetective
@@ -48,9 +48,9 @@ const Navbar = () => {
                     className={`
                       relative px-4 py-2 rounded-xl transition-all duration-300
                       flex items-center gap-2 font-medium
-                      ${isActive(item.href) 
-                        ? 'text-blue-600 bg-blue-50' 
-                        : 'text-gray-600 hover:text-gray-900 hover:bg-gray-100/50'
+                      ${isActive(item.href)
+                        ? 'text-blue-400 bg-blue-500/10'
+                        : 'text-gray-400 hover:text-white hover:bg-white/5'
                       }
                     `}
                   >
@@ -59,7 +59,7 @@ const Navbar = () => {
                     {isActive(item.href) && (
                       <motion.div
                         layoutId="activeTab"
-                        className="absolute inset-0 bg-gradient-to-r from-blue-50 to-purple-50 rounded-xl border border-blue-200"
+                        className="absolute inset-0 bg-white/5 rounded-xl border border-blue-500/30"
                         initial={false}
                         transition={{ type: "spring", bounce: 0.2, duration: 0.6 }}
                       />
@@ -73,7 +73,7 @@ const Navbar = () => {
             <div className="hidden md:block">
               <Link
                 to="/reverse-image-search"
-                className="btn-cosmic bg-gradient-to-r from-blue-500 to-purple-600 px-6 py-2 rounded-xl font-semibold hover:shadow-2xl transition-all duration-300"
+                className="btn-cosmic bg-gradient-to-r from-blue-600 to-purple-600 px-6 py-2 rounded-xl font-semibold hover:shadow-2xl transition-all duration-300 text-white"
               >
                 Start Search
               </Link>
@@ -82,7 +82,7 @@ const Navbar = () => {
             {/* Mobile menu button */}
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="md:hidden p-2 glass rounded-xl"
+              className="md:hidden p-2 glass rounded-xl text-gray-300"
             >
               {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
             </button>
@@ -97,7 +97,7 @@ const Navbar = () => {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
-            className="md:hidden glass-strong border-b border-slate-200/50"
+            className="md:hidden glass-strong border-b border-white/10"
           >
             <div className="container mx-auto px-4 py-4 space-y-2">
               {navigation.map((item) => {
@@ -109,9 +109,9 @@ const Navbar = () => {
                     onClick={() => setIsOpen(false)}
                     className={`
                       flex items-center gap-3 px-4 py-3 rounded-xl transition-all duration-300
-                      ${isActive(item.href) 
-                        ? 'text-blue-600 bg-blue-50 border border-blue-200' 
-                        : 'text-gray-600 hover:text-gray-900 hover:bg-gray-100/50'
+                      ${isActive(item.href)
+                        ? 'text-blue-400 bg-blue-500/10 border border-blue-500/30'
+                        : 'text-gray-400 hover:text-white hover:bg-white/5'
                       }
                     `}
                   >
@@ -123,7 +123,7 @@ const Navbar = () => {
               <Link
                 to="/reverse-image-search"
                 onClick={() => setIsOpen(false)}
-                className="flex items-center justify-center gap-2 mt-4 btn-cosmic bg-gradient-to-r from-blue-500 to-purple-600 px-6 py-3 rounded-xl font-semibold"
+                className="flex items-center justify-center gap-2 mt-4 btn-cosmic bg-gradient-to-r from-blue-600 to-purple-600 px-6 py-3 rounded-xl font-semibold text-white"
               >
                 <Search className="w-5 h-5" />
                 Start Search

@@ -278,16 +278,16 @@ const UploadPage = () => {
     <>
       <Helmet>
         {/* PRIMARY META TAGS - Optimized for Upload/Search Intent */}
-        <title>Upload Image to Find Duplicates - Multi-Engine Search | DuplicateDetective</title>
-        <meta name="description" content="Upload any photo to instantly search Google Lens, Bing, Yandex & TinEye. Find duplicates, track copyright theft & discover image sources. Free & fast!" />
-        <meta name="keywords" content="upload image search, find image source, duplicate image detector, copyright image finder, image plagiarism checker, photo source finder, Google Lens upload, Bing visual search, TinEye search, multi-engine image search" />
-        
+        <title>Upload Image to Find Duplicates & Check Source Free | DuplicateDetective</title>
+        <meta name="description" content="Upload photo to find duplicates, check if image is stolen, and identify fake profiles. Free multi-engine reverse image search across Google, Bing, Yandex & TinEye." />
+        <meta name="keywords" content="upload image to find source, check if image is stolen, identify fake profiles, find duplicate photos for free, instagram image source finder, reverse image search upload, photo source finder" />
+
         {/* SEO META TAGS */}
         <meta name="author" content="DuplicateDetective" />
         <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
         <meta name="googlebot" content="index, follow" />
         <link rel="canonical" href="https://checkduplicateimage.online/reverse-image-search" />
-        
+
         {/* OPEN GRAPH / FACEBOOK */}
         <meta property="og:title" content="Upload Image to Find Duplicates - Multi-Engine Search" />
         <meta property="og:description" content="Drag & drop any image to instantly find duplicates, similar photos, and original sources. AI-powered search across 4 major engines. 100% free, no signup!" />
@@ -299,7 +299,7 @@ const UploadPage = () => {
         <meta property="og:image:height" content="630" />
         <meta property="og:image:alt" content="Upload Image for Reverse Image Search - DuplicateDetective Interface" />
         <meta property="og:locale" content="en_US" />
-        
+
         {/* TWITTER CARD */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@DuplicateDetective" />
@@ -384,27 +384,27 @@ const UploadPage = () => {
               </motion.div>
               <h1 className="text-3xl md:text-5xl font-bold heading-premium gradient-text-cosmic">
                 Upload & Find <br className="hidden md:block" />
-                <span className="text-4xl md:text-6xl">Image Sources</span>
+                <span className="text-3xl md:text-5xl">Image Sources</span>
               </h1>
             </div>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed mb-6">
+            <p className="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed mb-6">
               Upload any image to instantly find duplicates, similar photos, and original sources across the web. Free reverse image search tool powered by Google Lens, Bing, Yandex & TinEye.
             </p>
             <div className="max-w-4xl mx-auto grid md:grid-cols-3 gap-4 text-sm">
               <div className="glass p-4 rounded-xl text-center">
                 <div className="text-2xl mb-2">🔍</div>
-                <h3 className="font-semibold text-gray-800 mb-1">Find Duplicate Images</h3>
-                <p className="text-gray-600 text-sm">Discover where your photos appear online and protect against unauthorized use</p>
+                <h3 className="font-semibold text-gray-200 mb-1">Find Duplicate Images</h3>
+                <p className="text-gray-300 text-sm">Discover where your photos appear online and protect against unauthorized use</p>
               </div>
               <div className="glass p-4 rounded-xl text-center">
                 <div className="text-2xl mb-2">🛒</div>
-                <h3 className="font-semibold text-gray-800 mb-1">Product Research</h3>
-                <p className="text-gray-600 text-sm">Find original sources, compare prices, and identify unknown products instantly</p>
+                <h3 className="font-semibold text-gray-200 mb-1">Product Research</h3>
+                <p className="text-gray-300 text-sm">Find original sources, compare prices, and identify unknown products instantly</p>
               </div>
               <div className="glass p-4 rounded-xl text-center">
                 <div className="text-2xl mb-2">✅</div>
-                <h3 className="font-semibold text-gray-800 mb-1">Verify Authenticity</h3>
-                <p className="text-gray-600 text-sm">Check image authenticity and find original sources of viral photos</p>
+                <h3 className="font-semibold text-gray-200 mb-1">Verify Authenticity</h3>
+                <p className="text-gray-300 text-sm">Check image authenticity and find original sources of viral photos</p>
               </div>
             </div>
           </motion.div>
@@ -413,18 +413,18 @@ const UploadPage = () => {
           <div className="max-w-2xl mx-auto">
             <AnimatePresence mode="wait">
               {!uploadedImage ? (
-              /* Upload Section */
-              <motion.div
-                key="upload"
-                initial={{ opacity: 0, scale: 0.9 }}
-                animate={{ opacity: 1, scale: 1 }}
-                exit={{ opacity: 0, scale: 0.9 }}
-                transition={{ duration: 0.5 }}
-                className="glass-strong rounded-xl p-4 md:p-6">
+                /* Upload Section */
+                <motion.div
+                  key="upload"
+                  initial={{ opacity: 0, scale: 0.9 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  exit={{ opacity: 0, scale: 0.9 }}
+                  transition={{ duration: 0.5 }}
+                  className="glass-strong rounded-xl p-4 md:p-6">
 
                   <div
-                  {...getRootProps()}
-                  className={`
+                    {...getRootProps()}
+                    className={`
                       border-2 border-dashed rounded-2xl p-12 text-center cursor-pointer
                       transition-all duration-300 hover:scale-[1.02]
                       ${isDragActive && !isDragReject ? 'dropzone-active' : ''}
@@ -432,40 +432,40 @@ const UploadPage = () => {
                     `}>
 
                     <input {...getInputProps()} />
-                    
+
                     <motion.div
-                    animate={{ y: isDragActive ? -10 : 0 }}
-                    transition={{ duration: 0.3 }}
-                    className="space-y-6">
+                      animate={{ y: isDragActive ? -10 : 0 }}
+                      transition={{ duration: 0.3 }}
+                      className="space-y-6">
 
                       <div className="flex justify-center">
                         <div className="p-6 glass rounded-full glow-blue">
                           <Upload className="w-12 h-12 text-blue-400" />
                         </div>
                       </div>
-                      
+
                       <div>
-                        <h3 className="text-xl font-bold text-gray-800 mb-2">
+                        <h3 className="text-xl font-bold text-gray-200 mb-2">
                           {isDragActive ? 'Drop your image here' : 'Upload your image'}
                         </h3>
-                        <p className="text-gray-600 text-lg">
+                        <p className="text-gray-300 text-lg">
                           Drag & drop or click to select • JPG, PNG, WebP • Max 10MB
                         </p>
                       </div>
-                      
+
                       <motion.button
-                      whileHover={{ scale: 1.05 }}
-                      whileTap={{ scale: 0.95 }}
-                      className="btn-cosmic bg-gradient-to-r from-blue-500 to-purple-600 px-4 py-2 rounded-lg font-semibold text-sm hover:shadow-2xl transition-all duration-300">
+                        whileHover={{ scale: 1.05 }}
+                        whileTap={{ scale: 0.95 }}
+                        className="btn-cosmic bg-gradient-to-r from-blue-500 to-purple-600 px-4 py-2 rounded-lg font-semibold text-sm hover:shadow-2xl transition-all duration-300">
 
                         Choose File
                       </motion.button>
                     </motion.div>
                   </div>
-                  
+
                   {/* Search Engine Preview Icons */}
                   <div className="mt-8 text-center">
-                    <p className="text-sm text-gray-600 mb-4">Powered by leading reverse image search engines:</p>
+                    <p className="text-sm text-gray-300 mb-4">Powered by leading reverse image search engines:</p>
                     <div className="flex justify-center items-center gap-6 flex-wrap">
                       {searchEngines.map((engine, index) => (
                         <motion.div
@@ -473,298 +473,107 @@ const UploadPage = () => {
                           initial={{ opacity: 0, scale: 0.8 }}
                           animate={{ opacity: 1, scale: 1 }}
                           transition={{ delay: index * 0.1 }}
-                          className="flex items-center gap-2 glass px-3 py-2 rounded-lg hover:bg-white/10 transition-colors"
+                          className="flex items-center gap-2 glass px-3 py-2 rounded-lg hover:bg-transparent/10 transition-colors"
                         >
                           <div className={`w-6 h-6 bg-gradient-to-br ${engine.color} rounded-lg flex items-center justify-center`}>
-                            {React.cloneElement(engine.icon as React.ReactElement, { className: "w-3 h-3 text-gray-900" })}
+                            {React.cloneElement(engine.icon as React.ReactElement, { className: "w-3 h-3 text-white" })}
                           </div>
-                          <span className="text-sm font-semibold text-gray-800">{engine.name.split(' ')[0]}</span>
+                          <span className="text-sm font-semibold text-gray-200">{engine.name.split(' ')[0]}</span>
                         </motion.div>
                       ))}
                     </div>
-                    <p className="text-sm text-gray-600 mt-3">Upload an image above to search across all engines simultaneously</p>
+                    <p className="text-sm text-gray-300 mt-3">Upload an image above to search across all engines simultaneously</p>
                   </div>
                 </motion.div>) : (
 
-              /* Results Section */
-              <motion.div
-                key="results"
-                initial={{ opacity: 0, y: 50 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5 }}
-                className="space-y-8">
+                /* Results Section */
+                <motion.div
+                  key="results"
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5 }}
+                  className="space-y-6">
 
-                  {/* Image Preview */}
+                  {/* Image Preview & Search Options Combined */}
                   <div className="glass-strong rounded-3xl p-6">
-                    <div className="flex items-center justify-between mb-6">
-                      <h3 className="text-xl font-bold text-gray-800 flex items-center gap-2">
-                        <ImageIcon className="w-6 h-6 text-blue-500" />
-                        Uploaded Image
-                      </h3>
-                      <motion.button
-                      whileHover={{ scale: 1.1 }}
-                      whileTap={{ scale: 0.9 }}
-                      onClick={resetUpload}
-                      className="p-2 glass rounded-xl hover:bg-red-500/20 transition-colors">
-
-                        <X className="w-5 h-5" />
-                      </motion.button>
-                    </div>
-                    
-                    <div className="grid md:grid-cols-2 gap-6 items-center">
-                      <div className="relative">
+                    <div className="flex flex-col md:flex-row gap-6 items-center">
+                      {/* Compact Preview */}
+                      <div className="relative w-32 h-32 md:w-40 md:h-40 flex-shrink-0">
                         <img
-                        src={uploadedImage.dataUrl}
-                        alt="Uploaded image for reverse image search - find duplicates and similar photos online"
-                        className="w-full h-64 object-cover rounded-xl" />
-
-                        {isUploading &&
-                      <div className="absolute inset-0 bg-black/50 rounded-xl flex items-center justify-center">
-                            <div className="text-center space-y-4">
-                              <Loader2 className="w-8 h-8 animate-spin mx-auto text-blue-400" />
-                              <div className="w-48 bg-gray-700 rounded-full h-2">
-                                <div
-                              className="bg-gradient-to-r from-blue-500 to-purple-600 h-2 rounded-full transition-all duration-300"
-                              style={{ width: `${uploadProgress}%` }} />
-
-                              </div>
-                              <p className="text-sm">Uploading to Vercel Blob...</p>
-                            </div>
+                          src={uploadedImage.dataUrl}
+                          alt="Preview"
+                          className="w-full h-full object-cover rounded-xl border border-white/10 shadow-lg"
+                        />
+                        <button
+                          onClick={resetUpload}
+                          className="absolute -top-2 -right-2 bg-red-500 text-white p-1.5 rounded-full hover:bg-red-600 transition-colors shadow-lg z-10"
+                          title="Remove image"
+                        >
+                          <X className="w-3 h-3" />
+                        </button>
+                        {isUploading && (
+                          <div className="absolute inset-0 bg-black/60 rounded-xl flex items-center justify-center backdrop-blur-sm">
+                            <Loader2 className="w-6 h-6 text-blue-400 animate-spin" />
                           </div>
-                      }
-                      </div>
-                      
-                      <div className="space-y-4">
-                        <div className="flex items-center gap-3">
-                          <div className="w-3 h-3 bg-green-400 rounded-full" />
-                          <span className="font-semibold text-gray-800">{uploadedImage.file.name}</span>
-                        </div>
-                        <div className="text-gray-600 space-y-2">
-                          <p>Size: {(uploadedImage.file.size / 1024 / 1024).toFixed(2)} MB</p>
-                          <p>Type: {uploadedImage.file.type}</p>
-                        </div>
-                        
-                        {uploadedImage.publicUrl ?
-                      <div className="space-y-2">
-                            <div className="flex items-center gap-2 text-green-400">
-                              <CheckCircle className="w-5 h-5" />
-                              <span className="font-medium">Ready for search</span>
-                            </div>
-                            <p className="text-xs text-gray-500 break-all">
-                              Public URL: {uploadedImage.publicUrl}
-                            </p>
-                            <div className="mt-2 flex flex-col gap-2">
-                              <button
-                                onClick={handlePurge}
-                                disabled={isPurging}
-                                className="bg-red-500/80 hover:bg-red-600/80 text-white px-3 py-1 rounded text-xs font-semibold transition-all disabled:opacity-50"
-                              >
-                                {isPurging ? 'Purging...' : 'Purge Image Now'}
-                              </button>
-                              <span className="text-xs text-gray-400">Images are auto-deleted from storage after 2-3 days for privacy.</span>
-                            </div>
-                          </div> :
-                      isUploading ?
-                      <div className="flex items-center gap-2 text-blue-400">
-                            <Loader2 className="w-5 h-5 animate-spin" />
-                            <span>Uploading to cloud...</span>
-                          </div> :
-
-                      <div className="flex items-center gap-2 text-yellow-400">
-                            <AlertCircle className="w-5 h-5" />
-                            <span>Upload failed</span>
-                          </div>
-                      }
-                      </div>
-                    </div>
-                  </div>
-
-                  {/* How to Use Instructions */}
-                  <div className="glass-strong rounded-3xl p-6 mb-8">
-                    <h3 className="text-xl font-bold text-gray-800 mb-4 flex items-center gap-2">
-                      <Eye className="w-6 h-6 text-blue-500" />
-                      How to Use Reverse Image Search Engines
-                    </h3>
-                    <div className="grid md:grid-cols-2 gap-4 text-sm text-gray-700">
-                      <div className="space-y-2">
-                        <h4 className="font-bold text-gray-800">🔍 Find Duplicate Images:</h4>
-                        <ul className="space-y-1 text-sm">
-                          <li>• Upload any photo to find exact matches</li>
-                          <li>• Discover where your images appear online</li>
-                          <li>• Check for unauthorized usage or theft</li>
-                        </ul>
-                      </div>
-                      <div className="space-y-2">
-                        <h4 className="font-bold text-gray-800">🛒 Product & Shopping:</h4>
-                        <ul className="space-y-1 text-sm">
-                          <li>• Find original product sources</li>
-                          <li>• Compare prices across websites</li>
-                          <li>• Identify unknown products or items</li>
-                        </ul>
-                      </div>
-                      <div className="space-y-2">
-                        <h4 className="font-bold text-gray-800">📸 Copyright Protection:</h4>
-                        <ul className="space-y-1 text-sm">
-                          <li>• Track unauthorized image usage</li>
-                          <li>• Protect your photography work</li>
-                          <li>• Monitor brand image violations</li>
-                        </ul>
-                      </div>
-                      <div className="space-y-2">
-                        <h4 className="font-bold text-gray-800">✅ Verify Authenticity:</h4>
-                        <ul className="space-y-1 text-sm">
-                          <li>• Check if images are fake or real</li>
-                          <li>• Find original source of viral photos</li>
-                          <li>• Verify news and social media images</li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-
-                  {/* Search Engines - Enhanced with Attention-Grabbing Design */}
-                  <motion.div 
-                    initial={{ opacity: 0, scale: 0.95 }}
-                    animate={{ opacity: 1, scale: 1 }}
-                    transition={{ delay: 0.3 }}
-                    className="glass-strong rounded-3xl p-8 border-2 border-purple-400/30 shadow-2xl relative overflow-hidden"
-                  >
-                    {/* Animated Background Gradient */}
-                    <div className="absolute inset-0 bg-gradient-to-r from-purple-500/5 via-blue-500/5 to-purple-500/5 animate-pulse" />
-                    
-                    {/* Attention Indicator */}
-                    <div className="absolute -top-1 -right-1">
-                      <motion.div
-                        animate={{ 
-                          scale: [1, 1.2, 1],
-                          opacity: [0.5, 1, 0.5]
-                        }}
-                        transition={{ 
-                          duration: 2,
-                          repeat: Infinity,
-                          ease: "easeInOut"
-                        }}
-                        className="w-24 h-24 bg-gradient-to-br from-purple-500/20 to-blue-500/20 rounded-full blur-2xl"
-                      />
-                    </div>
-
-                    <div className="relative z-10">
-                      {/* Header with Animation */}
-                      <motion.div 
-                        initial={{ y: -10, opacity: 0 }}
-                        animate={{ y: 0, opacity: 1 }}
-                        transition={{ delay: 0.4 }}
-                        className="text-center mb-8"
-                      >
-                        <div className="inline-flex items-center gap-3 mb-4">
-                          <motion.div
-                            animate={{ rotate: [0, 10, -10, 0] }}
-                            transition={{ duration: 2, repeat: Infinity }}
-                          >
-                            <Search className="w-8 h-8 text-purple-500" />
-                          </motion.div>
-                          <h3 className="text-2xl md:text-3xl font-bold gradient-text-cosmic">
-                            Choose Your Search Engine
-                          </h3>
-                          <motion.div
-                            animate={{ rotate: [0, -10, 10, 0] }}
-                            transition={{ duration: 2, repeat: Infinity }}
-                          >
-                            <Zap className="w-8 h-8 text-blue-500" />
-                          </motion.div>
-                        </div>
-                        <p className="text-lg text-gray-700 font-medium">
-                          👇 Click any engine below to start your reverse image search 👇
-                        </p>
-                        {uploadedImage.publicUrl && (
-                          <motion.p 
-                            animate={{ opacity: [0.5, 1, 0.5] }}
-                            transition={{ duration: 1.5, repeat: Infinity }}
-                            className="text-sm text-green-600 font-bold mt-2 flex items-center justify-center gap-2"
-                          >
-                            <CheckCircle className="w-4 h-4" />
-                            Image ready! Select an engine to search
-                          </motion.p>
                         )}
-                      </motion.div>
-                    
-                    <div className="grid lg:grid-cols-2 gap-6">
-                      {searchEngines.map((engine, index) =>
-                    <motion.button
-                      key={engine.name}
-                      initial={{ opacity: 0, y: 20 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      transition={{ delay: 0.5 + index * 0.1 }}
-                      whileHover={{ scale: 1.05, y: -4 }}
-                      whileTap={{ scale: 0.95 }}
-                      onClick={() => handleSearch(engine)}
-                      disabled={!uploadedImage.publicUrl}
-                      className={`
-                            group relative p-6 rounded-2xl text-left
-                            transition-all duration-300
-                            ${uploadedImage.publicUrl 
-                              ? 'bg-gradient-to-br from-white/80 to-white/40 hover:from-white hover:to-white/60 shadow-lg hover:shadow-2xl border-2 border-white/50 hover:border-purple-400/50 cursor-pointer' 
-                              : 'bg-gray-100/50 opacity-50 cursor-not-allowed border-2 border-gray-300/30'}
-                          `}>
+                      </div>
 
-                          {/* Hover Glow Effect */}
-                          {uploadedImage.publicUrl && (
-                            <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-purple-500/0 via-blue-500/0 to-purple-500/0 group-hover:from-purple-500/10 group-hover:via-blue-500/10 group-hover:to-purple-500/10 transition-all duration-300" />
-                          )}
-
-                          <div className="relative flex items-start gap-4">
-                            <motion.div 
-                              whileHover={{ rotate: 360 }}
-                              transition={{ duration: 0.6 }}
-                              className={`w-14 h-14 bg-gradient-to-br ${engine.color} rounded-xl flex items-center justify-center flex-shrink-0 shadow-lg`}
-                            >
-                              {engine.icon}
-                            </motion.div>
-                            <div className="flex-1">
-                              <h4 className="font-bold text-xl text-gray-900 mb-2 group-hover:text-purple-700 transition-colors">
-                                {engine.name}
-                              </h4>
-                              <p className="text-gray-700 text-sm leading-relaxed mb-3">{engine.description}</p>
-                              {uploadedImage.publicUrl && (
-                                <motion.div 
-                                  initial={{ x: -10, opacity: 0 }}
-                                  animate={{ x: 0, opacity: 1 }}
-                                  transition={{ delay: 0.2 }}
-                                  className="mt-3 flex items-center gap-2 text-sm font-bold text-purple-600"
-                                >
-                                  Click to search 
-                                  <motion.span
-                                    animate={{ x: [0, 5, 0] }}
-                                    transition={{ duration: 1, repeat: Infinity }}
-                                  >
-                                    →
-                                  </motion.span>
-                                </motion.div>
-                              )}
-                            </div>
+                      {/* Search Options */}
+                      <div className="flex-1 w-full">
+                        <div className="flex justify-between items-center mb-4">
+                          <div>
+                            <h3 className="text-lg font-bold text-white">Select Search Engine</h3>
+                            <p className="text-gray-400 text-xs">Click any engine to search</p>
                           </div>
-                        </motion.button>
-                    )}
+                          {!isUploading && uploadedImage.publicUrl && (
+                            <div className="flex items-center gap-1 text-green-400 text-xs bg-green-400/10 px-2 py-1 rounded-lg">
+                              <CheckCircle className="w-3 h-3" />
+                              <span>Ready</span>
+                            </div>
+                          )}
+                        </div>
+
+                        <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+                          {searchEngines.map((engine) => (
+                            <button
+                              key={engine.name}
+                              onClick={() => handleSearch(engine)}
+                              disabled={!uploadedImage.publicUrl}
+                              className={`
+                                group relative p-3 rounded-xl border border-white/5 text-left transition-all duration-200
+                                ${uploadedImage.publicUrl
+                                  ? 'bg-white/5 hover:bg-white/10 hover:border-blue-500/30 hover:-translate-y-0.5'
+                                  : 'bg-white/5 opacity-50 cursor-not-allowed'}
+                              `}
+                            >
+                              <div className={`w-8 h-8 rounded-lg bg-gradient-to-br ${engine.color} flex items-center justify-center mb-2 shadow-lg`}>
+                                {React.cloneElement(engine.icon as React.ReactElement, { className: "w-4 h-4 text-white" })}
+                              </div>
+                              <div className="font-semibold text-white text-sm">{engine.name}</div>
+                            </button>
+                          ))}
+                        </div>
+                      </div>
                     </div>
-                    
-                    {!uploadedImage.publicUrl && !isUploading && (
-                      <motion.div
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        className="mt-6 text-center text-gray-400">
-                        <p>Upload failed. Please try uploading your image again.</p>
-                      </motion.div>
-                    )}
-                    
-                    {isUploading && (
-                      <motion.div
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        className="mt-6 text-center text-gray-400">
-                        <p>Please wait for the image to finish uploading before searching</p>
-                      </motion.div>
-                    )}
+                  </div>
+
+                  {/* How to Use Instructions - Compact */}
+                  <div className="glass-strong rounded-3xl p-6">
+                    <h3 className="text-lg font-bold text-gray-200 mb-4 flex items-center gap-2">
+                      <Eye className="w-5 h-5 text-blue-500" />
+                      Quick Tips
+                    </h3>
+                    <div className="grid md:grid-cols-2 gap-4 text-xs text-gray-300">
+                      <div className="space-y-1">
+                        <h4 className="font-bold text-gray-200">🔍 Find Duplicates</h4>
+                        <p>Upload to find exact matches and see where your images appear.</p>
+                      </div>
+                      <div className="space-y-1">
+                        <h4 className="font-bold text-gray-200">🛒 Product Search</h4>
+                        <p>Find original sources and compare prices for products.</p>
+                      </div>
                     </div>
-                  </motion.div>
+                  </div>
                 </motion.div>
               )}
             </AnimatePresence>
@@ -776,12 +585,12 @@ const UploadPage = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.6, duration: 0.8 }}
             className="mt-12 max-w-4xl mx-auto">
-            
+
             <div className="glass-strong rounded-3xl p-8">
               <h2 className="text-2xl font-bold mb-4 gradient-text-cosmic text-center">
                 🚀 Why Choose Our Free Reverse Image Search Tool?
               </h2>
-              <div className="grid md:grid-cols-2 gap-6 text-sm text-gray-600">
+              <div className="grid md:grid-cols-2 gap-6 text-sm text-gray-300">
                 <div>
                   <h3 className="font-semibold text-blue-400 mb-3">🔍 Advanced Image Recognition</h3>
                   <ul className="space-y-2 text-xs leading-relaxed">
@@ -801,25 +610,25 @@ const UploadPage = () => {
                   </ul>
                 </div>
               </div>
-              
+
               <div className="mt-6 p-4 bg-gradient-to-r from-blue-500/10 to-purple-500/10 rounded-xl border border-blue-500/20">
                 <h3 className="font-semibold text-purple-400 mb-2 text-center">🎯 Perfect For:</h3>
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-3 text-xs text-center">
                   <div className="space-y-1">
                     <div className="text-lg">📸</div>
-                    <span className="text-gray-900 font-medium">Copyright Protection</span>
+                    <span className="text-white font-medium">Copyright Protection</span>
                   </div>
                   <div className="space-y-1">
                     <div className="text-lg">🛒</div>
-                    <span className="text-gray-900 font-medium">Product Research</span>
+                    <span className="text-white font-medium">Product Research</span>
                   </div>
                   <div className="space-y-1">
                     <div className="text-lg">🕵️</div>
-                    <span className="text-gray-900 font-medium">Image Verification</span>
+                    <span className="text-white font-medium">Image Verification</span>
                   </div>
                   <div className="space-y-1">
                     <div className="text-lg">🔎</div>
-                    <span className="text-gray-900 font-medium">Duplicate Detection</span>
+                    <span className="text-white font-medium">Duplicate Detection</span>
                   </div>
                 </div>
               </div>
@@ -832,12 +641,12 @@ const UploadPage = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.8, duration: 0.8 }}
             className="mt-16 max-w-4xl mx-auto">
-            
+
             <div className="text-center mb-8">
               <h2 className="text-2xl font-bold mb-3 gradient-text-cosmic">
                 🔍 Multi-Engine Reverse Image Search - Google, Bing, Yandex & TinEye
               </h2>
-              <p className="text-gray-600 text-sm">
+              <p className="text-gray-300 text-sm">
                 Choose from the world's most powerful image recognition engines to find duplicates, sources, and similar images
               </p>
             </div>
@@ -852,7 +661,7 @@ const UploadPage = () => {
                   className="glass-strong rounded-xl p-4 text-center hover:scale-105 transition-all duration-300"
                 >
                   <div className={`w-12 h-12 bg-gradient-to-br ${engine.color} rounded-xl flex items-center justify-center mx-auto mb-3`}>
-                    {React.cloneElement(engine.icon as React.ReactElement, { className: "w-6 h-6 text-gray-900" })}
+                    {React.cloneElement(engine.icon as React.ReactElement, { className: "w-6 h-6 text-white" })}
                   </div>
                   <h3 className="font-semibold text-sm mb-2">{engine.name}</h3>
                   <p className="text-gray-400 text-xs leading-relaxed">
@@ -870,30 +679,30 @@ const UploadPage = () => {
               <h3 className="text-lg font-semibold mb-3 text-blue-400">
                 🚀 How Our Free Reverse Image Search Works
               </h3>
-              <div className="grid md:grid-cols-3 gap-4 text-sm text-gray-600 mb-4">
+              <div className="grid md:grid-cols-3 gap-4 text-sm text-gray-300 mb-4">
                 <div className="flex items-start gap-3">
                   <span className="text-2xl">1️⃣</span>
                   <div>
-                    <p className="font-semibold text-gray-900">Upload Any Image</p>
+                    <p className="font-semibold text-white">Upload Any Image</p>
                     <p className="text-xs">Drag & drop or click to upload JPG, PNG, WebP files up to 10MB</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
                   <span className="text-2xl">2️⃣</span>
                   <div>
-                    <p className="font-semibold text-gray-900">Choose Search Engine</p>
+                    <p className="font-semibold text-white">Choose Search Engine</p>
                     <p className="text-xs">Select Google Lens, Bing Visual Search, Yandex, or TinEye</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
                   <span className="text-2xl">3️⃣</span>
                   <div>
-                    <p className="font-semibold text-gray-900">Find Duplicates & Sources</p>
+                    <p className="font-semibold text-white">Find Duplicates & Sources</p>
                     <p className="text-xs">Discover similar images, original sources, and duplicate photos</p>
                   </div>
                 </div>
               </div>
-              
+
               <div className="text-xs text-gray-400 border-t border-gray-700 pt-4">
                 <p><strong>Supported formats:</strong> JPEG, PNG, WebP | <strong>Max file size:</strong> 10MB | <strong>Processing time:</strong> 2-5 seconds</p>
                 <p className="mt-1"><strong>Search capabilities:</strong> Exact duplicates, similar images, reverse lookup, image source finding, copyright checking</p>
@@ -907,14 +716,14 @@ const UploadPage = () => {
             animate={{ opacity: 1 }}
             transition={{ delay: 1.2, duration: 0.8 }}
             className="text-center mt-16">
-            
+
             <div className="glass-strong rounded-2xl p-6 mb-8">
               <h3 className="text-lg font-semibold mb-4 text-purple-400">
                 🏷️ Popular Image Search Keywords
               </h3>
               <div className="flex flex-wrap justify-center gap-2 text-xs">
                 {['reverse image search', 'find duplicate images', 'image similarity search', 'google lens search', 'bing visual search', 'free image finder', 'photo duplicate checker', 'reverse photo lookup', 'image source finder', 'copyright image check', 'similar image detection', 'reverse image API'].map((keyword, index) => (
-                  <span key={index} className="px-3 py-1 bg-gradient-to-r from-blue-500/20 to-purple-500/20 border border-blue-500/30 rounded-full text-gray-600 hover:bg-white/10 transition-colors">
+                  <span key={index} className="px-3 py-1 bg-gradient-to-r from-blue-500/20 to-purple-500/20 border border-blue-500/30 rounded-full text-gray-300 hover:bg-transparent/10 transition-colors">
                     {keyword}
                   </span>
                 ))}
@@ -923,7 +732,7 @@ const UploadPage = () => {
                 Our free reverse image search tool supports all these search types and more. No registration required.
               </p>
             </div>
-            
+
             <div className="text-gray-400">
               <p className="text-sm mb-2">
                 🔐 <strong>Privacy & Security:</strong> Images auto-deleted after 2-3 days • Secure Vercel CDN storage • No personal data collected
@@ -949,7 +758,7 @@ const UploadPage = () => {
                 <h2 className="text-3xl md:text-4xl font-bold mb-6">
                   How to Use <span className="gradient-text-cosmic">DuplicateDetective</span> - Complete Example
                 </h2>
-                <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+                <p className="text-xl text-gray-300 max-w-3xl mx-auto">
                   Follow this step-by-step visual guide to find duplicate images, track copyright infringement, and discover image sources
                 </p>
               </div>
@@ -970,11 +779,11 @@ const UploadPage = () => {
                       </div>
                       <h3 className="text-2xl font-bold">Start on Homepage</h3>
                     </div>
-                    <p className="text-gray-600 leading-relaxed mb-4">
-                      Visit <strong>DuplicateDetective</strong> homepage and click on the "Start Search" or "Upload" button to begin your reverse image search. 
+                    <p className="text-gray-300 leading-relaxed mb-4">
+                      Visit <strong>DuplicateDetective</strong> homepage and click on the "Start Search" or "Upload" button to begin your reverse image search.
                       Our clean interface makes it easy to find duplicate images and similar photos.
                     </p>
-                    <ul className="space-y-2 text-gray-600">
+                    <ul className="space-y-2 text-gray-300">
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" />
                         <span>Access from any device - desktop, tablet, or mobile</span>
@@ -1028,11 +837,11 @@ const UploadPage = () => {
                       </div>
                       <h3 className="text-2xl font-bold">Upload Your Image</h3>
                     </div>
-                    <p className="text-gray-600 leading-relaxed mb-4">
-                      Drag & drop your image or click to browse. Our tool accepts <strong>JPG, PNG, GIF, WebP, and BMP</strong> formats up to 10MB. 
+                    <p className="text-gray-300 leading-relaxed mb-4">
+                      Drag & drop your image or click to browse. Our tool accepts <strong>JPG, PNG, GIF, WebP, and BMP</strong> formats up to 10MB.
                       Perfect for finding duplicate images, similar photos, or tracking where your images appear online.
                     </p>
-                    <ul className="space-y-2 text-gray-600">
+                    <ul className="space-y-2 text-gray-300">
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" />
                         <span>Multiple upload methods: drag-drop, click, or paste image URL</span>
@@ -1066,11 +875,11 @@ const UploadPage = () => {
                       </div>
                       <h3 className="text-2xl font-bold">Choose Search Engines</h3>
                     </div>
-                    <p className="text-gray-600 leading-relaxed mb-4">
-                      Select which search engines to use for your reverse image search. We support <strong>Google Lens</strong>, <strong>Bing Visual Search</strong>, 
+                    <p className="text-gray-300 leading-relaxed mb-4">
+                      Select which search engines to use for your reverse image search. We support <strong>Google Lens</strong>, <strong>Bing Visual Search</strong>,
                       <strong>Yandex Images</strong>, and <strong>TinEye</strong> for comprehensive duplicate detection and image source finding.
                     </p>
-                    <ul className="space-y-2 text-gray-600">
+                    <ul className="space-y-2 text-gray-300">
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" />
                         <span><strong>Google Lens</strong>: Best for products, landmarks, and general images</span>
@@ -1128,11 +937,11 @@ const UploadPage = () => {
                       </div>
                       <h3 className="text-2xl font-bold">AI Analysis & Processing</h3>
                     </div>
-                    <p className="text-gray-600 leading-relaxed mb-4">
-                      Our <strong>AI-powered image analysis</strong> extracts visual features, colors, patterns, and creates a unique digital fingerprint of your image. 
+                    <p className="text-gray-300 leading-relaxed mb-4">
+                      Our <strong>AI-powered image analysis</strong> extracts visual features, colors, patterns, and creates a unique digital fingerprint of your image.
                       This enables accurate duplicate detection and similar image finding across billions of indexed photos.
                     </p>
-                    <ul className="space-y-2 text-gray-600">
+                    <ul className="space-y-2 text-gray-300">
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" />
                         <span>Advanced computer vision algorithms</span>
@@ -1166,11 +975,11 @@ const UploadPage = () => {
                       </div>
                       <h3 className="text-2xl font-bold">Multi-Engine Search</h3>
                     </div>
-                    <p className="text-gray-600 leading-relaxed mb-4">
-                      Your image is simultaneously searched across <strong>Google, Bing, Yandex, and TinEye</strong> search engines. 
+                    <p className="text-gray-300 leading-relaxed mb-4">
+                      Your image is simultaneously searched across <strong>Google, Bing, Yandex, and TinEye</strong> search engines.
                       This comprehensive approach ensures you find all duplicate images, similar photos, and original sources.
                     </p>
-                    <ul className="space-y-2 text-gray-600">
+                    <ul className="space-y-2 text-gray-300">
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" />
                         <span>Parallel search across 4 major engines</span>
@@ -1224,11 +1033,11 @@ const UploadPage = () => {
                       </div>
                       <h3 className="text-2xl font-bold">Get Comprehensive Results</h3>
                     </div>
-                    <p className="text-gray-600 leading-relaxed mb-4">
-                      View all <strong>duplicate images</strong>, <strong>similar photos</strong>, and <strong>original sources</strong> found by each search engine. 
+                    <p className="text-gray-300 leading-relaxed mb-4">
+                      View all <strong>duplicate images</strong>, <strong>similar photos</strong>, and <strong>original sources</strong> found by each search engine.
                       Click on any result to visit the source website and learn more about where your image appears online.
                     </p>
-                    <ul className="space-y-2 text-gray-600">
+                    <ul className="space-y-2 text-gray-300">
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" />
                         <span>Results organized by search engine</span>
@@ -1266,11 +1075,11 @@ const UploadPage = () => {
                       </div>
                       <h3 className="text-2xl font-bold">Privacy-First: Purge Your Image</h3>
                     </div>
-                    <p className="text-gray-600 leading-relaxed mb-4">
-                      After viewing your search results, you can <strong>immediately delete your uploaded image</strong> from our secure storage by clicking the 
+                    <p className="text-gray-300 leading-relaxed mb-4">
+                      After viewing your search results, you can <strong>immediately delete your uploaded image</strong> from our secure storage by clicking the
                       <strong className="text-red-600"> "Purge Image Now"</strong> button. Your privacy is our top priority.
                     </p>
-                    <ul className="space-y-2 text-gray-600">
+                    <ul className="space-y-2 text-gray-300">
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" />
                         <span><strong>Instant deletion</strong>: Remove images immediately after search</span>
@@ -1290,7 +1099,7 @@ const UploadPage = () => {
                     </ul>
                     <div className="mt-6 bg-green-50 border-l-4 border-green-500 p-4 rounded">
                       <p className="text-sm text-green-800 font-semibold">
-                        🔒 Your Privacy Matters: DuplicateDetective is built with privacy-first design. 
+                        🔒 Your Privacy Matters: DuplicateDetective is built with privacy-first design.
                         We give you complete control over your uploaded images.
                       </p>
                     </div>
@@ -1320,8 +1129,8 @@ const UploadPage = () => {
                   <h3 className="text-3xl font-bold mb-4">
                     Ready to Find Your <span className="gradient-text-cosmic">Duplicate Images</span>?
                   </h3>
-                  <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-                    Start your free reverse image search now. No registration required. Find duplicate photos, 
+                  <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
+                    Start your free reverse image search now. No registration required. Find duplicate photos,
                     track copyright infringement, and discover image sources in seconds.
                   </p>
                   <a

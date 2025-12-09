@@ -10,16 +10,15 @@ import Upload from './pages/Upload'
 import Privacy from './pages/Privacy'
 import Blog from './pages/Blog'
 import BlogPost from './pages/BlogPost'
+import Terms from './pages/Terms'
+import Contact from './pages/Contact'
 import ScrollToTop from './components/ScrollToTop'
-import CustomCursor from './components/CustomCursor'
-
 function App() {
   return (
-    <div className="min-h-screen cosmic-bg text-gray-900">
+    <div className="min-h-screen cosmic-bg text-gray-100">
       <Toaster position="top-right" />
       <ScrollToTop />
-      <CustomCursor />
-      
+
       {/* Floating cosmic elements */}
       <div className="fixed inset-0 pointer-events-none overflow-hidden">
         <div className="absolute top-20 left-10 w-2 h-2 bg-blue-400 rounded-full opacity-60 float" />
@@ -29,7 +28,7 @@ function App() {
       </div>
 
       <Navbar />
-      
+
       <main className="relative z-10">
         <Routes>
           <Route path="/" element={<Home />} />
@@ -39,11 +38,13 @@ function App() {
           <Route path="/privacy" element={<Privacy />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/blog/:slug" element={<BlogPost />} />
+          <Route path="/terms" element={<Terms />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
       </main>
-      
+
       <Footer />
-    </div>
+    </div >
   )
 }
 

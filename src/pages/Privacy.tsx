@@ -77,7 +77,7 @@ const Privacy = () => {
             className="text-center mb-12"
           >
             <h1 className="text-3xl md:text-4xl font-bold mb-4 gradient-text-cosmic mt-4">DuplicateDetective Privacy Policy</h1>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+            <p className="text-lg text-gray-300 max-w-2xl mx-auto">
               How DuplicateDetective handles your data and protects your privacy when using our duplicate image detection and reverse search tool
             </p>
           </motion.div>

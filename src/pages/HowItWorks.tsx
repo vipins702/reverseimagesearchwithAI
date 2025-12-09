@@ -55,16 +55,16 @@ const HowItWorks = () => {
     <>
       <Helmet>
         {/* PRIMARY META TAGS - Optimized for Tutorial/Guide Intent */}
-        <title>How Reverse Image Search Works - Step-by-Step Guide | DuplicateDetective</title>
-        <meta name="description" content="Learn how to use reverse image search in 3 easy steps. Upload, search 4 engines (Google Lens, Bing, Yandex, TinEye), and find duplicates instantly. Free guide!" />
-        <meta name="keywords" content="how reverse image search works, reverse search tutorial, image search guide, find duplicates step-by-step, Google Lens tutorial, Bing visual search guide, TinEye how to use, duplicate detection tutorial" />
-        
+        <title>How to Find Duplicate Photos & Check Image Source | DuplicateDetective</title>
+        <meta name="description" content="Step-by-step guide: How to find duplicate photos, check if an image is stolen, and identify fake profiles using our free multi-engine reverse image search tool." />
+        <meta name="keywords" content="how to find duplicate photos, check if image is stolen, identify fake profiles, how to use reverse image search, find image source tutorial, instagram image search guide, duplicate photo finder guide" />
+
         {/* SEO META TAGS */}
         <meta name="author" content="DuplicateDetective" />
         <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
         <meta name="googlebot" content="index, follow" />
         <link rel="canonical" href="https://checkduplicateimage.online/how-it-works" />
-        
+
         {/* OPEN GRAPH / FACEBOOK */}
         <meta property="og:title" content="How to Use Reverse Image Search - Complete Tutorial" />
         <meta property="og:description" content="Master reverse image search in 3 simple steps. Upload images, search across Google Lens, Bing, Yandex & TinEye, and discover duplicates instantly. Free & easy!" />
@@ -76,7 +76,7 @@ const HowItWorks = () => {
         <meta property="og:image:height" content="630" />
         <meta property="og:image:alt" content="How to Use Reverse Image Search - Step-by-Step Tutorial" />
         <meta property="og:locale" content="en_US" />
-        
+
         {/* TWITTER CARD */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@DuplicateDetective" />
@@ -227,13 +227,13 @@ const HowItWorks = () => {
             transition={{ duration: 0.8 }}
             className="text-center max-w-4xl mx-auto space-y-8"
           >
-            <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold gradient-text-cosmic mt-4">
+            <h1 className="text-3xl md:text-5xl font-bold heading-premium gradient-text-cosmic mt-4">
               How DuplicateDetective Works - Professional Duplicate Detection
             </h1>
-            <p className="text-lg text-gray-600 leading-relaxed">
+            <p className="text-lg text-gray-300 leading-relaxed">
               Learn how DuplicateDetective's advanced technology detects duplicate images and finds original photo sources across Google Lens, Bing Visual Search, Yandex Images, and TinEye with professional-grade accuracy in just 3 simple steps.
             </p>
-            
+
             <div className="flex justify-center">
               <a
                 href="/reverse-image-search"
@@ -260,7 +260,7 @@ const HowItWorks = () => {
             <h2 className="text-2xl md:text-3xl font-bold mb-4">
               <span className="gradient-text-cosmic">3 Simple Steps</span> with DuplicateDetective
             </h2>
-            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+            <p className="text-lg text-gray-300 max-w-3xl mx-auto">
               Our streamlined process makes it easy to find duplicate images and similar photos across multiple search engines in seconds.
             </p>
           </motion.div>
@@ -286,9 +286,9 @@ const HowItWorks = () => {
                         <span className="text-white font-bold text-sm">{index + 1}</span>
                       </div>
                     </div>
-                    
-                    <h3 className="text-xl font-semibold mb-3 text-gray-900">{step.title}</h3>
-                    <p className="text-gray-600 leading-relaxed">{step.description}</p>
+
+                    <h3 className="text-xl font-semibold mb-3 text-white">{step.title}</h3>
+                    <p className="text-gray-300 leading-relaxed">{step.description}</p>
                   </div>
                 </motion.div>
               )
@@ -310,7 +310,7 @@ const HowItWorks = () => {
             <h2 className="text-2xl md:text-3xl font-bold mb-4">
               <span className="gradient-text-cosmic">Powered by Leading</span> Search Engines
             </h2>
-            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+            <p className="text-lg text-gray-300 max-w-3xl mx-auto">
               We integrate with the most powerful image search engines to provide comprehensive results for your reverse image searches.
             </p>
           </motion.div>
@@ -331,8 +331,8 @@ const HowItWorks = () => {
                 className="glass-strong rounded-2xl p-6 text-center hover:scale-105 transition-all duration-300"
               >
                 <div className="text-3xl mb-3">{engine.icon}</div>
-                <h3 className="text-lg font-semibold mb-2 text-gray-900">{engine.name}</h3>
-                <p className="text-gray-600 text-sm">{engine.description}</p>
+                <h3 className="text-lg font-semibold mb-2 text-white">{engine.name}</h3>
+                <p className="text-gray-300 text-sm">{engine.description}</p>
                 <div className="mt-3">
                   <span className="inline-flex items-center gap-1 text-green-400 text-xs">
                     <CheckCircle className="w-3 h-3" />
@@ -358,7 +358,7 @@ const HowItWorks = () => {
             <h2 className="text-2xl md:text-3xl font-bold mb-4">
               <span className="gradient-text-cosmic">Frequently Asked Questions</span> About DuplicateDetective
             </h2>
-            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+            <p className="text-lg text-gray-300 max-w-3xl mx-auto">
               Get answers to common questions about our free reverse image search tool and duplicate image detection process.
             </p>
           </motion.div>
@@ -375,13 +375,12 @@ const HowItWorks = () => {
               >
                 <button
                   onClick={() => setOpenFaq(openFaq === index ? null : index)}
-                  className="w-full p-6 text-left flex items-center justify-between hover:bg-white/5 transition-colors"
+                  className="w-full p-6 text-left flex items-center justify-between hover:bg-transparent/5 transition-colors"
                 >
-                  <span className="font-semibold text-lg text-gray-900 pr-4">{faq.question}</span>
-                  <ChevronDown 
-                    className={`w-5 h-5 text-gray-400 transition-transform ${
-                      openFaq === index ? 'rotate-180' : ''
-                    }`}
+                  <span className="font-semibold text-lg text-white pr-4">{faq.question}</span>
+                  <ChevronDown
+                    className={`w-5 h-5 text-gray-400 transition-transform ${openFaq === index ? 'rotate-180' : ''
+                      }`}
                   />
                 </button>
                 {openFaq === index && (
@@ -391,7 +390,7 @@ const HowItWorks = () => {
                     exit={{ height: 0 }}
                     className="px-6 pb-6"
                   >
-                    <p className="text-gray-600 leading-relaxed">{faq.answer}</p>
+                    <p className="text-gray-300 leading-relaxed">{faq.answer}</p>
                   </motion.div>
                 )}
               </motion.div>
@@ -414,10 +413,10 @@ const HowItWorks = () => {
               <h2 className="text-2xl md:text-3xl font-bold mb-4 gradient-text-cosmic">
                 Ready to Use DuplicateDetective?
               </h2>
-              <p className="text-lg text-gray-600 mb-8">
+              <p className="text-lg text-gray-300 mb-8">
                 Upload your image now and let DuplicateDetective's professional-grade technology detect duplicates, find original sources, and verify photo authenticity across multiple search engines - completely free!
               </p>
-              
+
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a
                   href="/reverse-image-search"
@@ -426,10 +425,10 @@ const HowItWorks = () => {
                   Start Searching Images
                   <ArrowRight className="w-5 h-5" />
                 </a>
-                
+
                 <a
                   href="/about"
-                  className="px-8 py-3 rounded-lg font-semibold text-lg border-2 border-gray-300 text-gray-700 hover:border-blue-400 hover:text-blue-600 transition-all duration-300"
+                  className="px-8 py-3 rounded-lg font-semibold text-lg border-2 border-gray-300 text-gray-300 hover:border-blue-400 hover:text-blue-600 transition-all duration-300"
                 >
                   Learn More About Us
                 </a>

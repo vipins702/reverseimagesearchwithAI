@@ -249,13 +249,13 @@ const BlogPost = () => {
           <motion.div
             initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
-            className="flex items-center gap-2 text-sm text-gray-600 mb-6"
+            className="flex items-center gap-2 text-sm text-gray-300 mb-6"
           >
             <Link to="/" className="hover:text-blue-600 transition-colors">Home</Link>
             <span>→</span>
             <Link to="/blog" className="hover:text-blue-600 transition-colors">Blog</Link>
             <span>→</span>
-            <span className="text-gray-900">{post.category}</span>
+            <span className="text-white">{post.category}</span>
           </motion.div>
 
           {/* Back to Blog Link */}
@@ -293,7 +293,7 @@ const BlogPost = () => {
                   <User className="w-5 h-5 text-white" />
                 </div>
                 <div>
-                  <p className="font-medium text-gray-900">{post.author}</p>
+                  <p className="font-medium text-white">{post.author}</p>
                   <p className="text-sm text-gray-500">{post.publishDate}</p>
                 </div>
               </div>
@@ -336,7 +336,7 @@ const BlogPost = () => {
                 <div className="w-20 h-20 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full flex items-center justify-center mb-4 mx-auto">
                   <span className="text-4xl">🔍</span>
                 </div>
-                <p className="text-gray-600 font-medium text-lg">{post.category}</p>
+                <p className="text-gray-300 font-medium text-lg">{post.category}</p>
               </div>
             </div>
           </motion.div>
@@ -351,20 +351,20 @@ const BlogPost = () => {
             <div className="glass-strong rounded-2xl p-8 md:p-12">
               <ReactMarkdown
                 components={{
-                  h1: ({node, ...props}) => <h1 className="text-3xl font-bold mb-6 mt-8 text-gray-900" {...props} />,
-                  h2: ({node, ...props}) => <h2 className="text-2xl font-bold mb-4 mt-8 text-gray-900" {...props} />,
-                  h3: ({node, ...props}) => <h3 className="text-xl font-bold mb-3 mt-6 text-gray-900" {...props} />,
-                  p: ({node, ...props}) => <p className="mb-4 leading-relaxed text-gray-700" {...props} />,
+                  h1: ({node, ...props}) => <h1 className="text-3xl font-bold mb-6 mt-8 text-white" {...props} />,
+                  h2: ({node, ...props}) => <h2 className="text-2xl font-bold mb-4 mt-8 text-white" {...props} />,
+                  h3: ({node, ...props}) => <h3 className="text-xl font-bold mb-3 mt-6 text-white" {...props} />,
+                  p: ({node, ...props}) => <p className="mb-4 leading-relaxed text-gray-300" {...props} />,
                   a: ({node, ...props}) => <a className="text-blue-600 hover:text-purple-600 underline transition-colors" {...props} />,
-                  ul: ({node, ...props}) => <ul className="mb-4 ml-6 list-disc text-gray-700" {...props} />,
-                  ol: ({node, ...props}) => <ol className="mb-4 ml-6 list-decimal text-gray-700" {...props} />,
+                  ul: ({node, ...props}) => <ul className="mb-4 ml-6 list-disc text-gray-300" {...props} />,
+                  ol: ({node, ...props}) => <ol className="mb-4 ml-6 list-decimal text-gray-300" {...props} />,
                   li: ({node, ...props}) => <li className="mb-2" {...props} />,
-                  blockquote: ({node, ...props}) => <blockquote className="border-l-4 border-blue-500 pl-4 italic my-4 text-gray-600" {...props} />,
+                  blockquote: ({node, ...props}) => <blockquote className="border-l-4 border-blue-500 pl-4 italic my-4 text-gray-300" {...props} />,
                   table: ({node, ...props}) => <div className="overflow-x-auto my-6"><table className="min-w-full divide-y divide-gray-200" {...props} /></div>,
-                  thead: ({node, ...props}) => <thead className="bg-gray-50" {...props} />,
-                  tbody: ({node, ...props}) => <tbody className="bg-white divide-y divide-gray-200" {...props} />,
+                  thead: ({node, ...props}) => <thead className="bg-transparent" {...props} />,
+                  tbody: ({node, ...props}) => <tbody className="bg-transparent divide-y divide-gray-200" {...props} />,
                   th: ({node, ...props}) => <th className="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider" {...props} />,
-                  td: ({node, ...props}) => <td className="px-4 py-3 whitespace-nowrap text-sm text-gray-900" {...props} />,
+                  td: ({node, ...props}) => <td className="px-4 py-3 whitespace-nowrap text-sm text-white" {...props} />,
                   code: ({node, inline, ...props}: any) => 
                     inline ? 
                       <code className="bg-gray-100 px-2 py-1 rounded text-sm font-mono text-blue-600" {...props} /> : 
@@ -377,10 +377,10 @@ const BlogPost = () => {
 
               {/* CTA Section */}
               <div className="mt-12 p-8 bg-gradient-to-r from-blue-50 to-purple-50 rounded-xl border-2 border-blue-200">
-                <h3 className="text-2xl font-bold mb-4 text-gray-900">
+                <h3 className="text-2xl font-bold mb-4 text-white">
                   Ready to Find Duplicate Photos?
                 </h3>
-                <p className="text-gray-700 mb-6 leading-relaxed">
+                <p className="text-gray-300 mb-6 leading-relaxed">
                   Try DuplicateDetective now - the free, privacy-first reverse image search tool. 
                   No registration required, works on all devices, and finds duplicates in seconds.
                 </p>
@@ -421,7 +421,7 @@ const BlogPost = () => {
                       <h3 className="text-lg font-bold mt-3 mb-2 group-hover:text-blue-600 transition-colors">
                         {relatedPost.title}
                       </h3>
-                      <p className="text-sm text-gray-600 line-clamp-2">
+                      <p className="text-sm text-gray-300 line-clamp-2">
                         {relatedPost.excerpt}
                       </p>
                     </div>
